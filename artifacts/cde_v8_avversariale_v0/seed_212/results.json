@@ -1,0 +1,967 @@
+{
+  "run": "CDE_PDE_DISCOVERY_V8",
+  "seed": 212,
+  "smoke": false,
+  "protocol": {
+    "version": "1.1",
+    "terms": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x"
+    ],
+    "stability_B": 100,
+    "subsample_frac": 0.6,
+    "freq_threshold": 0.8,
+    "lam_grid": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "sigmas": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "gate_coef_relerr": 0.05,
+    "gate_fit_resid": 0.05,
+    "gate_r_gt": 0.001,
+    "amendment_note": "v1.1: gate residuo fit aggiunto dopo la calibrazione sui nulli (surrogati: supporti stabili con residuo ~0.89 vs ~1e-4 dei veri)"
+  },
+  "systems": {
+    "allen_cahn": {
+      "r_GT_preflight": 0.00014880178182721397,
+      "preflight_open": true,
+      "true_coeffs": {
+        "u_xx": 0.05,
+        "u": 1.0,
+        "u^3": -1.0
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 512,
+        "Nt": 801
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 0.0,
+            "u^3": 1.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0000293947805892,
+            "u^3": -1.0000257090598368,
+            "u_xx": 0.0500023641531516
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 4.728306303200536e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 0.00014398581584895037
+        },
+        "0.01": {
+          "support": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 0.0,
+            "u^3": 1.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0004528816521572,
+            "u^3": -1.0003608239916892,
+            "u_xx": 0.05002044160303278
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0004528816521571777,
+          "gate_pass": true,
+          "fit_rel_resid": 0.003114604492973147
+        },
+        "0.02": {
+          "support": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 0.0,
+            "u^3": 1.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 0.9995078674802217,
+            "u^3": -0.9981626901041283,
+            "u_xx": 0.05015747304367522
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0031494608735042895,
+          "gate_pass": true,
+          "fit_rel_resid": 0.006482789358633502
+        },
+        "0.05": {
+          "support": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 0.0,
+            "u^3": 1.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0003478337404015,
+            "u^3": -0.9956906064156016,
+            "u_xx": 0.04959373445903234
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.008125310819353249,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0175385959080835
+        },
+        "0.1": {
+          "support": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 0.0,
+            "u^3": 1.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.020673488501956,
+            "u^3": -1.0027661423622412,
+            "u_xx": 0.05035982729586832
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.02067348850195594,
+          "gate_pass": true,
+          "fit_rel_resid": 0.03373835757849989
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          }
+        ],
+        "stable_nonempty": 0,
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.0
+      }
+    },
+    "fisher_kpp": {
+      "r_GT_preflight": 0.00010633069211683366,
+      "preflight_open": true,
+      "true_coeffs": {
+        "u_xx": 0.05,
+        "u": 1.0,
+        "u^2": -1.0
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 512,
+        "Nt": 601
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 1.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0000005026715817,
+            "u^2": -0.9999852155366096,
+            "u_xx": 0.05001246240218095
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0002492480436189215,
+          "gate_pass": true,
+          "fit_rel_resid": 9.79420769423759e-05
+        },
+        "0.01": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 1.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 0.9999465725461109,
+            "u^2": -0.9999046055703265,
+            "u_xx": 0.04996276994085074
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0007446011829852217,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0006452841447880116
+        },
+        "0.02": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 1.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 0.99998022263659,
+            "u^2": -0.9999553071413865,
+            "u_xx": 0.049902409051130664
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0019518189773867767,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0013306816005230454
+        },
+        "0.05": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 1.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0000210218000891,
+            "u^2": -0.9997571074811045,
+            "u_xx": 0.049706957393044836
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00586085213910334,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0037068489228138956
+        },
+        "0.1": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "frequencies": {
+            "u": 1.0,
+            "u^2": 1.0,
+            "u^3": 0.02,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 0.0
+          },
+          "coefficients": {
+            "u": 1.0002569673444404,
+            "u^2": -0.9997598628673451,
+            "u_xx": 0.04971418563708335
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.005716287258333008,
+          "gate_pass": true,
+          "fit_rel_resid": 0.007146985243225069
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [
+              "u",
+              "u^2",
+              "u^3"
+            ],
+            "fit_rel_resid": 0.9095091022878561,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [
+              "u^3"
+            ],
+            "fit_rel_resid": 0.8986334801219209,
+            "false_discovery": false
+          }
+        ],
+        "stable_nonempty": 2,
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.2
+      }
+    },
+    "burgers": {
+      "r_GT_preflight": 4.943617432655824e-05,
+      "preflight_open": true,
+      "true_coeffs": {
+        "uu_x": -1.0,
+        "u_xx": 0.08
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 512,
+        "Nt": 801
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xx": 0.08000163984140887,
+            "uu_x": -1.0000055266409664
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 2.049801761088571e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 4.8151130573004185e-05
+        },
+        "0.01": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xx": 0.08002676298778212,
+            "uu_x": -0.9999063482014047
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0003345373472764951,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0014865511247176585
+        },
+        "0.02": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xx": 0.0800516062956069,
+            "uu_x": -0.999795133701011
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0006450786950861973,
+          "gate_pass": true,
+          "fit_rel_resid": 0.003110400994250764
+        },
+        "0.05": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xx": 0.07993537542976582,
+            "uu_x": -0.9990187192597536
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.000981280740246393,
+          "gate_pass": true,
+          "fit_rel_resid": 0.006226090841637473
+        },
+        "0.1": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 1.0,
+            "u_xxx": 0.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xx": 0.08008927601429294,
+            "uu_x": -0.9986381395027291
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0013618604972709392,
+          "gate_pass": true,
+          "fit_rel_resid": 0.012892171072021836
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [
+              "u",
+              "u^3",
+              "u_xx",
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.8343643720250473,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [
+              "u",
+              "u^3",
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.9159445802333245,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          }
+        ],
+        "stable_nonempty": 2,
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.2
+      }
+    },
+    "kdv": {
+      "r_GT_preflight": 8.08298956374452e-05,
+      "preflight_open": true,
+      "true_coeffs": {
+        "uu_x": -1.0,
+        "u_xxx": -0.0484
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 1024,
+        "Nt": 401
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u_xxx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 0.0,
+            "u_xxx": 1.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xxx": -0.048399410386909064,
+            "uu_x": -0.9999811605668751
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 1.8839433124862026e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 8.012660879992853e-05
+        },
+        "0.01": {
+          "support": [
+            "u_xxx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 0.0,
+            "u_xxx": 1.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xxx": -0.04837461495393779,
+            "uu_x": -0.9993547918226686
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00064520817733138,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0026917352893905443
+        },
+        "0.02": {
+          "support": [
+            "u_xxx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 0.0,
+            "u_xxx": 1.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xxx": -0.04836460140736135,
+            "uu_x": -0.9985962463401258
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0014037536598742184,
+          "gate_pass": true,
+          "fit_rel_resid": 0.00611673717977358
+        },
+        "0.05": {
+          "support": [
+            "u_xxx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 0.0,
+            "u_xxx": 1.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xxx": -0.04838034300010922,
+            "uu_x": -0.9990304447977242
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.000969555202275818,
+          "gate_pass": true,
+          "fit_rel_resid": 0.014009910731340969
+        },
+        "0.1": {
+          "support": [
+            "u_xxx",
+            "uu_x"
+          ],
+          "frequencies": {
+            "u": 0.0,
+            "u^2": 0.0,
+            "u^3": 0.0,
+            "u_x": 0.0,
+            "u_xx": 0.0,
+            "u_xxx": 1.0,
+            "uu_x": 1.0
+          },
+          "coefficients": {
+            "u_xxx": -0.04835220398053903,
+            "uu_x": -0.9979068522866354
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0020931477133645515,
+          "gate_pass": true,
+          "fit_rel_resid": 0.02816260064263394
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.9095446642694492,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [
+              "uu_x"
+            ],
+            "fit_rel_resid": 0.9276293577580539,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.7978179558512054,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [
+              "u^3",
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.9037202398432794,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          }
+        ],
+        "stable_nonempty": 4,
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.4
+      }
+    }
+  },
+  "elapsed_s": 552.39
+}

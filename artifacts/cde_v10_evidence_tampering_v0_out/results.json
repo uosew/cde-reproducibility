@@ -1,0 +1,121 @@
+{
+  "run": "CDE_V10_EVIDENCE_TAMPERING_V0",
+  "pristine_pass": true,
+  "tamper_challenge": [
+    {
+      "id": "T1_coefficient_changed_stale_hash",
+      "expected_rule": "R1",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R1",
+          "field": "envelope.results_sha256",
+          "detail": "hash non corrisponde al results.json"
+        }
+      ]
+    },
+    {
+      "id": "T2_seed_changed",
+      "expected_rule": "R2",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R2",
+          "field": "seed",
+          "detail": "results=99 envelope=7"
+        }
+      ]
+    },
+    {
+      "id": "T3_hash_not_updated",
+      "expected_rule": "R1",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R1",
+          "field": "envelope.results_sha256",
+          "detail": "hash non corrisponde al results.json"
+        }
+      ]
+    },
+    {
+      "id": "T4_sigma_falsified",
+      "expected_rule": "R5",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R5",
+          "field": "systems.burgers.sigma.0.12",
+          "detail": "sigma non nella ladder del protocollo"
+        }
+      ]
+    },
+    {
+      "id": "T5_python_env_falsified",
+      "expected_rule": "R7",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R7",
+          "field": "envelope.python_version",
+          "detail": "3.14.0 fuori matrice supportata"
+        }
+      ]
+    },
+    {
+      "id": "T6_cell_copied",
+      "expected_rule": "R6",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R6",
+          "field": "systems.burgers.sigma.0.05~0.1",
+          "detail": "celle bit-identiche (copiate?)"
+        }
+      ]
+    },
+    {
+      "id": "T7_gate_pass_high_resid",
+      "expected_rule": "R3",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R3",
+          "field": "systems.burgers.sigma.0.1.gate_pass",
+          "detail": "resid 0.200 >= 0.05"
+        }
+      ]
+    },
+    {
+      "id": "T8_support_exact_missing_term",
+      "expected_rule": "R4",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R4",
+          "field": "systems.burgers.sigma.0.1.support_exact",
+          "detail": "termini mancanti/spuri dichiarati"
+        }
+      ]
+    },
+    {
+      "id": "T9_run_mislabeled",
+      "expected_rule": "R8",
+      "detected": true,
+      "violations": [
+        {
+          "rule": "R8",
+          "field": "run",
+          "detail": "results=CDE_PDE_DISCOVERY_V8 envelope=CDE_ALTRO_RUN"
+        }
+      ]
+    }
+  ],
+  "detected": "9/9",
+  "repo_audit": {
+    "n_artifacts": 7,
+    "all_pass": true
+  },
+  "nota": "manipolazioni solo su copie in memoria; il validatore segnala campo e regola, non ricostruisce nulla",
+  "elapsed_s": 0.05
+}

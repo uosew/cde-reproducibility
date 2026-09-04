@@ -1,0 +1,2372 @@
+{
+ "case_000": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001431672253455696,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_001": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015551114216165798,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_002": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00019337614405333522,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_003": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.697150066010004e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_004": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012239704857070204,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_005": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001918298659576365,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_006": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.506856548732701e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_007": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015040773408333055,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_008": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001092232580970908,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_009": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001499482554098832,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_010": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001484534481274955,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_011": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001207950584897886,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_012": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001976138913815399,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_013": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010515835097579273,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_014": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015104310486851677,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_015": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.66242394487548e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_016": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010589589290113427,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_017": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00011338301209116529,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_018": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012804309393867313,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_019": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014488283408919998,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_020": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 8.11510912797345e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_021": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.496421967819295e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_022": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014899974482009734,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_023": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.552420980879628e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_024": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010071977629537916,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_025": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014390365556552986,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_026": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.000108622696858987,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_027": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00016132673230769535,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_028": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00019492095366336297,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_029": {
+  "cls": "A",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010537350440196701,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_030": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018657542903955073,
+   "beta": 0.03311753491415266,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_031": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018615469689103008,
+   "beta": 0.04379257608724007,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_032": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.298523904788299e-05,
+   "beta": 0.04830447008867417,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_033": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001805513769293298,
+   "beta": 0.037825691414265235,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_034": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012924222765051796,
+   "beta": 0.02538513150768528,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_035": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015639020183061265,
+   "beta": 0.03275219075166078,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_036": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001300254618677307,
+   "beta": 0.029673464268003966,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_037": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00017563942331947033,
+   "beta": 0.025085395958690884,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_038": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00011488099180624734,
+   "beta": 0.04733523893802354,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_039": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.388872707482513e-05,
+   "beta": 0.03692975575064665,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_040": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.402583214024957e-05,
+   "beta": 0.021891772659424182,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_041": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.010778088114501e-05,
+   "beta": 0.03542510367968544,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_042": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00019410236682882925,
+   "beta": 0.011430318606865724,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_043": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.000151517194240167,
+   "beta": 0.02557452812398092,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_044": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00013400329878534182,
+   "beta": 0.009075171176488647,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_045": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 5.1982949529317706e-05,
+   "beta": 0.02240890339535317,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_046": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.945195837171414e-05,
+   "beta": 0.014473625248554667,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_047": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012946570536926597,
+   "beta": 0.010298227732565408,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_048": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018222041774176197,
+   "beta": 0.014375777824010987,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_049": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001949084743543653,
+   "beta": 0.02997045488158044,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_050": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.746834391554095e-05,
+   "beta": 0.04477600991916679,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_051": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018469987279922637,
+   "beta": 0.04383126741798193,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_052": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001537660116575238,
+   "beta": 0.02364512490364376,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_053": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018319534690400903,
+   "beta": 0.026482902425454386,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_054": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010410667911734096,
+   "beta": 0.023920670857699552,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_055": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014266191304443602,
+   "beta": 0.02719990252337656,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_056": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010143201708050047,
+   "beta": 0.013390055548666742,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_057": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.470375279930574e-05,
+   "beta": 0.048413802286401075,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_058": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 8.478685739372072e-05,
+   "beta": 0.038832010429304904,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_059": {
+  "cls": "B",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00016898706594750784,
+   "beta": 0.027236804441828407,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_060": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001370420051353615,
+   "beta": 0.04376857676462265,
+   "gamma": 0.004578031293728971,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_061": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001500066012162972,
+   "beta": 0.016916619465869417,
+   "gamma": 0.006186362828444447,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_062": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015532769366877162,
+   "beta": 0.008530598275106376,
+   "gamma": 0.005214893892113511,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_063": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 5.467906677478725e-05,
+   "beta": 0.034128552908576214,
+   "gamma": 0.0032467825697085847,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_064": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010866834494233838,
+   "beta": 0.009043282537359877,
+   "gamma": 0.004991696486510291,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_065": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.15684571768606e-05,
+   "beta": 0.019218494534032387,
+   "gamma": 0.005747753869046226,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_066": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001743455980118279,
+   "beta": 0.007126944834914766,
+   "gamma": 0.003145397997130842,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_067": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00011964269496561097,
+   "beta": 0.04862760106223456,
+   "gamma": 0.004850243745751833,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_068": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010417944836003591,
+   "beta": 0.02346902142486574,
+   "gamma": 0.0056000660658422075,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_069": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00011335372824622215,
+   "beta": 0.038826517065742014,
+   "gamma": 0.003949596674658679,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_070": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001498215176099011,
+   "beta": 0.045787533512753595,
+   "gamma": 0.005907253543357732,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_071": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.835117433939494e-05,
+   "beta": 0.010658468666163835,
+   "gamma": 0.0073183950932903625,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_072": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001691543278161058,
+   "beta": 0.01687012753135922,
+   "gamma": 0.0071411056415652254,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_073": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014391073058605484,
+   "beta": 0.03529466771481769,
+   "gamma": 0.005335991367475523,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_074": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00013409810777029795,
+   "beta": 0.006382175214015403,
+   "gamma": 0.004728344245146193,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_075": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018391231101736114,
+   "beta": 0.014767760127030872,
+   "gamma": 0.007290051653657977,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_076": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015506918964375193,
+   "beta": 0.04653185562268271,
+   "gamma": 0.003001618219872098,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_077": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001078116864766285,
+   "beta": 0.03396791050768105,
+   "gamma": 0.007242079600779878,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_078": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.290621603194347e-05,
+   "beta": 0.007044902057375598,
+   "gamma": 0.005221792145173055,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_079": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001267069542428455,
+   "beta": 0.03463625991780928,
+   "gamma": 0.007150551010338735,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_080": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001611764163791554,
+   "beta": 0.02575460708520712,
+   "gamma": 0.0034811883945484547,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_081": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012208972080077844,
+   "beta": 0.015435487098492968,
+   "gamma": 0.004851093885604232,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_082": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00013978996640166778,
+   "beta": 0.0431616624050367,
+   "gamma": 0.00512335832943331,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_083": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 5.001636409163107e-05,
+   "beta": 0.04417571715112962,
+   "gamma": 0.007262200100600541,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_084": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 8.675199892452645e-05,
+   "beta": 0.023345721382505073,
+   "gamma": 0.0064033103036439006,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_085": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.175225611353777e-05,
+   "beta": 0.048445684402238634,
+   "gamma": 0.005216433689933744,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_086": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00011801879962642774,
+   "beta": 0.01670871985973259,
+   "gamma": 0.0038961679020654057,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_087": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014610126291295572,
+   "beta": 0.027914771607048253,
+   "gamma": 0.0038925921315169673,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_088": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00017860584088417008,
+   "beta": 0.020569597835925577,
+   "gamma": 0.0036016977495852004,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_089": {
+  "cls": "C",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.652481262702753e-05,
+   "beta": 0.04725747973470759,
+   "gamma": 0.007490851104981091,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.0,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_090": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00012545140784738534,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.7882964764823998,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_091": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010650659335412682,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.5706413700435247,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_092": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.90722094668397e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.596556970645759,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_093": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 5.2033489150949395e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.6641993647988476,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_094": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018124132992920915,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.7344393728068412,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_095": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 8.087065539046445e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.4466369901671069,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_096": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.132914514190259e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.5694498278012436,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_097": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00015986991692644028,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.42805526170675695,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_098": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014486761645879256,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.33672104743976927,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_099": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.336301290720718e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.5685657899201946,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_100": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00018780221869317052,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.3526300192696201,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_101": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.090771194423816e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.6857577685496451,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_102": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.68913744038229e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.4494418827802488,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_103": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.735189638541317e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.3028884471692359,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_104": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010668737939239667,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.4894442553041355,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_105": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00016970059679799715,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.4865330159160032,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_106": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 7.983349906097978e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.4407451177121049,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_107": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001916941396418174,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.32348996568067495,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_108": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001902542894312416,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.7412792741484477,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_109": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010661168485020901,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.795812205617534,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_110": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00019131130978295905,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.35456648652885014,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_111": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001051899586047262,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.554460408423481,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_112": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00010744060894779506,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.6960506121620562,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_113": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.672071748074953e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.6282636156958612,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_114": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.142549959848938e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.46388396220522704,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_115": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.0001365111465283928,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.7799516194737024,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_116": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 9.556877049480598e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.48258570765264813,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_117": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 5.725700485403489e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.5531067986660796,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_118": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 0.00014781684529481404,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.42993799706121394,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ },
+ "case_119": {
+  "cls": "F",
+  "representable": true,
+  "is_null": false,
+  "true_support": [
+   "v_xx"
+  ],
+  "model": {
+   "alpha": 6.0789698560455775e-05,
+   "beta": 0.0,
+   "gamma": 0.0,
+   "alpha_x": null,
+   "source": null,
+   "robin": 0.6715355390641962,
+   "iface": null,
+   "advect": null,
+   "null_kind": null
+  }
+ }
+}

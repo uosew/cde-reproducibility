@@ -1,0 +1,354 @@
+{
+  "run": "CDE_V8_PYSINDY_BASELINE_V0",
+  "seed": 7,
+  "smoke": true,
+  "pysindy_version": "2.1.0",
+  "paired_with": "CDE_PDE_DISCOVERY_V8 v1.1 + CDE_KS_DISCOVERY_V9",
+  "disclosure": "soglia STLSQ scelta con oracolo pro-baseline; libreria pysindy naturale (sovrainsieme)",
+  "threshold_grid": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "systems": {
+    "allen_cahn": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 1.0000000124452042,
+            "x0^3": -0.9999999980102371,
+            "x0_11": 0.05000000224054679
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 4.481093579533635e-08
+        },
+        "0.01": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 1.002671864069644,
+            "x0^3": -1.002323111959027,
+            "x0_11": 0.05013093733424484
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0026718640696439255
+        },
+        "0.02": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 0.9984246165589977,
+            "x0^3": -0.9977797669671269,
+            "x0_11": 0.049983378848519194
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.002220233032873109
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0_11": 0.05,
+        "x0": 1.0,
+        "x0^3": -1.0
+      },
+      "nulls": {
+        "n_runs": 4,
+        "false_discoveries": 4,
+        "abstention_available": 4,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 8,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 5,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 7,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 12,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "fisher_kpp": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 0.9999999923554577,
+            "x0^2": -0.9999999820618665,
+            "x0^3": -1.0091132894869376e-08,
+            "x0_11": 0.050000000147175996
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^3"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 1.7938133534123324e-08
+        },
+        "0.01": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0": 1.00092309415799,
+            "x0^2": -1.0060460187951197,
+            "x0^3": 0.005397780242956835,
+            "x0_11": 0.04992146521225957,
+            "x0x0_11": -0.005606974143329151,
+            "x0^2x0_11": 0.017190407855732663,
+            "x0^3x0_11": -0.01206600808102199
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^2x0_11",
+            "x0^3",
+            "x0^3x0_11",
+            "x0x0_11"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.006046018795119679
+        },
+        "0.02": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0": 0.9982733372655169,
+            "x0^2": -0.994660157157419,
+            "x0^3": -0.004629894529680123,
+            "x0_11": 0.04989839569897364
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^3"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.005339842842581044
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0_11": 0.05,
+        "x0": 1.0,
+        "x0^2": -1.0
+      },
+      "nulls": {
+        "n_runs": 4,
+        "false_discoveries": 4,
+        "abstention_available": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "burgers": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.08009463449017101,
+            "x0x0_1": -1.0010804848385622
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0011829311271376389
+        },
+        "0.01": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.08007703260470218,
+            "x0x0_1": -0.9994426454067196
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0009629075587772734
+        },
+        "0.02": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.07966740922879074,
+            "x0x0_1": -1.0046873540785264
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0046873540785263845
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0x0_1": -1.0,
+        "x0_11": 0.08
+      },
+      "nulls": {
+        "n_runs": 4,
+        "false_discoveries": 4,
+        "abstention_available": 1,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 12,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 11,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "kdv": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_111": -0.04837086236544148,
+            "x0x0_1": -1.0015014891544651
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0015014891544651299
+        },
+        "0.01": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_111": -0.048207775790220675,
+            "x0x0_1": -0.9989016784871243
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.003971574582217431
+        },
+        "0.02": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0_111": -0.047647014730290385,
+            "x0x0_1": -0.9813582118315912
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.01864178816840878
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0x0_1": -1.0,
+        "x0_111": -0.0484
+      },
+      "nulls": {
+        "n_runs": 4,
+        "false_discoveries": 4,
+        "abstention_available": 4,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          }
+        ],
+        "fdr": 1.0
+      }
+    }
+  },
+  "elapsed_s": 30.31
+}

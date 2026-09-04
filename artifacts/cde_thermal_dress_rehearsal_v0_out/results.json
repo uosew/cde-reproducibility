@@ -1,0 +1,370 @@
+{
+  "run": "CDE_THERMAL_DRESS_REHEARSAL_V0",
+  "design": "EXPERIMENTAL_DESIGN_THERMAL_V0_2026_07_31.md (+ emendamento libreria)",
+  "synthetic_and_declared": true,
+  "camera_spec": {
+    "px": 160,
+    "hz": 5.0,
+    "noise_C": 0.3,
+    "drift_C": 0.2,
+    "quant_C": 0.1
+  },
+  "physics": {
+    "alpha": 9.7e-05,
+    "beta": 0.02,
+    "gamma_vardiff": 0.004
+  },
+  "terms": [
+    "const",
+    "v",
+    "v2",
+    "v_x",
+    "v_xx",
+    "vv_x",
+    "div_vv_x"
+  ],
+  "arms": {
+    "linear": {
+      "ics": {
+        "ic0": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.024539291499635293,
+            "v_x": -0.0004484743761380808,
+            "v_xx": 7.941680580379806e-05,
+            "vv_x": 2.1474009108481925e-05,
+            "div_vv_x": 7.179927339261362e-07
+          },
+          "fit_rel_resid": 0.07286328998983693,
+          "preflight": {
+            "P1": 0.26267993177950666,
+            "P2": 0.10684746486567419,
+            "P3": 0.08392622740745387,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic1": {
+          "support": [
+            "v",
+            "v_x",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.023827388643930185,
+            "v_x": -0.00011476469352868691,
+            "v_xx": 9.215345619033896e-05
+          },
+          "fit_rel_resid": 0.08268144296617315,
+          "preflight": {
+            "P1": 0.33275768003334283,
+            "P2": 0.15692107712265277,
+            "P3": 0.09800391494932373,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic2": {
+          "support": [
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.023367657579323412,
+            "v_xx": 9.134301718856114e-05
+          },
+          "fit_rel_resid": 0.06139587726750675,
+          "preflight": {
+            "P1": 0.2218495553311308,
+            "P2": 0.10376170291158242,
+            "P3": 0.10047807772985744,
+            "open": false
+          },
+          "support_true": true
+        },
+        "ic3": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.02332537175451933,
+            "v_xx": 7.175003301719631e-05,
+            "div_vv_x": 7.73855332205003e-07
+          },
+          "fit_rel_resid": 0.10061299804239296,
+          "preflight": {
+            "P1": 0.4316985349279214,
+            "P2": 0.11735414055958042,
+            "P3": 0.15551778471341715,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic4": {
+          "support": [
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.023372352358240815,
+            "v_xx": 9.042502228460004e-05
+          },
+          "fit_rel_resid": 0.05764258574311086,
+          "preflight": {
+            "P1": 0.23092698125447106,
+            "P2": 0.10017480054331877,
+            "P3": 0.07271764025876358,
+            "open": false
+          },
+          "support_true": true
+        }
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0
+      },
+      "transfer": {
+        "r": [
+          0.10466,
+          0.107,
+          0.129,
+          0.10506
+        ],
+        "all_pass": false
+      },
+      "swap_ic0": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.07916
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v2",
+            "resid": 0.07663
+          },
+          {
+            "drop": "v_x",
+            "add": "const",
+            "resid": 0.07762
+          },
+          {
+            "drop": "v_x",
+            "add": "v2",
+            "resid": 0.0772
+          },
+          {
+            "drop": "vv_x",
+            "add": "const",
+            "resid": 0.07492
+          },
+          {
+            "drop": "vv_x",
+            "add": "v2",
+            "resid": 0.07415
+          }
+        ],
+        "not_identifiable": true
+      },
+      "ladder": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "state": {
+          "operator_valid": true,
+          "numerical_preflight": false,
+          "support_stable": true,
+          "fit_gate": false,
+          "transfer_gate": false,
+          "identifiability_gate": false,
+          "replication": true
+        }
+      }
+    },
+    "vardiff": {
+      "ics": {
+        "ic0": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.024709995537337645,
+            "v_x": -0.00047720348206950876,
+            "v_xx": 7.870841252286903e-05,
+            "vv_x": 2.328637637214003e-05,
+            "div_vv_x": 1.1303809879354733e-06
+          },
+          "fit_rel_resid": 0.0760461310988255,
+          "preflight": {
+            "P1": 0.2761994918033113,
+            "P2": 0.10881333697215846,
+            "P3": 0.08847074601980243,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic1": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v_x",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.023944209578046133,
+            "v_x": -0.00011857788429056844,
+            "v_xx": 9.150632343749472e-05,
+            "div_vv_x": 3.852316646123382e-07
+          },
+          "fit_rel_resid": 0.08670355348862363,
+          "preflight": {
+            "P1": 0.3557340003915788,
+            "P2": 0.1617127916430913,
+            "P3": 0.09489701823011447,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic2": {
+          "support": [
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.02341816242841003,
+            "v_xx": 9.66205514638597e-05
+          },
+          "fit_rel_resid": 0.06563180409092763,
+          "preflight": {
+            "P1": 0.23322895956782547,
+            "P2": 0.10681836494119773,
+            "P3": 0.11328219788105083,
+            "open": false
+          },
+          "support_true": false
+        },
+        "ic3": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.0234214285637128,
+            "v_xx": 6.96518449470867e-05,
+            "div_vv_x": 1.2585547213080308e-06
+          },
+          "fit_rel_resid": 0.10343719587215888,
+          "preflight": {
+            "P1": 0.4607857502270999,
+            "P2": 0.11864901906051308,
+            "P3": 0.17098312139735666,
+            "open": false
+          },
+          "support_true": true
+        },
+        "ic4": {
+          "support": [
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.023655311683458937,
+            "v_xx": 9.531485078528097e-05
+          },
+          "fit_rel_resid": 0.05900255031452835,
+          "preflight": {
+            "P1": 0.24319829735566378,
+            "P2": 0.10555610632631132,
+            "P3": 0.07157180893129032,
+            "open": false
+          },
+          "support_true": false
+        }
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0
+      },
+      "transfer": {
+        "r": [
+          0.10543,
+          0.11518,
+          0.12978,
+          0.10919
+        ],
+        "all_pass": false
+      },
+      "swap_ic0": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.08886
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v2",
+            "resid": 0.08575
+          },
+          {
+            "drop": "v_x",
+            "add": "const",
+            "resid": 0.08099
+          },
+          {
+            "drop": "v_x",
+            "add": "v2",
+            "resid": 0.0805
+          },
+          {
+            "drop": "vv_x",
+            "add": "const",
+            "resid": 0.07812
+          },
+          {
+            "drop": "vv_x",
+            "add": "v2",
+            "resid": 0.07723
+          }
+        ],
+        "not_identifiable": true
+      },
+      "ladder": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "state": {
+          "operator_valid": true,
+          "numerical_preflight": false,
+          "support_stable": true,
+          "fit_gate": false,
+          "transfer_gate": false,
+          "identifiability_gate": false,
+          "replication": true
+        }
+      }
+    }
+  },
+  "rehearsal_verdicts": {
+    "R1_preflight_opens": false,
+    "R2_linear_support_and_alpha": false,
+    "R2_alpha_hat": 7.941680580379806e-05,
+    "R2_alpha_true": 9.7e-05,
+    "R3_vardiff_detected": true,
+    "R4_transfer": false,
+    "R5_nulls": true
+  },
+  "elapsed_s": 164.03
+}

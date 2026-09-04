@@ -1,0 +1,93 @@
+{
+  "generato_utc": "2026-08-24T16:33:20Z",
+  "sorgente": "cde_v10_wrong_library_v0_out/results.json",
+  "osservato": {
+    "sostituti_falsi": 4,
+    "casi": 26,
+    "fdr": 0.15384615384615385
+  },
+  "precisione_attuale": {
+    "ci95_clopper_pearson": [
+      0.043563,
+      0.348679
+    ],
+    "nota": "4/26 e' compatibile con un FDR vero fra il 4% e il 35%: su questo pannello non sappiamo con precisione quanto sia grave adesso, non solo se migliori."
+  },
+  "osservabilita_del_bersaglio": {
+    "domanda": "se dopo un miglioramento osservassimo ZERO sostituti su n casi, quale FDR vero resterebbe compatibile?",
+    "limiti_superiori_al_95": {
+      "26": 0.10883,
+      "50": 0.058155,
+      "100": 0.029513,
+      "300": 0.009936,
+      "600": 0.00498
+    },
+    "casi_necessari_per_bersaglio": {
+      "0.05": 59,
+      "0.02": 149,
+      "0.01": 299
+    },
+    "conclusione": "con i 26 casi attuali, zero sostituti osservati lascerebbe l'FDR vero fino al 10.9% — peggiore del limite inferiore dell'intervallo attuale. Il pannello non puo' dimostrare un FDR nullo."
+  },
+  "localizzazione": {
+    "casi_per_sistema": {
+      "allen_cahn": 6,
+      "fisher_kpp": 6,
+      "burgers": 4,
+      "kdv": 4,
+      "ks": 6
+    },
+    "falliti_per_sistema": {
+      "fisher_kpp": 4
+    },
+    "combinazioni_fallite": [
+      [
+        "fisher_kpp",
+        "u^2"
+      ],
+      [
+        "fisher_kpp",
+        "u_xx"
+      ]
+    ],
+    "sigma_dei_falliti": [
+      0.0,
+      0.05
+    ],
+    "nota": "i fallimenti non sono diffusi: stanno tutti su un sistema e su due termini, a entrambi i livelli di rumore. Un FDR aggregato lo nasconderebbe."
+  },
+  "tetto_del_pannello": {
+    "combinazioni_sistema_termine": 13,
+    "livelli_di_rumore": [
+      0.0,
+      0.05
+    ],
+    "casi_totali": 26,
+    "termini_per_sistema": {
+      "allen_cahn": [
+        "u",
+        "u^3",
+        "u_xx"
+      ],
+      "fisher_kpp": [
+        "u",
+        "u^2",
+        "u_xx"
+      ],
+      "burgers": [
+        "u_xx",
+        "uu_x"
+      ],
+      "kdv": [
+        "u_xxx",
+        "uu_x"
+      ],
+      "ks": [
+        "u_xx",
+        "u_xxxx",
+        "uu_x"
+      ]
+    },
+    "nota": "i casi sono combinazioni (sistema, termine vero rimosso) replicate sui livelli di rumore. Aggiungere rumore gonfia il denominatore senza aggiungere informazione: e' pseudo-replicazione. Servono altre equazioni, cioe' un altro pannello e un altro esperimento."
+  }
+}

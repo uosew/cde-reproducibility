@@ -1,0 +1,786 @@
+{
+  "run": "CDE_V8_PYSINDY_BASELINE_V0",
+  "seed": 7,
+  "smoke": false,
+  "pysindy_version": "2.1.0",
+  "paired_with": "CDE_PDE_DISCOVERY_V8 v1.1 + CDE_KS_DISCOVERY_V9",
+  "disclosure": "soglia STLSQ scelta con oracolo pro-baseline; libreria pysindy naturale (sovrainsieme)",
+  "threshold_grid": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "systems": {
+    "allen_cahn": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 1.0000000002838965,
+            "x0^3": -1.0000000000685183,
+            "x0_11": 0.05000000003747057
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 7.494113662964708e-10
+        },
+        "0.01": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0": 0.9990584712862073,
+            "x0^3": -0.9984053331410772,
+            "x0_11": 0.04993430857241943
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.001594666858922844
+        },
+        "0.02": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0": 1.001866013565337,
+            "x0^3": -1.0026724184116629,
+            "x0_11": 0.04997890508323474
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00267241841166288
+        },
+        "0.05": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0": 1.0040843523221528,
+            "x0^3": -1.0030294913013802,
+            "x0_11": 0.04984844093650033
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.004084352322152762
+        },
+        "0.1": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 1.0061866463354066,
+            "x0^3": -0.9954639458174017,
+            "x0_11": 0.05033493118039382
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.006698623607876292
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0_11": 0.05,
+        "x0": 1.0,
+        "x0^3": -1.0
+      },
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 10,
+        "abstention_available": 10,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 5,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 7,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "n_terms": 7,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "n_terms": 8,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 4,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "n_terms": 8,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "n_terms": 8,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "fisher_kpp": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0": 0.9999999998895234,
+            "x0^2": -0.9999999996935562,
+            "x0^3": -1.9938631982808524e-10,
+            "x0_11": 0.050000000003773915
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^3"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 3.064437592570357e-10
+        },
+        "0.01": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0": 0.9993199452639034,
+            "x0^2": -0.9981614190832797,
+            "x0^3": -0.0011235937823458094,
+            "x0_11": 0.049960186370488345
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^3"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0018385809167202893
+        },
+        "0.02": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0": 0.9941448941777634,
+            "x0^2": -0.9839668888239872,
+            "x0^3": -0.009198773198368445,
+            "x0_11": 0.05166580232766077,
+            "x0x0_11": -0.009269732857297453,
+            "x0^2x0_11": 0.01034213492220039
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^2x0_11",
+            "x0^3",
+            "x0x0_11"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.03331604655321535
+        },
+        "0.05": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0": 1.0088109451874046,
+            "x0^2": -1.0125519118070059,
+            "x0^3": -0.005965383017500175,
+            "x0_11": 0.04864763737862965,
+            "x0^2x0_11": 0.017260151892091933,
+            "x0^3x0_11": -0.021850483496201344
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^2x0_11",
+            "x0^3",
+            "x0^3x0_11"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.027047252427407076
+        },
+        "0.1": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0": 1.0215963286895497,
+            "x0^2": -1.0241313426471113,
+            "x0^3": 0.017403583084423975,
+            "x0_11": 0.04784335320135241,
+            "x0^3x0_1": -0.019381739492098947,
+            "x0^2x0_11": 0.006830576621516622,
+            "x0^3x0_11": -0.0013874131812401454
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^2x0_11",
+            "x0^3",
+            "x0^3x0_1",
+            "x0^3x0_11"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.043132935972951814
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0_11": 0.05,
+        "x0": 1.0,
+        "x0^2": -1.0
+      },
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 10,
+        "abstention_available": 0,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "burgers": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.08002095468630992,
+            "x0x0_1": -1.0002726727053286
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00027267270532860266
+        },
+        "0.01": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.08005171417911128,
+            "x0x0_1": -1.0004407804646553
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0006464272388909467
+        },
+        "0.02": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.07987867327890523,
+            "x0x0_1": -0.9979197406859691
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0020802593140308856
+        },
+        "0.05": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0_11": 0.08038088292800515,
+            "x0x0_1": -0.9994167672927896
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0047610366000643
+        },
+        "0.1": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": 0.08005038614187461,
+            "x0x0_1": -0.9908291353811965
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.009170864618803454
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0x0_1": -1.0,
+        "x0_11": 0.08
+      },
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 10,
+        "abstention_available": 4,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 11,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 10,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "n_terms": 10,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "n_terms": 11,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "n_terms": 10,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 10,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "n_terms": 9,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "n_terms": 12,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": false
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "kdv": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_111": -0.04839819044599631,
+            "x0x0_1": -1.0000986934931415
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 9.869349314151066e-05
+        },
+        "0.01": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_111": -0.04837230288518307,
+            "x0x0_1": -0.999718529307437
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0005722544383662591
+        },
+        "0.02": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_111": -0.04839258927120563,
+            "x0x0_1": -1.0009406390559659
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.000940639055965864
+        },
+        "0.05": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0_111": -0.04733780783641052,
+            "x0x0_1": -1.0107161638609343,
+            "x0^3x0_1": 0.029531731596609632
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^3x0_1"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.02194611908242725
+        },
+        "0.1": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0_1": 0.031104087123966704,
+            "x0_111": -0.04698339005724888,
+            "x0x0_1": -1.0083584741248097,
+            "x0^2x0_1": -0.023771949755544003,
+            "x0^3x0_1": 0.031279400547482294
+          },
+          "support_exact": false,
+          "spurious_terms": [
+            "x0^2x0_1",
+            "x0^3x0_1",
+            "x0_1"
+          ],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.029268800470064454
+        }
+      },
+      "deriv_order": 3,
+      "true_terms": {
+        "x0x0_1": -1.0,
+        "x0_111": -0.0484
+      },
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 10,
+        "abstention_available": 10,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "n_terms": 15,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 11,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "n_terms": 11,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "n_terms": 14,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          }
+        ],
+        "fdr": 1.0
+      }
+    },
+    "ks": {
+      "sigma": {
+        "0.0": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_11": -0.9993737769567608,
+            "x0_1111": -0.9997270077788413,
+            "x0x0_1": -1.0003891497770552
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0006262230432392268
+        },
+        "0.01": {
+          "threshold_oracle": 0.1,
+          "coefficients": {
+            "x0_11": -0.999455424412217,
+            "x0_1111": -0.9997558229138526,
+            "x0x0_1": -1.0004776526939818
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0005445755877829805
+        },
+        "0.02": {
+          "threshold_oracle": 0.05,
+          "coefficients": {
+            "x0_11": -0.9995306489004254,
+            "x0_1111": -0.9999810902491848,
+            "x0x0_1": -1.0004398081985495
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00046935109957457755
+        },
+        "0.05": {
+          "threshold_oracle": 0.01,
+          "coefficients": {
+            "x0_11": -0.9999445870478918,
+            "x0_1111": -1.0002937660041005,
+            "x0x0_1": -1.0009160233424557
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.000916023342455663
+        },
+        "0.1": {
+          "threshold_oracle": 0.02,
+          "coefficients": {
+            "x0_11": -0.999698987519327,
+            "x0_1111": -1.0001617840347925,
+            "x0x0_1": -1.0005310619821286
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0005310619821286
+        }
+      },
+      "deriv_order": 4,
+      "true_terms": {
+        "x0x0_1": -1.0,
+        "x0_11": -1.0,
+        "x0_1111": -1.0
+      },
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 10,
+        "abstention_available": 10,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "n_terms": 18,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "n_terms": 17,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "n_terms": 18,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "n_terms": 18,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "n_terms": 16,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "n_terms": 12,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "n_terms": 13,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "n_terms": 12,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "n_terms": 6,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "n_terms": 7,
+            "false_discovery": true,
+            "empty_model_reachable_in_grid": true
+          }
+        ],
+        "fdr": 1.0
+      }
+    }
+  },
+  "elapsed_s": 185.7
+}

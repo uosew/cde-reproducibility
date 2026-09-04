@@ -1,0 +1,134 @@
+{
+  "run": "CDE_V11_BLIND_UNBLINDING_V1",
+  "prereg": "PREREGISTRATION_V11_BLIND_V1_2026_07_31.md @ de395f79",
+  "seal_verified": true,
+  "n_cases": 90,
+  "per_class": {
+    "A": {
+      "n": 10,
+      "verdicts": {
+        "CLAIM": 2,
+        "NOT_IDENTIFIABLE": 1,
+        "MISSPECIFIED": 7
+      },
+      "support_ok": 2
+    },
+    "B": {
+      "n": 10,
+      "verdicts": {
+        "CLAIM": 9,
+        "NOT_IDENTIFIABLE": 1
+      },
+      "support_ok": 9
+    },
+    "C": {
+      "n": 10,
+      "verdicts": {
+        "MISSPECIFIED": 1,
+        "NOT_IDENTIFIABLE": 8,
+        "CLAIM": 1
+      },
+      "support_ok": 1
+    },
+    "D": {
+      "n": 10,
+      "verdicts": {
+        "MISSPECIFIED": 10
+      },
+      "support_ok": 0
+    },
+    "E": {
+      "n": 10,
+      "verdicts": {
+        "MISSPECIFIED": 4,
+        "ABSTAIN_GATE": 5,
+        "REJECTED_TRANSFER": 1
+      },
+      "support_ok": 0
+    },
+    "F": {
+      "n": 10,
+      "verdicts": {
+        "NOT_IDENTIFIABLE": 3,
+        "CLAIM": 4,
+        "REJECTED_TRANSFER": 1,
+        "MISSPECIFIED": 1,
+        "ABSTAIN_GATE": 1
+      },
+      "support_ok": 4
+    },
+    "G": {
+      "n": 10,
+      "verdicts": {
+        "MISSPECIFIED": 9,
+        "REJECTED_PREFLIGHT": 1
+      },
+      "support_ok": 0
+    },
+    "H": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 5,
+        "MISSPECIFIED": 5
+      },
+      "support_ok": 0
+    },
+    "I": {
+      "n": 10,
+      "verdicts": {
+        "MISSPECIFIED": 10
+      },
+      "support_ok": 0
+    }
+  },
+  "false_claims": [],
+  "P_claim_errata": 0.0,
+  "coef_err_median": 0.014081798538985339,
+  "gates": {
+    "G1_zero_false_claims": true,
+    "G4_null_claims": [
+      0,
+      10,
+      true
+    ],
+    "G5_median_coef_err": [
+      0.014081798538985339,
+      true
+    ],
+    "G6_holdout": [
+      16,
+      16,
+      true
+    ],
+    "G2p_recovery_data_ok": [
+      0.4,
+      16,
+      40,
+      false
+    ],
+    "G3p_misspec_detection": [
+      0.975,
+      39,
+      40,
+      true
+    ],
+    "G8_preflight_false_rejection": [
+      0.0,
+      0,
+      40,
+      true
+    ],
+    "G9_missp_precision": [
+      0.8085106382978723,
+      38,
+      47,
+      true
+    ],
+    "G9_missp_recall_nonrep": [
+      0.825,
+      33,
+      40
+    ]
+  },
+  "elapsed_s": 0.2
+}

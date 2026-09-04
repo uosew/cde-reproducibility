@@ -1,0 +1,285 @@
+{
+  "run": "CDE_V8_MULTISEED_AGGREGA_V0",
+  "campagna": "CDE_V8_MULTISEED_CHARACTERIZATION",
+  "timestamp_utc": "2026-08-05T01:56:29Z",
+  "runtime_guard": {
+    "status": "PASS",
+    "python_version": "3.13.10",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "executable": "/Users/valentinoberardi/Desktop/LB/.venv313/bin/python",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv313",
+    "in_support_matrix": true,
+    "operations_tested": [
+      "*",
+      "**",
+      "+",
+      "-",
+      "/",
+      "exp"
+    ],
+    "operations_result": {
+      "**": false,
+      "*": false,
+      "+": false,
+      "-": false,
+      "/": false,
+      "exp": false
+    },
+    "input_mutation_detected": false,
+    "checked_at_utc": "2026-08-05T01:56:29Z",
+    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+    "guard_protocol_version": "1.1.0",
+    "forensic": false
+  },
+  "execution_mode": "SCIENTIFIC",
+  "source_sha256": "3186606b990ed679e31a02a24a37841fa8349f086cbe758b776204fef66a6f38",
+  "prereg": "PREREGISTRAZIONE_V8_MULTISEED_2026_08_04.md",
+  "prereg_sha256": "ad35f6cb1ec7d9904ad640049e98d49e6dd27c74d5e289dfe4919a1a064e8a8b",
+  "semi": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "n_semi": 20,
+  "semi_esclusi_dalla_stima": [
+    7,
+    11
+  ],
+  "motivo_esclusione": "hanno prodotto la claim originale: contarli significherebbe stimare la frequenza di un evento sui casi che l'hanno fatto dichiarare",
+  "S1_recupero_esatto_sigma_zero": {
+    "valore": {
+      "allen_cahn": 20,
+      "fisher_kpp": 20,
+      "burgers": 20,
+      "kdv": 20
+    },
+    "minimo": 20,
+    "soglia": ">= 19/20 confermata, >= 15/20 probabilistica",
+    "gate_pass_accanto": {
+      "allen_cahn": 20,
+      "fisher_kpp": 20,
+      "burgers": 20,
+      "kdv": 20
+    },
+    "esito": "CONFERMATA"
+  },
+  "S2_recupero_sigma_dieci_per_cento": {
+    "valore": {
+      "allen_cahn": 20,
+      "fisher_kpp": 20,
+      "burgers": 20,
+      "kdv": 20
+    },
+    "soglia": ">= 15/20 per sistema",
+    "esito": "PASS",
+    "conseguenza_se_fail": "la formulazione «fino al 10% di rumore» va indebolita indicando il livello effettivamente sostenuto"
+  },
+  "S3_falsi_positivi_sui_nulli": {
+    "false_discoveries": 0,
+    "run_di_nullo": 800,
+    "fdr": 0.0,
+    "soglia": "<= 0.05",
+    "esito": "PASS",
+    "claim_originale": "FDR = 0"
+  },
+  "S4_descrittivi": {
+    "allen_cahn": {
+      "per_sigma": {
+        "0.0": {
+          "errore_rel_max_mediana": 9.5e-05,
+          "errore_rel_max_p90": 0.000152,
+          "errore_rel_max_massimo": 0.00023,
+          "recupero_esatto": 20
+        },
+        "0.01": {
+          "errore_rel_max_mediana": 0.000947,
+          "errore_rel_max_p90": 0.001847,
+          "errore_rel_max_massimo": 0.002827,
+          "recupero_esatto": 20
+        },
+        "0.02": {
+          "errore_rel_max_mediana": 0.001373,
+          "errore_rel_max_p90": 0.002862,
+          "errore_rel_max_massimo": 0.003758,
+          "recupero_esatto": 20
+        },
+        "0.05": {
+          "errore_rel_max_mediana": 0.005885,
+          "errore_rel_max_p90": 0.011014,
+          "errore_rel_max_massimo": 0.016162,
+          "recupero_esatto": 20
+        },
+        "0.1": {
+          "errore_rel_max_mediana": 0.016735,
+          "errore_rel_max_p90": 0.026665,
+          "errore_rel_max_massimo": 0.033215,
+          "recupero_esatto": 20
+        }
+      },
+      "sigma_star_mai_raggiunta": 11,
+      "sigma_star_valori": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "fisher_kpp": {
+      "per_sigma": {
+        "0.0": {
+          "errore_rel_max_mediana": 0.00013,
+          "errore_rel_max_p90": 0.000213,
+          "errore_rel_max_massimo": 0.000241,
+          "recupero_esatto": 20
+        },
+        "0.01": {
+          "errore_rel_max_mediana": 0.000607,
+          "errore_rel_max_p90": 0.00133,
+          "errore_rel_max_massimo": 0.001857,
+          "recupero_esatto": 20
+        },
+        "0.02": {
+          "errore_rel_max_mediana": 0.001337,
+          "errore_rel_max_p90": 0.003718,
+          "errore_rel_max_massimo": 0.004154,
+          "recupero_esatto": 20
+        },
+        "0.05": {
+          "errore_rel_max_mediana": 0.004146,
+          "errore_rel_max_p90": 0.007817,
+          "errore_rel_max_massimo": 0.023026,
+          "recupero_esatto": 20
+        },
+        "0.1": {
+          "errore_rel_max_mediana": 0.007352,
+          "errore_rel_max_p90": 0.021497,
+          "errore_rel_max_massimo": 0.024332,
+          "recupero_esatto": 20
+        }
+      },
+      "sigma_star_mai_raggiunta": 20,
+      "sigma_star_valori": []
+    },
+    "burgers": {
+      "per_sigma": {
+        "0.0": {
+          "errore_rel_max_mediana": 4.1e-05,
+          "errore_rel_max_p90": 6.3e-05,
+          "errore_rel_max_massimo": 6.6e-05,
+          "recupero_esatto": 20
+        },
+        "0.01": {
+          "errore_rel_max_mediana": 0.000261,
+          "errore_rel_max_p90": 0.000593,
+          "errore_rel_max_massimo": 0.000953,
+          "recupero_esatto": 20
+        },
+        "0.02": {
+          "errore_rel_max_mediana": 0.000384,
+          "errore_rel_max_p90": 0.000962,
+          "errore_rel_max_massimo": 0.001584,
+          "recupero_esatto": 20
+        },
+        "0.05": {
+          "errore_rel_max_mediana": 0.001574,
+          "errore_rel_max_p90": 0.002425,
+          "errore_rel_max_massimo": 0.00449,
+          "recupero_esatto": 20
+        },
+        "0.1": {
+          "errore_rel_max_mediana": 0.002801,
+          "errore_rel_max_p90": 0.005019,
+          "errore_rel_max_massimo": 0.008477,
+          "recupero_esatto": 20
+        }
+      },
+      "sigma_star_mai_raggiunta": 20,
+      "sigma_star_valori": []
+    },
+    "kdv": {
+      "per_sigma": {
+        "0.0": {
+          "errore_rel_max_mediana": 1.3e-05,
+          "errore_rel_max_p90": 2.7e-05,
+          "errore_rel_max_massimo": 3.8e-05,
+          "recupero_esatto": 20
+        },
+        "0.01": {
+          "errore_rel_max_mediana": 0.000347,
+          "errore_rel_max_p90": 0.00065,
+          "errore_rel_max_massimo": 0.001169,
+          "recupero_esatto": 20
+        },
+        "0.02": {
+          "errore_rel_max_mediana": 0.000506,
+          "errore_rel_max_p90": 0.00116,
+          "errore_rel_max_massimo": 0.001467,
+          "recupero_esatto": 20
+        },
+        "0.05": {
+          "errore_rel_max_mediana": 0.001639,
+          "errore_rel_max_p90": 0.003499,
+          "errore_rel_max_massimo": 0.005764,
+          "recupero_esatto": 20
+        },
+        "0.1": {
+          "errore_rel_max_mediana": 0.001906,
+          "errore_rel_max_p90": 0.003826,
+          "errore_rel_max_massimo": 0.008189,
+          "recupero_esatto": 20
+        }
+      },
+      "sigma_star_mai_raggiunta": 20,
+      "sigma_star_valori": []
+    }
+  },
+  "semi_storici_non_contati": {
+    "7": {
+      "file": "results.json",
+      "sha256": "e5662ad857671b4d3a19324ab7bf2bd5af38bd3811fa8706749687cc3e9b2a18",
+      "recupero_esatto_sigma0": {
+        "allen_cahn": true,
+        "fisher_kpp": true,
+        "burgers": true,
+        "kdv": true
+      }
+    },
+    "11": {
+      "file": "results_seed11.json",
+      "sha256": "b359f86811322338e013cc4165fe8d5051f44b0070d43d0a17ee15a3732922f9",
+      "recupero_esatto_sigma0": {
+        "allen_cahn": true,
+        "fisher_kpp": true,
+        "burgers": true,
+        "kdv": true
+      }
+    }
+  },
+  "v8_modificato": false,
+  "verdetto": "CONFERMATA"
+}

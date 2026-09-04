@@ -1,0 +1,63 @@
+{
+  "run": "CDE_V10_MULTISEED_V0",
+  "smoke": true,
+  "prereg": "PREREGISTRATION_PROTOCOL_V2_2026_07_30.md @ bb8f3427",
+  "seeds": [
+    100,
+    101
+  ],
+  "break_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "boot": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "per_cell": {},
+  "breakdown": {},
+  "nulls": {
+    "n": 0,
+    "fd": 0,
+    "stable_nonempty": 0,
+    "fdr": 0.0,
+    "fdr_cp95": [
+      0.0,
+      0.975
+    ]
+  },
+  "sigma_star": {
+    "allen_cahn": {
+      "values": [],
+      "n_finite": 0
+    },
+    "fisher_kpp": {
+      "values": [],
+      "n_finite": 0
+    },
+    "burgers": {
+      "values": [],
+      "n_finite": 0
+    },
+    "kdv": {
+      "values": [],
+      "n_finite": 0
+    },
+    "ks": {
+      "values": [],
+      "n_finite": 0
+    }
+  },
+  "resid_true_max": null,
+  "resid_null_min": null,
+  "resid_null_all": [],
+  "elapsed_s": 0.21
+}

@@ -1,0 +1,49 @@
+{
+ "run": "CDE_V8_AVVERSARIALE_SEMI_NUOVI_V0",
+ "prereg": "PREREGISTRAZIONE_V8_AVVERSARIALE_2026_08_25.md",
+ "prereg_sha256": "358c1272eb5322b8d4f4310caa02d0ecf743c78fbe79a46c5f66f89219d4ee4d",
+ "motore_sha256": "4a2181b8dbeda428fcfe17c9c34bdffa3f6f809ba9b37a9db2465196f6adc1ec",
+ "semi": [
+  201,
+  202,
+  203,
+  204,
+  205,
+  206,
+  207,
+  208,
+  209,
+  210,
+  211,
+  212,
+  213,
+  214,
+  215,
+  216,
+  217,
+  218,
+  219,
+  220
+ ],
+ "soglie_congelate": {
+  "S1_confermata": 19,
+  "S1_probabilistica": 15,
+  "S2_minimo": 15,
+  "S3_fdr_max": 0.05,
+  "testo": {
+   "S1": ">= 19/20 confermata, >= 15/20 probabilistica",
+   "S2": ">= 15/20 per sistema",
+   "S3": "<= 0.05"
+  }
+ },
+ "avvio_utc": "2026-08-25T13:25:53Z",
+ "a1_completati": 20,
+ "motore_a2_sha256": "fe445ae0e4ed6538664a3339e52eb851b62e696a954a85697e2a0433516daf4a",
+ "a2_sigmas": [
+  0.15,
+  0.2,
+  0.3
+ ],
+ "a2_unica_differenza": "SIGMAS = (0.0, 0.01, 0.02, 0.05, 0.10)  ->  SIGMAS = (0.15, 0.2, 0.3)",
+ "a2_completati": 0
+}

@@ -1,0 +1,164 @@
+{
+  "generato": "2026-08-24",
+  "n_casi": 22,
+  "fuori_pannello": [
+    "case_01",
+    "case_02"
+  ],
+  "casi": [
+    {
+      "case_id": "case_01",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.526375,
+      "file": "cases/case_01.npz"
+    },
+    {
+      "case_id": "case_02",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.385861,
+      "file": "cases/case_02.npz"
+    },
+    {
+      "case_id": "case_03",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.311119,
+      "file": "cases/case_03.npz"
+    },
+    {
+      "case_id": "case_04",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.393694,
+      "file": "cases/case_04.npz"
+    },
+    {
+      "case_id": "case_05",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.604079,
+      "file": "cases/case_05.npz"
+    },
+    {
+      "case_id": "case_06",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.77379,
+      "file": "cases/case_06.npz"
+    },
+    {
+      "case_id": "case_07",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.531703,
+      "file": "cases/case_07.npz"
+    },
+    {
+      "case_id": "case_08",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.523155,
+      "file": "cases/case_08.npz"
+    },
+    {
+      "case_id": "case_09",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.435899,
+      "file": "cases/case_09.npz"
+    },
+    {
+      "case_id": "case_10",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.660686,
+      "file": "cases/case_10.npz"
+    },
+    {
+      "case_id": "case_11",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.707107,
+      "file": "cases/case_11.npz"
+    },
+    {
+      "case_id": "case_12",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.926994,
+      "file": "cases/case_12.npz"
+    },
+    {
+      "case_id": "case_13",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.548493,
+      "file": "cases/case_13.npz"
+    },
+    {
+      "case_id": "case_14",
+      "Nx": 512,
+      "Nt": 81,
+      "u_std": 0.109819,
+      "file": "cases/case_14.npz"
+    },
+    {
+      "case_id": "case_15",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.574041,
+      "file": "cases/case_15.npz"
+    },
+    {
+      "case_id": "case_16",
+      "Nx": 512,
+      "Nt": 81,
+      "u_std": 0.489846,
+      "file": "cases/case_16.npz"
+    },
+    {
+      "case_id": "case_17",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.914813,
+      "file": "cases/case_17.npz"
+    },
+    {
+      "case_id": "case_18",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.400868,
+      "file": "cases/case_18.npz"
+    },
+    {
+      "case_id": "case_19",
+      "Nx": 64,
+      "Nt": 401,
+      "u_std": 0.643234,
+      "file": "cases/case_19.npz"
+    },
+    {
+      "case_id": "case_20",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.449302,
+      "file": "cases/case_20.npz"
+    },
+    {
+      "case_id": "case_21",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.490445,
+      "file": "cases/case_21.npz"
+    },
+    {
+      "case_id": "case_22",
+      "Nx": 512,
+      "Nt": 401,
+      "u_std": 0.485135,
+      "file": "cases/case_22.npz"
+    }
+  ]
+}

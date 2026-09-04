@@ -1,0 +1,54 @@
+{
+  "run": "CDE_REAL_THERMOGRAPHY_V0",
+  "timestamp_utc": "2026-08-07T09:22:20Z",
+  "results_sha256": "6c18d95ddeb00c3c4ded6864dc9ce0354e30df56cae5ca89ce8ed6be3969e5a3",
+  "source_data_sha256": {
+    "CFRP-007_facq-120Hz_s-Back_Img-2000.zip": "c18e068c239e163c687e80f376957d26b79bb121ba13c1d3f19669cb25ecb77a",
+    "CFRP-007_facq-145Hz_s-Front_Img-2000.zip": "a8f70a50002c8a60b2a842eb58a9b2a05e203271689f084a67c744cba4a410ce",
+    "CFRP-008_facq-120Hz_s-Back_Img-2000.zip": "27eba434326f6ec51bd1512d9d6d100a2c6669d4536e376d24871c30e1485817",
+    "CFRP-008_facq-145Hz_s-Front_Img-2000.zip": "27396f810b5c78ebce3e4c11390c9d92675c0b12b02887523bf4411c0e3de003",
+    "GFRP-006_facq-120Hz_s-Back_Img-2000.zip": "647bbd8fc2ebe2a454c29c104a444c9680be2155574093c52e55523cb513f1d2",
+    "GFRP-006_facq-145Hz_s-Front_Img-2000.zip": "ac87ebda801d8625a00cad6df6470e14c05594700e0ae6e5b478ee5572488c64",
+    "GFRP-007_facq-120Hz_s-Back_Img-2000.zip": "6d93dde28261be03f71fa73f96f1dcb01c3e043b40bfda335c9bdc54f4c70f4a",
+    "GFRP-007_facq-145Hz_s-Front_Img-2000.zip": "2a88b02d1f566a89c58f5d3c6f789fad1e85205429b416d31c2da4d6d7ae826b",
+    "GFRP-008_facq-120Hz_s-Back_Img-2000.zip": "bc61434d27a7093c13a0e60699586df4779317dcbc25b1cc6a1186e549e8645b",
+    "GFRP-008_facq-145Hz_s-Front_Img-2000.zip": "9bc0bace3a21ff75d340081c9d16312779557a5c162444372c7dee0681e25ebd"
+  },
+  "python_version": "3.12.12",
+  "numpy_version": "2.5.1",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "git_commit": "dbe49b7a",
+  "runtime_guard": {
+    "status": "PASS",
+    "python_version": "3.12.12",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "executable": "/Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/../.venv312/bin/python",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv312",
+    "in_support_matrix": true,
+    "operations_tested": [
+      "*",
+      "**",
+      "+",
+      "-",
+      "/",
+      "exp"
+    ],
+    "operations_result": {
+      "**": false,
+      "*": false,
+      "+": false,
+      "-": false,
+      "/": false,
+      "exp": false
+    },
+    "input_mutation_detected": false,
+    "checked_at_utc": "2026-08-07T09:13:04Z",
+    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+    "guard_protocol_version": "1.1.0",
+    "forensic": false
+  },
+  "human_review_required": true
+}

@@ -1,0 +1,113 @@
+{
+  "run": "CDE_V10_CLAIM_LADDER_AUDIT_V0",
+  "levels": [
+    "operator_valid",
+    "numerical_preflight",
+    "support_stable",
+    "fit_gate",
+    "transfer_gate",
+    "identifiability_gate",
+    "replication"
+  ],
+  "fail_verdicts": {
+    "operator_valid": "REJECTED_OPERATOR",
+    "numerical_preflight": "REJECTED_PREFLIGHT",
+    "support_stable": "ABSTAIN_EMPTY",
+    "fit_gate": "ABSTAIN_GATE",
+    "transfer_gate": "REJECTED_TRANSFER",
+    "identifiability_gate": "NOT_IDENTIFIABLE",
+    "replication": "PROVISIONAL_NO_REPLICATION"
+  },
+  "synthetic_tests": {
+    "n": 7,
+    "detail": [
+      {
+        "injected": "operator_valid",
+        "verdict": "REJECTED_OPERATOR",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "numerical_preflight",
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "support_stable",
+        "verdict": "ABSTAIN_EMPTY",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "fit_gate",
+        "verdict": "ABSTAIN_GATE",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "transfer_gate",
+        "verdict": "REJECTED_TRANSFER",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "identifiability_gate",
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      },
+      {
+        "injected": "replication",
+        "verdict": "PROVISIONAL_NO_REPLICATION",
+        "blocked_correctly": true,
+        "no_rehabilitation": true
+      }
+    ],
+    "all_blocked_correctly": true
+  },
+  "reclassification_v1": {
+    "allen_cahn": {
+      "0.0": "CLAIM",
+      "0.01": "CLAIM",
+      "0.02": "CLAIM",
+      "0.05": "REJECTED_TRANSFER",
+      "0.1": "REJECTED_TRANSFER"
+    },
+    "fisher_kpp": {
+      "0.0": "NOT_IDENTIFIABLE",
+      "0.01": "NOT_IDENTIFIABLE",
+      "0.02": "NOT_IDENTIFIABLE",
+      "0.05": "NOT_IDENTIFIABLE",
+      "0.1": "NOT_IDENTIFIABLE"
+    },
+    "burgers": {
+      "0.0": "CLAIM",
+      "0.01": "CLAIM",
+      "0.02": "CLAIM",
+      "0.05": "CLAIM",
+      "0.1": "CLAIM"
+    },
+    "kdv": {
+      "0.0": "CLAIM",
+      "0.01": "CLAIM",
+      "0.02": "CLAIM",
+      "0.05": "CLAIM",
+      "0.1": "CLAIM"
+    },
+    "ks": {
+      "0.0": "CLAIM",
+      "0.01": "CLAIM",
+      "0.02": "CLAIM",
+      "0.05": "CLAIM",
+      "0.1": "CLAIM"
+    }
+  },
+  "counts": {
+    "CLAIM": 18,
+    "REJECTED_TRANSFER": 2,
+    "NOT_IDENTIFIABLE": 5
+  },
+  "nota": "riclassificazione DESCRITTIVA sotto la ladder v2: le claim v1 restano valide nel loro protocollo v1.1 dichiarato; la ladder mostra cosa cambierebbe con transfer+identifiability obbligatori",
+  "elapsed_s": 0.03
+}

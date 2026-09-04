@@ -1,0 +1,1112 @@
+{
+  "run": "CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0",
+  "smoke": false,
+  "prereg": "PREREGISTRATION_V11_VIRTUAL_INSTRUMENT_2026_07_31.md @ 538b1611",
+  "base_cfg": {
+    "px": 160,
+    "psf": 0.0,
+    "netd": 0.3,
+    "quant": 0.1,
+    "hz": 5.0,
+    "jitter_ms": 0.0,
+    "drift": 0.2,
+    "dead": 0.0,
+    "nonunif": 0.0,
+    "motion": 0.0,
+    "scale_err": 0.0,
+    "sat": null
+  },
+  "axes": {
+    "A1_px": {
+      "40": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": -2.2731265352458122e-05,
+        "alpha_err": 1.2343429417779188,
+        "fit_resid": 0.1290878048984281,
+        "r_holdout": 0.1739723750706491,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      },
+      "80": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 5.1509316384164375e-05,
+        "alpha_err": 0.4689761197508827,
+        "fit_resid": 0.07102131744762293,
+        "r_holdout": 0.07876014688841503,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      },
+      "120": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "v",
+          "v_x",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.34318706091055e-05,
+        "alpha_err": 0.036784839081386606,
+        "fit_resid": 0.03498321688121834,
+        "r_holdout": 0.03434641436061166,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "160": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "240": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.663256433790839e-05,
+        "alpha_err": 0.0037879965164083775,
+        "fit_resid": 0.01921203584043787,
+        "r_holdout": 0.029236615641960898,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "320": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.695024562147032e-05,
+        "alpha_err": 0.0005129317374193946,
+        "fit_resid": 0.020122166661500504,
+        "r_holdout": 0.02801921315011537,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A2_psf": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.752047261062453e-05,
+        "alpha_err": 0.005365697016747766,
+        "fit_resid": 0.02192977957671247,
+        "r_holdout": 0.03011506522323546,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "2.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.755980028157578e-05,
+        "alpha_err": 0.005771136923461673,
+        "fit_resid": 0.021998268855379352,
+        "r_holdout": 0.03003817099171222,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "4.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.75318622650448e-05,
+        "alpha_err": 0.005483116134482528,
+        "fit_resid": 0.022031206898122366,
+        "r_holdout": 0.03024993852876362,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "8.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.7565010072251e-05,
+        "alpha_err": 0.005824846105680362,
+        "fit_resid": 0.022358746166971397,
+        "r_holdout": 0.030952755882810382,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A3_netd": {
+      "0.05": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.736860049306153e-05,
+        "alpha_err": 0.0038000050831085864,
+        "fit_resid": 0.014023290140966309,
+        "r_holdout": 0.014742867866927922,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.1": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.744471923491301e-05,
+        "alpha_err": 0.004584734380546515,
+        "fit_resid": 0.014879806559085692,
+        "r_holdout": 0.01645961498934791,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.3": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.76898916394447e-05,
+        "alpha_err": 0.0071122849427288455,
+        "fit_resid": 0.0318110506115885,
+        "r_holdout": 0.04642680367783434,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.788771107895018e-05,
+        "alpha_err": 0.00915166060773379,
+        "fit_resid": 0.05917166976217691,
+        "r_holdout": 0.0895983163237389,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      }
+    },
+    "A4_quant": {
+      "0.01": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.756529787531249e-05,
+        "alpha_err": 0.005827813147551429,
+        "fit_resid": 0.02193005501612616,
+        "r_holdout": 0.030035773942750123,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.1": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.75031887825211e-05,
+        "alpha_err": 0.005187513221867024,
+        "fit_resid": 0.02221529226302255,
+        "r_holdout": 0.03253559509144807,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.72071034976081e-05,
+        "alpha_err": 0.002135087604207223,
+        "fit_resid": 0.024127877821244,
+        "r_holdout": 0.029609494832754105,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A5_hz": {
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.892325447638628e-05,
+        "alpha_err": 0.019827365735941044,
+        "fit_resid": 0.017158915376699804,
+        "r_holdout": 0.01687400370013173,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.726069297534383e-05,
+        "alpha_err": 0.002687556446843605,
+        "fit_resid": 0.011442413245087796,
+        "r_holdout": 0.01257760312991344,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "2.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.739955664419659e-05,
+        "alpha_err": 0.004119140661820531,
+        "fit_resid": 0.01311414609790496,
+        "r_holdout": 0.014537294817666573,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "5.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "8.7": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.786535083998503e-05,
+        "alpha_err": 0.008921142680258077,
+        "fit_resid": 0.019156254127804802,
+        "r_holdout": 0.02316011175239992,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A6_jitter": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "20.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.755300491778292e-05,
+        "alpha_err": 0.005701081626628004,
+        "fit_resid": 0.021826769448256,
+        "r_holdout": 0.030267594944968886,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "50.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.75679800635479e-05,
+        "alpha_err": 0.005855464572658819,
+        "fit_resid": 0.0218264076489086,
+        "r_holdout": 0.03034038948943935,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "100.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.764195689682902e-05,
+        "alpha_err": 0.006618112338443534,
+        "fit_resid": 0.02220926503711637,
+        "r_holdout": 0.031762161579335514,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "200.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.775445768983804e-05,
+        "alpha_err": 0.007777914328227237,
+        "fit_resid": 0.024550297011511825,
+        "r_holdout": 0.03727782000807442,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A7_drift": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.747270812118421e-05,
+        "alpha_err": 0.004873279599837243,
+        "fit_resid": 0.016706891294748415,
+        "r_holdout": 0.019974734922098464,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.2": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.735725524587826e-05,
+        "alpha_err": 0.0036830437719408576,
+        "fit_resid": 0.022047380914776815,
+        "r_holdout": 0.030200784712551425,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.864766826418282e-05,
+        "alpha_err": 0.016986270764771348,
+        "fit_resid": 0.022152672926553204,
+        "r_holdout": 0.030859647605672252,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "2.0": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.938280123392276e-05,
+        "alpha_err": 0.024564961174461455,
+        "fit_resid": 0.023177056285306922,
+        "r_holdout": 0.033951165813829294,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A8_dead": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.005": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.755113714126274e-05,
+        "alpha_err": 0.005681826198584991,
+        "fit_resid": 0.02196550357541915,
+        "r_holdout": 0.030307867538281373,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.02": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.749060911550779e-05,
+        "alpha_err": 0.0050578259330700225,
+        "fit_resid": 0.021965503625244624,
+        "r_holdout": 0.0301444254499982,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.05": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.747319906240529e-05,
+        "alpha_err": 0.004878340849539101,
+        "fit_resid": 0.0219933539798376,
+        "r_holdout": 0.030210494602107316,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A9_nonunif": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.01": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.796053016124827e-05,
+        "alpha_err": 0.009902372796373887,
+        "fit_resid": 0.022654167912743977,
+        "r_holdout": 0.0305496195324349,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.03": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.825460119721023e-05,
+        "alpha_err": 0.012934032960930224,
+        "fit_resid": 0.0277667249627791,
+        "r_holdout": 0.03467000954741825,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.05": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "v",
+          "v_xx",
+          "vv_x"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.887291266443944e-05,
+        "alpha_err": 0.01930837798391172,
+        "fit_resid": 0.03231336941954792,
+        "r_holdout": 0.04375925931228035,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.1": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "v",
+          "v_xx",
+          "vv_x"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.628594432624761e-05,
+        "alpha_err": 0.007361398698478202,
+        "fit_resid": 0.05212648300543642,
+        "r_holdout": 0.07434738423560336,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      }
+    },
+    "A10_motion": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.824705295578686e-05,
+        "alpha_err": 0.0128562160390398,
+        "fit_resid": 0.030042963035536094,
+        "r_holdout": 0.03574879471962327,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "v",
+          "v_x",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.702981371772079e-05,
+        "alpha_err": 0.00030735791464732947,
+        "fit_resid": 0.03601273387873849,
+        "r_holdout": 0.036087623844420054,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "2.0": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "v",
+          "v_x",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 9.650902547232978e-05,
+        "alpha_err": 0.005061593068765168,
+        "fit_resid": 0.06004593066660395,
+        "r_holdout": 0.053177938644286105,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      }
+    },
+    "A11_scale": {
+      "0.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.01": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.94917652293694e-05,
+        "alpha_err": 0.025688301333705154,
+        "fit_resid": 0.023169792179262395,
+        "r_holdout": 0.03002440767199464,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.03": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 0.00010277345920264512,
+        "alpha_err": 0.059520197965413614,
+        "fit_resid": 0.02325468433637911,
+        "r_holdout": 0.03188547406601514,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.05": {
+        "verdict": "NOT_IDENTIFIABLE",
+        "blocked_at": "identifiability_gate",
+        "support": [
+          "div_vv_x",
+          "v",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 0.00010076602484705843,
+        "alpha_err": 0.038824998423282776,
+        "fit_resid": 0.02975743751137583,
+        "r_holdout": 0.03842045234858663,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      }
+    },
+    "A12_sat": {
+      "None": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "60.0": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "40.0": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "support_exact": false,
+        "alpha_hat": 0.00010251769203981817,
+        "alpha_err": 0.056883423090909,
+        "fit_resid": 0.07973615192606126,
+        "r_holdout": 0.03971426662009789,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      }
+    }
+  },
+  "combined": {
+    "C1_noise_psf": {
+      "overrides": {
+        "netd": 0.5,
+        "psf": 2.0
+      },
+      "verdict": "CLAIM",
+      "blocked_at": null,
+      "support": [
+        "v",
+        "v_xx"
+      ],
+      "support_exact": true,
+      "alpha_hat": 9.772627013681074e-05,
+      "alpha_err": 0.00748732099804887,
+      "fit_resid": 0.03174989322618236,
+      "r_holdout": 0.046534327222804574,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    },
+    "C2_drift_nonunif": {
+      "overrides": {
+        "drift": 1.0,
+        "nonunif": 0.03
+      },
+      "verdict": "NOT_IDENTIFIABLE",
+      "blocked_at": "identifiability_gate",
+      "support": [
+        "v",
+        "v2",
+        "v_xx"
+      ],
+      "support_exact": false,
+      "alpha_hat": 0.00010027859114929575,
+      "alpha_err": 0.03379990875562631,
+      "fit_resid": 0.02761633900026744,
+      "r_holdout": 0.03388093451249254,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    },
+    "C3_lowhz_jitter": {
+      "overrides": {
+        "hz": 2.0,
+        "jitter_ms": 100.0
+      },
+      "verdict": "CLAIM",
+      "blocked_at": null,
+      "support": [
+        "v",
+        "v_xx"
+      ],
+      "support_exact": true,
+      "alpha_hat": 9.719212265500414e-05,
+      "alpha_err": 0.001980645927877752,
+      "fit_resid": 0.013382147768388487,
+      "r_holdout": 0.0146163604064725,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    },
+    "C4_motion_dead": {
+      "overrides": {
+        "motion": 1.0,
+        "dead": 0.02
+      },
+      "verdict": "NOT_IDENTIFIABLE",
+      "blocked_at": "identifiability_gate",
+      "support": [
+        "v",
+        "v_x",
+        "v_xx"
+      ],
+      "support_exact": false,
+      "alpha_hat": 9.700599173509419e-05,
+      "alpha_err": 6.1770464888564e-05,
+      "fit_resid": 0.03595437666296007,
+      "r_holdout": 0.03618432162248774,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    },
+    "C5_worst_plausible": {
+      "overrides": {
+        "psf": 2.0,
+        "quant": 0.5,
+        "netd": 0.5
+      },
+      "verdict": "CLAIM",
+      "blocked_at": null,
+      "support": [
+        "v",
+        "v_xx"
+      ],
+      "support_exact": true,
+      "alpha_hat": 9.758689386407412e-05,
+      "alpha_err": 0.006050452206949678,
+      "fit_resid": 0.03213945702994412,
+      "r_holdout": 0.045732142205312375,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    }
+  },
+  "spec_thresholds": {
+    "A1_px": {
+      "param": "px",
+      "direction": "higher",
+      "threshold": 160,
+      "qualifying_values": [
+        160,
+        240,
+        320
+      ]
+    },
+    "A2_psf": {
+      "param": "psf",
+      "direction": "lower",
+      "threshold": 8.0,
+      "qualifying_values": [
+        0.0,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ]
+    },
+    "A3_netd": {
+      "param": "netd",
+      "direction": "lower",
+      "threshold": 0.5,
+      "qualifying_values": [
+        0.05,
+        0.1,
+        0.3,
+        0.5
+      ]
+    },
+    "A4_quant": {
+      "param": "quant",
+      "direction": "lower",
+      "threshold": 1.0,
+      "qualifying_values": [
+        0.01,
+        0.1,
+        0.5,
+        1.0
+      ]
+    },
+    "A5_hz": {
+      "param": "hz",
+      "direction": "higher",
+      "threshold": 0.5,
+      "qualifying_values": [
+        0.5,
+        1.0,
+        2.0,
+        5.0,
+        8.7
+      ]
+    },
+    "A6_jitter": {
+      "param": "jitter_ms",
+      "direction": "lower",
+      "threshold": 200.0,
+      "qualifying_values": [
+        0.0,
+        20.0,
+        50.0,
+        100.0,
+        200.0
+      ]
+    },
+    "A7_drift": {
+      "param": "drift",
+      "direction": "lower",
+      "threshold": 0.5,
+      "qualifying_values": [
+        0.0,
+        0.2,
+        0.5
+      ]
+    },
+    "A8_dead": {
+      "param": "dead",
+      "direction": "lower",
+      "threshold": 0.05,
+      "qualifying_values": [
+        0.0,
+        0.005,
+        0.02,
+        0.05
+      ]
+    },
+    "A9_nonunif": {
+      "param": "nonunif",
+      "direction": "lower",
+      "threshold": 0.03,
+      "qualifying_values": [
+        0.0,
+        0.01,
+        0.03
+      ]
+    },
+    "A10_motion": {
+      "param": "motion",
+      "direction": "lower",
+      "threshold": 0.5,
+      "qualifying_values": [
+        0.0,
+        0.5
+      ]
+    },
+    "A11_scale": {
+      "param": "scale_err",
+      "direction": "lower",
+      "threshold": 0.01,
+      "qualifying_values": [
+        0.0,
+        0.01
+      ]
+    },
+    "A12_sat": {
+      "param": "sat",
+      "direction": "lower",
+      "threshold": 60.0,
+      "qualifying_values": [
+        null,
+        60.0
+      ]
+    }
+  },
+  "elapsed_s": 2481.21
+}

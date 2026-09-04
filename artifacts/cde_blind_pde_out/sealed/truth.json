@@ -1,0 +1,300 @@
+{
+  "generato": "2026-08-24",
+  "commit": "26b86317",
+  "fuori_pannello": [
+    "case_01",
+    "case_02"
+  ],
+  "casi": [
+    {
+      "case_id": "case_01",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.7,
+        "u_xx": 0.04
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione-diffusione, coefficienti mai usati",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_02",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.7,
+        "u_xx": 0.04
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "stesso caso 01 con rumore basso: isola l'effetto del rumore",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_03",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "uu_x": -1.0,
+        "u_xx": 0.06,
+        "u": -0.3
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Burgers smorzata: tre termini, uno lineare di perdita",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_04",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u^2": 0.8,
+        "u^3": -0.8
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Zeldovich: reazione quadratica e cubica insieme",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_05",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.5,
+        "u_xxx": -0.03
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione dispersiva, IC multimodo: identificabile",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_06",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u": 1.2,
+        "u^3": -1.2
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Newell-Whitehead: coefficienti diversi da allen_cahn",
+      "sigma": 0.02,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_07",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.1
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "diffusione pura: un solo termine",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_08",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.03,
+        "u": 1.0,
+        "u^2": -0.25
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "FKPP con coefficienti nuovi, campo positivo",
+      "sigma": 0.05,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_09",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "uu_x": -1.0,
+        "u_xx": 0.02,
+        "u_xxx": -0.01
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Burgers-KdV: tre meccanismi insieme",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_10",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.4,
+        "u": 0.9,
+        "u^3": -0.9
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "reazione-avvezione",
+      "sigma": 0.02,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_11",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_x": -0.5,
+        "u_xxx": -0.03
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "IC a modo singolo k=2: u_xxx = -4 u_x esattamente, quindi ogni (a,b) con a - 4b = -0.38 spiega i dati in modo identico",
+      "sigma": 0.0,
+      "vincolo": {
+        "termini": [
+          "u_x",
+          "u_xxx"
+        ],
+        "pesi": [
+          1.0,
+          -4.0
+        ],
+        "valore": -0.38
+      }
+    },
+    {
+      "case_id": "case_12",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u": 0.3
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "IC a modo singolo k=1: u_xx = -u esattamente, quindi ogni (a,b) con b - a = 0.25 spiega i dati in modo identico",
+      "sigma": 0.0,
+      "vincolo": {
+        "termini": [
+          "u",
+          "u_xx"
+        ],
+        "pesi": [
+          1.0,
+          -1.0
+        ],
+        "valore": 0.25
+      }
+    },
+    {
+      "case_id": "case_13",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_xx": 0.02,
+        "u": -0.1
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "IC a modo singolo k=3: u_xx = -9u, famiglia -9a + b = -0.28",
+      "sigma": 0.0,
+      "vincolo": {
+        "termini": [
+          "u_xx",
+          "u"
+        ],
+        "pesi": [
+          -9.0,
+          1.0
+        ],
+        "valore": -0.28
+      }
+    },
+    {
+      "case_id": "case_14",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {},
+      "esito_atteso": "ABSTAIN",
+      "motivo": "rumore filtrato: nessuna dinamica PDE dietro",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_15",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {},
+      "esito_atteso": "ABSTAIN",
+      "motivo": "surrogato di fase di una traiettoria vera: stesso spettro, nessuna dinamica",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_16",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {},
+      "esito_atteso": "ABSTAIN",
+      "motivo": "campo statico: u_t = 0, nessuna legge da recuperare",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_17",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "sin(u)": 0.6
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "sin(u) NON e' nella libreria: nessuna combinazione dei sette termini e' la legge vera",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_18",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {
+        "u_xx": 0.03,
+        "u_xxxx": -0.005
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "u_xxxx NON e' nella libreria",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_19",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {
+        "uu_x": -1.0,
+        "u_xxx": -0.0484
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "griglia sotto-risolta (Nx=64) su una legge dispersiva: il preflight deve chiudere",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_20",
+      "famiglia": "ASTENSIONE",
+      "coeff_veri": {
+        "u_x": -0.7,
+        "u_xx": 0.04
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "stessa legge del caso 01 con rumore 35%: molto oltre l'inviluppo misurato (sigma<=0.02 nella claim card di transfer)",
+      "sigma": 0.35,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_21",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.25,
+        "u_xx": 0.07
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione-diffusione, coefficienti diversi dal caso pilota",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_22",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.25,
+        "u_xx": 0.07
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "come il 21 con rumore basso",
+      "sigma": 0.01,
+      "vincolo": null
+    }
+  ]
+}

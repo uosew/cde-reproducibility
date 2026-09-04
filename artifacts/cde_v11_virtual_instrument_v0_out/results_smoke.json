@@ -1,0 +1,133 @@
+{
+  "run": "CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0",
+  "smoke": true,
+  "prereg": "PREREGISTRATION_V11_VIRTUAL_INSTRUMENT_2026_07_31.md @ 538b1611",
+  "base_cfg": {
+    "px": 160,
+    "psf": 0.0,
+    "netd": 0.3,
+    "quant": 0.1,
+    "hz": 5.0,
+    "jitter_ms": 0.0,
+    "drift": 0.2,
+    "dead": 0.0,
+    "nonunif": 0.0,
+    "motion": 0.0,
+    "scale_err": 0.0,
+    "sat": null
+  },
+  "axes": {
+    "A3_netd": {
+      "0.05": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.736860049306153e-05,
+        "alpha_err": 0.0038000050831085864,
+        "fit_resid": 0.014023290140966309,
+        "r_holdout": 0.014742867866927922,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.1": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.744471923491301e-05,
+        "alpha_err": 0.004584734380546515,
+        "fit_resid": 0.014879806559085692,
+        "r_holdout": 0.01645961498934791,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.3": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.750833144578773e-05,
+        "alpha_err": 0.005240530368945661,
+        "fit_resid": 0.021923648255530316,
+        "r_holdout": 0.030069668660389626,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "0.5": {
+        "verdict": "CLAIM",
+        "blocked_at": null,
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.76898916394447e-05,
+        "alpha_err": 0.0071122849427288455,
+        "fit_resid": 0.0318110506115885,
+        "r_holdout": 0.04642680367783434,
+        "preflight_open_all": true,
+        "nulls_fd": 0
+      },
+      "1.0": {
+        "verdict": "REJECTED_PREFLIGHT",
+        "blocked_at": "numerical_preflight",
+        "support": [
+          "v",
+          "v_xx"
+        ],
+        "support_exact": true,
+        "alpha_hat": 9.788771107895018e-05,
+        "alpha_err": 0.00915166060773379,
+        "fit_resid": 0.05917166976217691,
+        "r_holdout": 0.0895983163237389,
+        "preflight_open_all": false,
+        "nulls_fd": 0
+      }
+    }
+  },
+  "combined": {
+    "C1_noise_psf": {
+      "overrides": {
+        "netd": 0.5,
+        "psf": 2.0
+      },
+      "verdict": "CLAIM",
+      "blocked_at": null,
+      "support": [
+        "v",
+        "v_xx"
+      ],
+      "support_exact": true,
+      "alpha_hat": 9.772627013681074e-05,
+      "alpha_err": 0.00748732099804887,
+      "fit_resid": 0.03174989322618236,
+      "r_holdout": 0.046534327222804574,
+      "preflight_open_all": true,
+      "nulls_fd": 0
+    }
+  },
+  "spec_thresholds": {
+    "A3_netd": {
+      "param": "netd",
+      "direction": "lower",
+      "threshold": 0.5,
+      "qualifying_values": [
+        0.05,
+        0.1,
+        0.3,
+        0.5
+      ]
+    }
+  },
+  "elapsed_s": 261.61
+}

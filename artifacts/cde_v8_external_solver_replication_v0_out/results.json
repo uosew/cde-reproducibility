@@ -1,0 +1,398 @@
+{
+  "run": "CDE_V8_EXTERNAL_SOLVER_REPLICATION_V0",
+  "seed": 7,
+  "smoke": false,
+  "solver": "scipy solve_ivp RK45 + FD centrali 4o ordine (periodiche)",
+  "protocol_frozen_from": "CDE_PDE_DISCOVERY_V8 v1.1",
+  "systems": {
+    "burgers": {
+      "solver": "scipy solve_ivp RK45 + FD centrali 4o ordine (periodiche)",
+      "r_GT_preflight": 4.550556919476367e-05,
+      "preflight_open": true,
+      "true_coeffs": {
+        "uu_x": -1.0,
+        "u_xx": 0.08
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 512,
+        "Nt": 801
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "coefficients": {
+            "u_xx": 0.08000511097877326,
+            "uu_x": -0.9999622532794599
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 6.388723466574375e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 2.23467622506844e-05
+        },
+        "0.01": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "coefficients": {
+            "u_xx": 0.08000251412576374,
+            "uu_x": -0.9999701293553971
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 3.142657204677213e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0019419045292957244
+        },
+        "0.02": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "coefficients": {
+            "u_xx": 0.0800165861486429,
+            "uu_x": -0.9998570968656689
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.00020732685803628165,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0028611548569787673
+        },
+        "0.05": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "coefficients": {
+            "u_xx": 0.08010903781249448,
+            "uu_x": -0.9996415308392219
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0013629726561810093,
+          "gate_pass": true,
+          "fit_rel_resid": 0.008290683181924064
+        },
+        "0.1": {
+          "support": [
+            "u_xx",
+            "uu_x"
+          ],
+          "coefficients": {
+            "u_xx": 0.07990335977781934,
+            "uu_x": -0.9987542512224744
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0012457487775255904,
+          "gate_pass": true,
+          "fit_rel_resid": 0.014528285512588595
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "stable_nonempty": 4,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [
+              "u",
+              "u^3",
+              "u_x"
+            ],
+            "fit_rel_resid": 0.8961157226884564,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [
+              "u",
+              "u^3",
+              "u_xx",
+              "uu_x"
+            ],
+            "fit_rel_resid": 0.8853947092191085,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [
+              "u^2",
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.9693691787788724,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [
+              "u",
+              "u^3",
+              "u_x",
+              "u_xxx"
+            ],
+            "fit_rel_resid": 0.85913739803232,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          }
+        ],
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.4
+      }
+    },
+    "fisher_kpp": {
+      "solver": "scipy solve_ivp RK45 + FD centrali 4o ordine (periodiche)",
+      "r_GT_preflight": 4.7457038376854554e-05,
+      "preflight_open": true,
+      "true_coeffs": {
+        "u_xx": 0.05,
+        "u": 1.0,
+        "u^2": -1.0
+      },
+      "K_windows": 200,
+      "grid": {
+        "Nx": 512,
+        "Nt": 1201
+      },
+      "sigma": {
+        "0.0": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "coefficients": {
+            "u": 1.0000145581548856,
+            "u^2": -1.000001920445623,
+            "u_xx": 0.05000341245283087
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 6.824905661728664e-05,
+          "gate_pass": true,
+          "fit_rel_resid": 1.9410566723123083e-05
+        },
+        "0.01": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "coefficients": {
+            "u": 0.9998802231204948,
+            "u^2": -0.9998195925352446,
+            "u_xx": 0.050043698047283265
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0008739609456652475,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0005312848613728031
+        },
+        "0.02": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "coefficients": {
+            "u": 1.0002954564052682,
+            "u^2": -1.000394654587309,
+            "u_xx": 0.0499007942116716
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.001984115766568012,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0008109646195495196
+        },
+        "0.05": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "coefficients": {
+            "u": 1.0014494624539345,
+            "u^2": -1.0017316370505869,
+            "u_xx": 0.04990962541947738
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0018074916104524053,
+          "gate_pass": true,
+          "fit_rel_resid": 0.0023290359003510356
+        },
+        "0.1": {
+          "support": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "coefficients": {
+            "u": 1.0009846752764204,
+            "u^2": -1.000800411000226,
+            "u_xx": 0.05000010420070169
+          },
+          "support_exact": true,
+          "spurious_terms": [],
+          "missing_terms": [],
+          "coef_rel_err_max": 0.0009846752764204325,
+          "gate_pass": true,
+          "fit_rel_resid": 0.00423855893007692
+        }
+      },
+      "sigma_star_first_fail": null,
+      "nulls": {
+        "n_runs": 10,
+        "false_discoveries": 0,
+        "stable_nonempty": 3,
+        "detail": [
+          {
+            "kind": "shuffle_t",
+            "seed": 0,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 2,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 3,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "shuffle_t",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 0,
+            "stable_support": [
+              "u^2",
+              "u^3"
+            ],
+            "fit_rel_resid": 0.9447034418158136,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 1,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 2,
+            "stable_support": [
+              "u^3"
+            ],
+            "fit_rel_resid": 0.9597432223699361,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 3,
+            "stable_support": [
+              "u^2",
+              "u^3"
+            ],
+            "fit_rel_resid": 0.9284040871656368,
+            "false_discovery": false
+          },
+          {
+            "kind": "phase_surrogate",
+            "seed": 4,
+            "stable_support": [],
+            "fit_rel_resid": 1.0,
+            "false_discovery": false
+          }
+        ],
+        "fdr": 0.0,
+        "stable_nonempty_rate": 0.3
+      }
+    }
+  },
+  "elapsed_s": 413.73
+}

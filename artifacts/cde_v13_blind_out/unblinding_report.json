@@ -1,0 +1,449 @@
+{
+ "run": "CDE_V13_BLIND_UNBLINDING_V0",
+ "prereg": "PREREGISTRAZIONE_CDE_V13_REPLICA_LARGA_SCALA_2026_08_02.md",
+ "generato": "2026-09-03T12:11:03.618435+00:00",
+ "sigillo": {
+  "discoverer_legge_sealed": [
+   "Cecita': si leggono `public_meta.json` e i casi, **mai** `sealed/truth.json`."
+  ],
+  "truth_identico_a_HEAD": true,
+  "commit_truth": [
+   "23c254ba 2026-08-04T22:20:02+02:00"
+  ],
+  "commit_verdicts": [
+   "23c254ba 2026-08-04T22:20:02+02:00"
+  ],
+  "stesso_commit": true,
+  "generazione_utc": "2026-08-02T17:03:18.418623+00:00",
+  "esecuzione_mac_utc": "2026-08-02T22:19:33.669503+00:00",
+  "sha256_truth_ora": "79ba3f15c59255e4cdfab52dacf809d8620d56002439ec2b49008cb33e0d93ee",
+  "sha256_truth_in_envelope": null,
+  "natura": "PROCEDURALE: nessuno sha della verita' negli envelope; verita' e verdetti nello stesso commit. Evidenza di cecita' = sorgente del discoverer + ordine temporale negli envelope."
+ },
+ "domanda_A": {
+  "n": 603,
+  "nulli": 67,
+  "non_rappresentabili": 268,
+  "rappresentabili": 268,
+  "rapp_supporto_errato": 88,
+  "claim_corrette": 105,
+  "claim_false": [
+   {
+    "case": "case_134",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_138",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_148",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_151",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_152",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_162",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_163",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_178",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_181",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_186",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_188",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_193",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_195",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   },
+   {
+    "case": "case_200",
+    "cls": "C",
+    "reason": "supporto errato",
+    "support": [
+     "v",
+     "v_xx"
+    ],
+    "true": [
+     "div_vv_x",
+     "v",
+     "v_xx"
+    ]
+   }
+  ],
+  "coef_err": [
+   0.008399886394309396,
+   0.031166879450145697,
+   0.0033689622643153358,
+   0.0002930517534980227,
+   0.020047564296064736,
+   0.02784512004666669,
+   0.0019429358876314271,
+   0.015485509617569372,
+   0.011691341403379884,
+   0.012922967500560562,
+   0.005272801370428719,
+   0.026841775475936958,
+   0.0203776403461669,
+   0.0002574081002410609,
+   0.022316524040292655,
+   0.002329896390668516,
+   0.008144513965196666,
+   0.012916423688610179,
+   0.025932161064710146,
+   0.022936672454509966,
+   0.01658136093073396,
+   0.008967138422535144,
+   0.007330376317862866,
+   0.007866218630437896,
+   0.0110954614227502,
+   0.02077206098728953,
+   0.03313611801355171,
+   0.00812451172148728,
+   0.006823559433683797,
+   0.00013383995806363232,
+   0.021673048060750887,
+   0.009725372054056136,
+   0.03317288079017429,
+   0.0024661204213985606,
+   0.00558839275354763,
+   0.00725842658774507,
+   0.026714453863056285,
+   0.016264025140161426,
+   0.01128591986021951,
+   0.010222948762484058,
+   0.007477685975863691,
+   0.0024362552293589533,
+   0.006621349481922447,
+   0.00250469706212021,
+   0.003997317987321221,
+   0.0039267117453690705,
+   0.016829215341888228,
+   0.00627237918946886,
+   0.014478279286991764,
+   0.003452332334889559,
+   0.006964110810700215,
+   0.014501267373979474,
+   0.004540952371078523,
+   0.00024785705190614224,
+   0.016191287048525117,
+   0.007666992289494701,
+   0.016287987649258383,
+   0.016750021360487147,
+   0.004249752454159698,
+   0.033481298673011715,
+   0.003183374140434925,
+   0.022622824717981556,
+   0.005808572587287344,
+   0.017184897830949678,
+   0.005164390418092438,
+   0.010699496055339389,
+   0.01703928215917242,
+   0.012445774736204842,
+   0.0012927670994279147,
+   0.02930555000728978,
+   0.005045126126673145,
+   0.027345039988461262,
+   0.01000314622589996,
+   0.01679997624665163,
+   0.004870028271078441,
+   0.0022918161246486884,
+   0.004141998897757782,
+   0.003664279546060444,
+   0.0202152521071383,
+   0.00851007472564655,
+   0.025543366298988183,
+   0.008964703228419505,
+   0.05589241802266064,
+   0.0037580270645757984,
+   0.019521753458756657,
+   0.035691981870575845,
+   0.019273540393238392,
+   0.032603019333365256,
+   0.03001653597407765,
+   0.02930012759935159,
+   0.004664294025666693,
+   0.021317638504379312,
+   0.023812281700112986,
+   0.019030785134929437,
+   0.0090387183260385,
+   0.04167841466728792,
+   0.036007377416203364,
+   0.00023757948047787,
+   0.056258875594052835,
+   0.025374784977951318,
+   0.023283145659608158,
+   0.011865919864209132,
+   0.003689440132667988,
+   0.014809771173904876,
+   0.05165523916344781
+  ],
+  "per_classe": {
+   "A": {
+    "n": 67,
+    "verdetti": {
+     "MISSPECIFIED": 44,
+     "CLAIM": 16,
+     "ABSTAIN_GATE": 6,
+     "REJECTED_TRANSFER": 1
+    },
+    "claim_corrette": 16,
+    "claim_false": 0
+   },
+   "B": {
+    "n": 67,
+    "verdetti": {
+     "CLAIM": 54,
+     "NOT_IDENTIFIABLE": 12,
+     "MISSPECIFIED": 1
+    },
+    "claim_corrette": 54,
+    "claim_false": 0
+   },
+   "C": {
+    "n": 67,
+    "verdetti": {
+     "CLAIM": 15,
+     "NOT_IDENTIFIABLE": 48,
+     "MISSPECIFIED": 4
+    },
+    "claim_corrette": 1,
+    "claim_false": 14
+   },
+   "D": {
+    "n": 67,
+    "verdetti": {
+     "MISSPECIFIED": 65,
+     "ABSTAIN_GATE": 2
+    },
+    "claim_corrette": 0,
+    "claim_false": 0
+   },
+   "E": {
+    "n": 67,
+    "verdetti": {
+     "ABSTAIN_GATE": 31,
+     "MISSPECIFIED": 21,
+     "NOT_IDENTIFIABLE": 4,
+     "REJECTED_TRANSFER": 11
+    },
+    "claim_corrette": 0,
+    "claim_false": 0
+   },
+   "F": {
+    "n": 67,
+    "verdetti": {
+     "CLAIM": 34,
+     "NOT_IDENTIFIABLE": 23,
+     "MISSPECIFIED": 8,
+     "REJECTED_TRANSFER": 1,
+     "ABSTAIN_GATE": 1
+    },
+    "claim_corrette": 34,
+    "claim_false": 0
+   },
+   "G": {
+    "n": 67,
+    "verdetti": {
+     "MISSPECIFIED": 66,
+     "REJECTED_PREFLIGHT": 1
+    },
+    "claim_corrette": 0,
+    "claim_false": 0
+   },
+   "H": {
+    "n": 67,
+    "verdetti": {
+     "MISSPECIFIED": 37,
+     "REJECTED_PREFLIGHT": 30
+    },
+    "claim_corrette": 0,
+    "claim_false": 0
+   },
+   "I": {
+    "n": 67,
+    "verdetti": {
+     "MISSPECIFIED": 67
+    },
+    "claim_corrette": 0,
+    "claim_false": 0
+   }
+  },
+  "opportunita": 423,
+  "n_claim_false": 14,
+  "limite_regola_del_tre": 0.0070921985815602835,
+  "coef_err_mediano": 0.011691341403379884,
+  "recall_rappresentabili": 0.3917910447761194
+ },
+ "domanda_B": {
+  "n_condivisi": 100,
+  "discrepanze": [],
+  "accordo_pieno": true
+ },
+ "esito": "CLAIM_FALSA_OSSERVATA",
+ "mutation_test": {
+  "400 opportunita', 0 false, accordo -> LIMITE_STRETTO": true,
+  "claim su nullo -> CLAIM_FALSA_OSSERVATA": true,
+  "supporto errato affermato -> CLAIM_FALSA_OSSERVATA": true,
+  "claim su non rappresentabile -> CLAIM_FALSA_OSSERVATA": true,
+  "verdetto diverso su un condiviso -> DIVERGENZA_PIATTAFORMA": true,
+  "blocked_at diverso -> DIVERGENZA": true,
+  "300 opportunita' -> POTENZA_INSUFFICIENTE": true,
+  "supporto errato NON affermato = opportunita' in piu', non claim falsa": true
+ },
+ "nota_condivisi": "per la domanda A sui 100 condivisi conta il verdetto Mac"
+}

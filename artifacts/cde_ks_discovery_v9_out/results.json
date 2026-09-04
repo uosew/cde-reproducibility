@@ -1,0 +1,351 @@
+{
+  "run": "CDE_KS_DISCOVERY_V9",
+  "seed": 7,
+  "smoke": false,
+  "protocol": {
+    "frozen_from": "CDE_PDE_DISCOVERY_V8 v1.1",
+    "terms": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x",
+      "u_xxxx"
+    ],
+    "library_extension": "u_xxxx (dichiarata upfront, validata dal track D4)"
+  },
+  "track_D4": {
+    "configs": {
+      "trig_mix/bump/D4_uxxxx/trapezoid": {
+        "best_rel_err": 1.0658323833313326e-14,
+        "empirical_order": 13.982467224149145,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          3.487875302956286,
+          0.07070121006694172,
+          6.257112407793211e-05,
+          1.4796782333424438e-08,
+          1.0658323833313326e-14
+        ],
+        "Ns": [
+          65,
+          129,
+          257,
+          513,
+          1025
+        ]
+      },
+      "trig_mix/bump/D4_uxxxx/simpson": {
+        "best_rel_err": 4.932273324948861e-09,
+        "empirical_order": 9.320975227357385,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          5.522973449474666,
+          1.0683568208961685,
+          0.023483641856873787,
+          2.083731231637936e-05,
+          4.932273324948861e-09
+        ],
+        "Ns": [
+          65,
+          129,
+          257,
+          513,
+          1025
+        ]
+      },
+      "gaussian/bump/D4_uxxxx/trapezoid": {
+        "best_rel_err": 2.245972952694666e-14,
+        "empirical_order": 12.188346801827285,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          0.15542052172191143,
+          0.0030722580999257877,
+          8.287498653996296e-07,
+          4.325169678753568e-10,
+          2.245972952694666e-14
+        ],
+        "Ns": [
+          65,
+          129,
+          257,
+          513,
+          1025
+        ]
+      },
+      "gaussian/bump/D4_uxxxx/simpson": {
+        "best_rel_err": 1.442021145687526e-10,
+        "empirical_order": 9.676244982127852,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          0.3570920447051908,
+          0.04771049644073636,
+          0.0010229810334880245,
+          2.756732660356624e-07,
+          1.442021145687526e-10
+        ],
+        "Ns": [
+          65,
+          129,
+          257,
+          513,
+          1025
+        ]
+      }
+    },
+    "d4phi_check": {
+      "max_rel_err_vs_fd": 1.1201413624004486e-06,
+      "pass": true
+    },
+    "gate_pass": true
+  },
+  "ks": {
+    "r_GT_preflight": 8.741866718053423e-06,
+    "preflight_open": true,
+    "true_coeffs": {
+      "uu_x": -1.0,
+      "u_xx": -1.0,
+      "u_xxxx": -1.0
+    },
+    "K_windows": 200,
+    "grid": {
+      "Nx": 2048,
+      "Nt": 1001,
+      "L": 100.53096491487338,
+      "u_std": 1.3580897516353754
+    },
+    "sigma": {
+      "0.0": {
+        "support": [
+          "u_xx",
+          "u_xxxx",
+          "uu_x"
+        ],
+        "frequencies": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0,
+          "u_xxxx": 1.0
+        },
+        "coefficients": {
+          "u_xx": -0.9999940288323564,
+          "uu_x": -0.9999994450765952,
+          "u_xxxx": -0.9999965720831069
+        },
+        "support_exact": true,
+        "spurious_terms": [],
+        "missing_terms": [],
+        "coef_rel_err_max": 5.971167643559205e-06,
+        "gate_pass": true,
+        "fit_rel_resid": 7.863198600638653e-06
+      },
+      "0.01": {
+        "support": [
+          "u_xx",
+          "u_xxxx",
+          "uu_x"
+        ],
+        "frequencies": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0,
+          "u_xxxx": 1.0
+        },
+        "coefficients": {
+          "u_xx": -1.0000269986861705,
+          "uu_x": -0.9999799450246889,
+          "u_xxxx": -1.0000288491560165
+        },
+        "support_exact": true,
+        "spurious_terms": [],
+        "missing_terms": [],
+        "coef_rel_err_max": 2.8849156016530486e-05,
+        "gate_pass": true,
+        "fit_rel_resid": 0.001267710684794395
+      },
+      "0.02": {
+        "support": [
+          "u_xx",
+          "u_xxxx",
+          "uu_x"
+        ],
+        "frequencies": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0,
+          "u_xxxx": 1.0
+        },
+        "coefficients": {
+          "u_xx": -0.999982625608332,
+          "uu_x": -0.9998791328524685,
+          "u_xxxx": -1.0005042204645196
+        },
+        "support_exact": true,
+        "spurious_terms": [],
+        "missing_terms": [],
+        "coef_rel_err_max": 0.0005042204645195891,
+        "gate_pass": true,
+        "fit_rel_resid": 0.002582957617694045
+      },
+      "0.05": {
+        "support": [
+          "u_xx",
+          "u_xxxx",
+          "uu_x"
+        ],
+        "frequencies": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0,
+          "u_xxxx": 1.0
+        },
+        "coefficients": {
+          "u_xx": -0.9991485256904179,
+          "uu_x": -0.9992056046968754,
+          "u_xxxx": -0.9990352350502102
+        },
+        "support_exact": true,
+        "spurious_terms": [],
+        "missing_terms": [],
+        "coef_rel_err_max": 0.0009647649497898092,
+        "gate_pass": true,
+        "fit_rel_resid": 0.006392778677767672
+      },
+      "0.1": {
+        "support": [
+          "u_xx",
+          "u_xxxx",
+          "uu_x"
+        ],
+        "frequencies": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0,
+          "u_xxxx": 1.0
+        },
+        "coefficients": {
+          "u_xx": -0.9981142288937158,
+          "uu_x": -0.9992352495843526,
+          "u_xxxx": -0.9948828504698615
+        },
+        "support_exact": true,
+        "spurious_terms": [],
+        "missing_terms": [],
+        "coef_rel_err_max": 0.005117149530138532,
+        "gate_pass": true,
+        "fit_rel_resid": 0.012771294210604214
+      }
+    },
+    "sigma_star_first_fail": null,
+    "nulls": {
+      "n_runs": 10,
+      "false_discoveries": 0,
+      "stable_nonempty": 0,
+      "detail": [
+        {
+          "kind": "shuffle_t",
+          "seed": 0,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "shuffle_t",
+          "seed": 1,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "shuffle_t",
+          "seed": 2,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "shuffle_t",
+          "seed": 3,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "shuffle_t",
+          "seed": 4,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "phase_surrogate",
+          "seed": 0,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "phase_surrogate",
+          "seed": 1,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "phase_surrogate",
+          "seed": 2,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "phase_surrogate",
+          "seed": 3,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        },
+        {
+          "kind": "phase_surrogate",
+          "seed": 4,
+          "stable_support": [],
+          "fit_rel_resid": 1.0,
+          "false_discovery": false
+        }
+      ],
+      "fdr": 0.0,
+      "stable_nonempty_rate": 0.0
+    }
+  },
+  "elapsed_s": 154.56
+}

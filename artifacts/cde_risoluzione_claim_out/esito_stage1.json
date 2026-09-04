@@ -1,0 +1,45 @@
+{
+ "esito": {
+  "n": 44,
+  "n_false": 14,
+  "per_k": {
+   "1.0": {
+    "violazioni": [
+     [
+      "case_138",
+      [
+       "div_vv_x"
+      ]
+     ],
+     [
+      "case_193",
+      [
+       "div_vv_x"
+      ]
+     ]
+    ],
+    "n_violazioni": 2,
+    "X_mediana": 0.012622327684606749,
+    "X_max": 0.049259256843313934,
+    "copertura_false": "12/14"
+   },
+   "2.0": {
+    "violazioni": [],
+    "n_violazioni": 0,
+    "X_mediana": 0.025244655369213498,
+    "X_max": 0.09851851368662787,
+    "copertura_false": "14/14"
+   }
+  },
+  "k_star": "2.0",
+  "esito": "PROMISING"
+ },
+ "mutation_test": {
+  "0 violazioni -> k*=1, PROMISING": true,
+  "k=1 viola, k=2 no -> k*=2": true,
+  "entrambi violano -> NOT_PROMISING": true,
+  "X vacuo (mediana > gate) -> NOT_PROMISING": true,
+  "copertura false contata per k": true
+ },
+ "prereg_sha256": "95cef22f538f88d9ad965ee1c83f85084880e80ea06f64788286832f0e626f5b"
+}

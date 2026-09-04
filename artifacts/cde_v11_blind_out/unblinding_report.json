@@ -1,0 +1,116 @@
+{
+  "run": "CDE_V11_BLIND_UNBLINDING_V0",
+  "prereg": "PREREGISTRATION_V11_BLIND_CHALLENGE_2026_07_31.md @ 28e4c4bb",
+  "seal_verified": true,
+  "n_cases": 90,
+  "per_class": {
+    "A": {
+      "n": 10,
+      "verdicts": {
+        "CLAIM": 2,
+        "NOT_IDENTIFIABLE": 1,
+        "REJECTED_PREFLIGHT": 7
+      },
+      "support_ok": 2
+    },
+    "B": {
+      "n": 10,
+      "verdicts": {
+        "CLAIM": 9,
+        "NOT_IDENTIFIABLE": 1
+      },
+      "support_ok": 9
+    },
+    "C": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 1,
+        "NOT_IDENTIFIABLE": 8,
+        "CLAIM": 1
+      },
+      "support_ok": 1
+    },
+    "D": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 10
+      },
+      "support_ok": 0
+    },
+    "E": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 4,
+        "ABSTAIN_GATE": 5,
+        "REJECTED_TRANSFER": 1
+      },
+      "support_ok": 0
+    },
+    "F": {
+      "n": 10,
+      "verdicts": {
+        "NOT_IDENTIFIABLE": 3,
+        "CLAIM": 4,
+        "REJECTED_TRANSFER": 1,
+        "REJECTED_PREFLIGHT": 1,
+        "ABSTAIN_GATE": 1
+      },
+      "support_ok": 4
+    },
+    "G": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 10
+      },
+      "support_ok": 0
+    },
+    "H": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 10
+      },
+      "support_ok": 0
+    },
+    "I": {
+      "n": 10,
+      "verdicts": {
+        "REJECTED_PREFLIGHT": 10
+      },
+      "support_ok": 0
+    }
+  },
+  "false_claims": [],
+  "P_claim_errata": 0.0,
+  "coef_err_median": 0.014081798538985339,
+  "preflight_rejects": 53,
+  "gates": {
+    "G1_zero_false_claims": true,
+    "G2_support_recovery": [
+      0.4,
+      16,
+      40,
+      false
+    ],
+    "G3_misspec_detection": [
+      0.15,
+      6,
+      40,
+      false
+    ],
+    "G4_null_fd": [
+      0,
+      10,
+      true
+    ],
+    "G5_median_coef_err": [
+      0.014081798538985339,
+      true
+    ],
+    "G6_holdout": [
+      16,
+      16,
+      true
+    ]
+  },
+  "elapsed_s": 0.19
+}

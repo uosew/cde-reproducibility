@@ -1,0 +1,1412 @@
+{
+  "run": "CDE_BLIND_PDE2_RUNNER_V0",
+  "data": "2026-08-24",
+  "commit": "38eb97e5",
+  "python": "3.13.10",
+  "numpy": "2.5.1",
+  "parametri_congelati": {
+    "TERMS": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x"
+    ],
+    "wx": 1.0,
+    "wt": 0.3,
+    "K": 200,
+    "GATE_P1": 0.05,
+    "GATE_P2": 0.05,
+    "GATE_P3": 0.05,
+    "GATE_FIT": 0.05,
+    "GATE_TRANSFER": 0.05,
+    "GATE_AMPIEZZA": 0.05,
+    "SOGLIA_CORR": 0.9999,
+    "FATTORE_IDENT": 2.0,
+    "SEME_CENTRI": 8484,
+    "STAB_B": 100,
+    "STAB_FREQ": 0.8
+  },
+  "casi": [
+    {
+      "case_id": "case_01",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00090394,
+        "P2_famiglie": 1.762e-05,
+        "P3_holdout": 1.768e-05
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.92322525,
+          "cond_A": 248.90454676,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": -0.59999924,
+          "u_xx": 0.14999838
+        },
+        "resid_fit": 1.656e-05,
+        "resid_transfer": 1.973e-05,
+        "resid_ampiezza": 2.024e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.92322525,
+          "cond_A": 248.90454676,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": -0.59999924,
+          "u_xx": 0.14999838
+        },
+        "resid_fit": 1.656e-05,
+        "resid_transfer": 1.973e-05,
+        "resid_ampiezza": 2.024e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 38.14
+    },
+    {
+      "case_id": "case_02",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00111168,
+        "P2_famiglie": 0.00160022,
+        "P3_holdout": 0.00148981
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.94592281,
+          "cond_A": 97.37218141,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_xx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_xx": 0.04501742,
+          "uu_x": -0.99995906
+        },
+        "resid_fit": 0.00140161,
+        "resid_transfer": 0.00295246,
+        "resid_ampiezza": 0.00106661,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.94592281,
+          "cond_A": 97.37218141,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_xx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_xx": 0.04501742,
+          "uu_x": -0.99995906
+        },
+        "resid_fit": 0.00140161,
+        "resid_transfer": 0.00295246,
+        "resid_ampiezza": 0.00106661,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 38.14
+    },
+    {
+      "case_id": "case_03",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.0007649,
+        "P2_famiglie": 2.392e-05,
+        "P3_holdout": 2.401e-05
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.94034285,
+          "cond_A": 63.23819858,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u_x",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39999278,
+          "u_x": -0.89999532,
+          "u_xx": 0.02499858
+        },
+        "resid_fit": 2.312e-05,
+        "resid_transfer": 2.382e-05,
+        "resid_ampiezza": 2.999e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.94034285,
+          "cond_A": 63.23819858,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u_x",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39999278,
+          "u_x": -0.89999532,
+          "u_xx": 0.02499858
+        },
+        "resid_fit": 2.312e-05,
+        "resid_transfer": 2.382e-05,
+        "resid_ampiezza": 2.999e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 37.23
+    },
+    {
+      "case_id": "case_04",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00425136,
+        "P2_famiglie": 0.00128024,
+        "P3_holdout": 0.00101009
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.98993827,
+          "cond_A": 160.97790825,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^2",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 1.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.7001241,
+          "u^2": -0.35007525,
+          "u_xx": 0.06000652
+        },
+        "resid_fit": 0.00102707,
+        "resid_transfer": 0.00092051,
+        "resid_ampiezza": 0.00148059,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.98993827,
+          "cond_A": 160.97790825,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^2",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 1.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.7001241,
+          "u^2": -0.35007525,
+          "u_xx": 0.06000652
+        },
+        "resid_fit": 0.00102707,
+        "resid_transfer": 0.00092051,
+        "resid_ampiezza": 0.00148059,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 37.63
+    },
+    {
+      "case_id": "case_05",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00084102,
+        "P2_famiglie": 0.00160742,
+        "P3_holdout": 0.00142678
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.93733259,
+          "cond_A": 81.87689872,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_xx",
+          "u_xxx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 1.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_xx": 0.03500931,
+          "u_xxx": -0.02000535,
+          "uu_x": -0.99980909
+        },
+        "resid_fit": 0.0015106,
+        "resid_transfer": 0.00184846,
+        "resid_ampiezza": 0.00132279,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.93733259,
+          "cond_A": 81.87689872,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_xx",
+          "u_xxx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 1.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_xx": 0.03500931,
+          "u_xxx": -0.02000535,
+          "uu_x": -0.99980909
+        },
+        "resid_fit": 0.0015106,
+        "resid_transfer": 0.00184846,
+        "resid_ampiezza": 0.00132279,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 39.31
+    },
+    {
+      "case_id": "case_06",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00079873,
+        "P2_famiglie": 8.309e-05,
+        "P3_holdout": 8.179e-05
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.95189274,
+          "cond_A": 81.03767668,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u^3": -0.49999186,
+          "u_xx": 0.07999943
+        },
+        "resid_fit": 8.236e-05,
+        "resid_transfer": 0.0001006,
+        "resid_ampiezza": 4.14e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.95189274,
+          "cond_A": 81.03767668,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u^3": -0.49999186,
+          "u_xx": 0.07999943
+        },
+        "resid_fit": 8.236e-05,
+        "resid_transfer": 0.0001006,
+        "resid_ampiezza": 4.14e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 38.86
+    },
+    {
+      "case_id": "case_07",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00240372,
+        "P2_famiglie": 0.00036036,
+        "P3_holdout": 0.00030284
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.95581435,
+          "cond_A": 66.55628785,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_x",
+          "u_xxx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 0.0,
+          "u_xxx": 1.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u_x": -0.59986064,
+          "u_xxx": -0.04498029
+        },
+        "resid_fit": 0.00028099,
+        "resid_transfer": 0.0002755,
+        "resid_ampiezza": 0.0003206,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.95581435,
+          "cond_A": 66.55628785,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_x",
+          "u_xxx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 0.0,
+          "u_xxx": 1.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u_x": -0.59986064,
+          "u_xxx": -0.04498029
+        },
+        "resid_fit": 0.00028099,
+        "resid_transfer": 0.0002755,
+        "resid_ampiezza": 0.0003206,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 37.72
+    },
+    {
+      "case_id": "case_08",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00093663,
+        "P2_famiglie": 0.00244269,
+        "P3_holdout": 0.0015709
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.91790363,
+          "cond_A": 303.47139314,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u^2",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 1.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u^2": 0.49996737,
+          "u^3": -0.59919975,
+          "u_xx": 0.04002011
+        },
+        "resid_fit": 0.00193721,
+        "resid_transfer": 0.00382042,
+        "resid_ampiezza": 0.00450714,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.91790363,
+          "cond_A": 303.47139314,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u^2",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 1.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u^2": 0.49996737,
+          "u^3": -0.59919975,
+          "u_xx": 0.04002011
+        },
+        "resid_fit": 0.00193721,
+        "resid_transfer": 0.00382042,
+        "resid_ampiezza": 0.00450714,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 43.81
+    },
+    {
+      "case_id": "case_09",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00049621,
+        "P2_famiglie": 3.293e-05,
+        "P3_holdout": 3.846e-05
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.94036938,
+          "cond_A": 176.85674487,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_x",
+          "u_xx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_x": -0.29999868,
+          "u_xx": 0.04999922,
+          "uu_x": -0.99999736
+        },
+        "resid_fit": 3.229e-05,
+        "resid_transfer": 3.077e-05,
+        "resid_ampiezza": 3.057e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.94036938,
+          "cond_A": 176.85674487,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u_x",
+          "u_xx",
+          "uu_x"
+        ],
+        "frequenze": {
+          "u": 0.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 1.0
+        },
+        "coefficienti": {
+          "u_x": -0.29999868,
+          "u_xx": 0.04999922,
+          "uu_x": -0.99999736
+        },
+        "resid_fit": 3.229e-05,
+        "resid_transfer": 3.077e-05,
+        "resid_ampiezza": 3.057e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 38.87
+    },
+    {
+      "case_id": "case_10",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00638285,
+        "P2_famiglie": 0.00379051,
+        "P3_holdout": 0.00311544
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.96639515,
+          "cond_A": 29.21593357,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.80004422,
+          "u^3": -0.79970362,
+          "u_xx": 0.11996351
+        },
+        "resid_fit": 0.00308535,
+        "resid_transfer": 0.00391312,
+        "resid_ampiezza": 0.00913057,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.96639515,
+          "cond_A": 29.21593357,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.80004422,
+          "u^3": -0.79970362,
+          "u_xx": 0.11996351
+        },
+        "resid_fit": 0.00308535,
+        "resid_transfer": 0.00391312,
+        "resid_ampiezza": 0.00913057,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 38.52
+    },
+    {
+      "case_id": "case_11",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.0007442,
+        "P2_famiglie": 3.81e-05,
+        "P3_holdout": 3.046e-05
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 1.0,
+          "cond_A": 3996487.9405162,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u_x"
+        ],
+        "frequenze": {
+          "u": 0.42,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 1.0,
+          "u_xx": 0.42,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u_x": -0.51999563
+        },
+        "resid_fit": 2.871e-05,
+        "resid_transfer": 2.955e-05,
+        "resid_ampiezza": 2.542e-05,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 1.0,
+          "cond_A": 3996487.9405162,
+          "coppia": "u ~ u_xx"
+        },
+        "decisione": "NOT_IDENTIFIABLE",
+        "motivo": "colonne u ~ u_xx collineari a 1.000000: i dati non separano le leggi"
+      },
+      "wall_s": 37.53
+    },
+    {
+      "case_id": "case_12",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00861264,
+        "P2_famiglie": 0.001499,
+        "P3_holdout": 0.00114132
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.99999973,
+          "cond_A": 5437.74758528,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 0.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.41997811
+        },
+        "resid_fit": 0.00121285,
+        "resid_transfer": 0.00138509,
+        "resid_ampiezza": 0.00104474,
+        "identificabile": false,
+        "alternative_entro_fattore": [
+          {
+            "supporto": [
+              "u_xx"
+            ],
+            "resid": 0.001418,
+            "coefficienti": {
+              "u_xx": -0.420007
+            }
+          }
+        ],
+        "decisione": "NOT_IDENTIFIABLE"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.99999973,
+          "cond_A": 5437.74758528,
+          "coppia": "u ~ u_xx"
+        },
+        "decisione": "NOT_IDENTIFIABLE",
+        "motivo": "colonne u ~ u_xx collineari a 1.000000: i dati non separano le leggi"
+      },
+      "wall_s": 39.53
+    },
+    {
+      "case_id": "case_13",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00227524,
+        "P2_famiglie": 0.00682387,
+        "P3_holdout": 0.00484837
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.99999984,
+          "cond_A": 54746.70558441,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [],
+        "frequenze": {
+          "u": 0.73,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.67,
+          "u_xx": 0.47,
+          "u_xxx": 0.67,
+          "uu_x": 0.0
+        },
+        "decisione": "ABSTAIN_SUPPORTO_VUOTO"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.99999984,
+          "cond_A": 54746.70558441,
+          "coppia": "u ~ u_xx"
+        },
+        "decisione": "NOT_IDENTIFIABLE",
+        "motivo": "colonne u ~ u_xx collineari a 1.000000: i dati non separano le leggi"
+      },
+      "wall_s": 37.14
+    },
+    {
+      "case_id": "case_14",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00078252,
+        "P2_famiglie": 0.00015808,
+        "P3_holdout": 0.00013724
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 1.0,
+          "cond_A": 3662648.83620298,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u"
+        ],
+        "frequenze": {
+          "u": 0.85,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 0.63,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.19999847
+        },
+        "resid_fit": 0.00013254,
+        "resid_transfer": 0.00013184,
+        "resid_ampiezza": 0.00013361,
+        "identificabile": false,
+        "alternative_entro_fattore": [
+          {
+            "supporto": [
+              "u_xx"
+            ],
+            "resid": 0.000133,
+            "coefficienti": {
+              "u_xx": -0.05
+            }
+          }
+        ],
+        "decisione": "NOT_IDENTIFIABLE"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 1.0,
+          "cond_A": 3662648.83620298,
+          "coppia": "u ~ u_xx"
+        },
+        "decisione": "NOT_IDENTIFIABLE",
+        "motivo": "colonne u ~ u_xx collineari a 1.000000: i dati non separano le leggi"
+      },
+      "wall_s": 35.97
+    },
+    {
+      "case_id": "case_15",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00461169,
+        "P2_famiglie": 0.00010471,
+        "P3_holdout": 0.00010585
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.99878562,
+          "cond_A": 410.26282702,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.29996281,
+          "u_xx": 0.04996255
+        },
+        "resid_fit": 0.00010445,
+        "resid_transfer": 9.374e-05,
+        "resid_ampiezza": 0.00011729,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.99878562,
+          "cond_A": 410.26282702,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.29996281,
+          "u_xx": 0.04996255
+        },
+        "resid_fit": 0.00010445,
+        "resid_transfer": 9.374e-05,
+        "resid_ampiezza": 0.00011729,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 36.82
+    },
+    {
+      "case_id": "case_16",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00433253,
+        "P2_famiglie": 0.0001264,
+        "P3_holdout": 0.00012797
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.99987813,
+          "cond_A": 1260.43923176,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.29993814,
+          "u_xx": 0.04994232
+        },
+        "resid_fit": 0.00012506,
+        "resid_transfer": 0.00011169,
+        "resid_ampiezza": 0.00010341,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.99987813,
+          "cond_A": 1260.43923176,
+          "coppia": "u ~ u_xx"
+        },
+        "supporto": [
+          "u",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 0.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.29993814,
+          "u_xx": 0.04994232
+        },
+        "resid_fit": 0.00012506,
+        "resid_transfer": 0.00011169,
+        "resid_ampiezza": 0.00010341,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "wall_s": 39.72
+    },
+    {
+      "case_id": "case_17",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00159923,
+        "P2_famiglie": 0.0015023,
+        "P3_holdout": 0.00117081
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.95865395,
+          "cond_A": 13.50836534,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.49427546,
+          "u^3": -0.07221321,
+          "u_xx": 0.04043549
+        },
+        "resid_fit": 0.00251901,
+        "resid_transfer": 0.00661525,
+        "resid_ampiezza": 0.06046867,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.95865395,
+          "cond_A": 13.50836534,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.49427546,
+          "u^3": -0.07221321,
+          "u_xx": 0.04043549
+        },
+        "resid_fit": 0.00251901,
+        "resid_transfer": 0.00661525,
+        "resid_ampiezza": 0.06046867,
+        "decisione": "ABSTAIN_AMPIEZZA",
+        "motivo": "i coefficienti non reggono ad ampiezza doppia (0.0605): modello efficace, non legge"
+      },
+      "wall_s": 39.01
+    },
+    {
+      "case_id": "case_18",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00141778,
+        "P2_famiglie": 0.00213044,
+        "P3_holdout": 0.00216583
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.92902182,
+          "cond_A": 25.40419825,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39517589,
+          "u^3": -0.05729468,
+          "u_xx": 0.06002635
+        },
+        "resid_fit": 0.00368546,
+        "resid_transfer": 0.00998211,
+        "resid_ampiezza": 0.28702349,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.92902182,
+          "cond_A": 25.40419825,
+          "coppia": "u ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39517589,
+          "u^3": -0.05729468,
+          "u_xx": 0.06002635
+        },
+        "resid_fit": 0.00368546,
+        "resid_transfer": 0.00998211,
+        "resid_ampiezza": 0.28702349,
+        "decisione": "ABSTAIN_AMPIEZZA",
+        "motivo": "i coefficienti non reggono ad ampiezza doppia (0.2870): modello efficace, non legge"
+      },
+      "wall_s": 37.86
+    },
+    {
+      "case_id": "case_19",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00102657,
+        "P2_famiglie": 0.00573869,
+        "P3_holdout": 0.00507994
+      },
+      "baseline": {
+        "collinearita": {
+          "max_corr": 0.98754192,
+          "cond_A": 87.11199229,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39380021,
+          "u^3": -0.09306717,
+          "u_xx": 0.04972091
+        },
+        "resid_fit": 0.00556314,
+        "resid_transfer": 0.02127819,
+        "resid_ampiezza": 0.38137876,
+        "identificabile": true,
+        "alternative_entro_fattore": [],
+        "decisione": "CLAIM"
+      },
+      "corretto": {
+        "collinearita": {
+          "max_corr": 0.98754192,
+          "cond_A": 87.11199229,
+          "coppia": "u^2 ~ u^3"
+        },
+        "supporto": [
+          "u",
+          "u^3",
+          "u_xx"
+        ],
+        "frequenze": {
+          "u": 1.0,
+          "u^2": 0.0,
+          "u^3": 1.0,
+          "u_x": 0.0,
+          "u_xx": 1.0,
+          "u_xxx": 0.0,
+          "uu_x": 0.0
+        },
+        "coefficienti": {
+          "u": 0.39380021,
+          "u^3": -0.09306717,
+          "u_xx": 0.04972091
+        },
+        "resid_fit": 0.00556314,
+        "resid_transfer": 0.02127819,
+        "resid_ampiezza": 0.38137876,
+        "decisione": "ABSTAIN_AMPIEZZA",
+        "motivo": "i coefficienti non reggono ad ampiezza doppia (0.3814): modello efficace, non legge"
+      },
+      "wall_s": 38.22
+    },
+    {
+      "case_id": "case_20",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00081852,
+        "P2_famiglie": 0.06904213,
+        "P3_holdout": 0.06448008
+      },
+      "baseline": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "corretto": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "wall_s": 19.12
+    },
+    {
+      "case_id": "case_21",
+      "Nx": 768,
+      "Nt": 81,
+      "preflight": {
+        "P1_quadratura": 0.34534695,
+        "P2_famiglie": 0.99788088,
+        "P3_holdout": 0.99273375
+      },
+      "baseline": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P1_quadratura",
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "corretto": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P1_quadratura",
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "wall_s": 2.17
+    },
+    {
+      "case_id": "case_22",
+      "Nx": 768,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00530946,
+        "P2_famiglie": 0.91203464,
+        "P3_holdout": 0.82127122
+      },
+      "baseline": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "corretto": {
+        "decisione": "ABSTAIN_PREFLIGHT",
+        "cancelli_chiusi": [
+          "P2_famiglie",
+          "P3_holdout"
+        ]
+      },
+      "wall_s": 18.85
+    }
+  ],
+  "elapsed_s": 770.2
+}

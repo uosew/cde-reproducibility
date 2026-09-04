@@ -1,0 +1,42 @@
+{
+  "run": "CDE_V10_METAMORPHIC_TESTS_V0",
+  "seed": 7,
+  "field": "burgers smoke",
+  "tests": {
+    "M1_row_permutation": {
+      "invariant": true
+    },
+    "M2_column_permutation_renamed": {
+      "invariant": true
+    },
+    "M3_column_rescale": {
+      "invariant_support": true,
+      "coef_rescales": true
+    },
+    "M4_units_change": {
+      "invariant": true
+    },
+    "M5_window_duplication_on_null": {
+      "null_outcome": "ABSTAIN_EMPTY",
+      "duplicated_outcome": "ABSTAIN_GATE",
+      "no_fake_evidence": true
+    },
+    "M6_time_reversal": {
+      "support_level_outcome": "EXACT_CLAIM",
+      "coef_sign_flip_detected": true,
+      "coef_rel_err_max": 2.003087339824514,
+      "claim_blocked_by_coef_gate": true
+    },
+    "M7_same_seed_repeat": {
+      "bit_identical": true
+    },
+    "M8_json_roundtrip": {
+      "identical": true
+    },
+    "M9_key_order": {
+      "equivalent": true
+    }
+  },
+  "all_pass": true,
+  "elapsed_s": 39.98
+}

@@ -1,0 +1,12 @@
+{
+  "run": "CDE_WEAK_OPERATOR_COMPONENTWISE_IDENTITY_V7",
+  "timestamp_utc": "2026-07-28T00:06:00Z",
+  "results_sha256": "b35128de2ac6aef9a073a7bce272490b774b4642ee8a9829ca9cf31573ffebbd",
+  "seed": 42,
+  "python_version": "3.14.0",
+  "numpy_version": "2.2.6",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "git_commit": "906609d5",
+  "numpy_temp_elision_bug_detected": true,
+  "human_review_required": true
+}

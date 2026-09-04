@@ -1,0 +1,43 @@
+{
+  "run": "CDE_V10_WRONG_LIBRARY_V0",
+  "timestamp_utc": "2026-07-30T19:07:21Z",
+  "results_sha256": "529620d0191e19af83f1088c8bd3ed6307d3db1ef33977a858e8db495f98fbd1",
+  "seed": 7,
+  "python_version": "3.12.12",
+  "numpy_version": "2.5.1",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "git_commit": "9e9a48c8",
+  "runtime_guard": {
+    "status": "PASS",
+    "python_version": "3.12.12",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "executable": "/Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/../.venv312/bin/python",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv312",
+    "in_support_matrix": true,
+    "operations_tested": [
+      "*",
+      "**",
+      "+",
+      "-",
+      "/",
+      "exp"
+    ],
+    "operations_result": {
+      "**": false,
+      "*": false,
+      "+": false,
+      "-": false,
+      "/": false,
+      "exp": false
+    },
+    "input_mutation_detected": false,
+    "checked_at_utc": "2026-07-30T18:54:19Z",
+    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+    "guard_protocol_version": "1.1.0",
+    "forensic": false
+  },
+  "human_review_required": true
+}

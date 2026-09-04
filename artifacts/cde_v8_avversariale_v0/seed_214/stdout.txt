@@ -1,0 +1,30 @@
+== allen_cahn ==
+   sigma=0.0: support=['u', 'u^3', 'u_xx'] err=0.00% gate=True
+   sigma=0.01: support=['u', 'u^3', 'u_xx'] err=0.17% gate=True
+   sigma=0.02: support=['u', 'u^3', 'u_xx'] err=0.11% gate=True
+   sigma=0.05: support=['u', 'u^3', 'u_xx'] err=2.24% gate=True
+   sigma=0.1: support=['u', 'u^3', 'u_xx'] err=2.11% gate=False
+   sigma* (primo fail): 0.1 | FDR nulli: 0.00 (0/10)
+== fisher_kpp ==
+   sigma=0.0: support=['u', 'u^2', 'u_xx'] err=0.00% gate=True
+   sigma=0.01: support=['u', 'u^2', 'u_xx'] err=0.05% gate=True
+   sigma=0.02: support=['u', 'u^2', 'u_xx'] err=0.36% gate=True
+   sigma=0.05: support=['u', 'u^2', 'u_xx'] err=0.34% gate=True
+   sigma=0.1: support=['u', 'u^2', 'u_xx'] err=1.13% gate=True
+   sigma* (primo fail): None | FDR nulli: 0.00 (0/10)
+== burgers ==
+   sigma=0.0: support=['u_xx', 'uu_x'] err=0.00% gate=True
+   sigma=0.01: support=['u_xx', 'uu_x'] err=0.04% gate=True
+   sigma=0.02: support=['u_xx', 'uu_x'] err=0.04% gate=True
+   sigma=0.05: support=['u_xx', 'uu_x'] err=0.33% gate=True
+   sigma=0.1: support=['u_xx', 'uu_x'] err=1.12% gate=True
+   sigma* (primo fail): None | FDR nulli: 0.00 (0/10)
+== kdv ==
+   sigma=0.0: support=['u_xxx', 'uu_x'] err=0.00% gate=True
+   sigma=0.01: support=['u_xxx', 'uu_x'] err=0.02% gate=True
+   sigma=0.02: support=['u_xxx', 'uu_x'] err=0.06% gate=True
+   sigma=0.05: support=['u_xxx', 'uu_x'] err=0.13% gate=True
+   sigma=0.1: support=['u_xxx', 'uu_x'] err=0.28% gate=True
+   sigma* (primo fail): None | FDR nulli: 0.00 (0/10)
+
+Output in /Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/cde_pde_discovery_v8_out  (575.58s)

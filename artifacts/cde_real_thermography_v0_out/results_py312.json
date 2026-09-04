@@ -1,0 +1,2063 @@
+{
+  "run": "CDE_REAL_THERMOGRAPHY_V0",
+  "preregistration": "PREREGISTRAZIONE_REAL_THERMOGRAPHY_2026_08_07.md",
+  "data_source": {
+    "doi": "10.17632/v4knrwgj9y.2",
+    "license": "CC BY 4.0",
+    "third_party_measured": true,
+    "calibration_sequence_excluded": "CFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+    "sha256": {
+      "CFRP-007_facq-120Hz_s-Back_Img-2000.zip": "c18e068c239e163c687e80f376957d26b79bb121ba13c1d3f19669cb25ecb77a",
+      "CFRP-007_facq-145Hz_s-Front_Img-2000.zip": "a8f70a50002c8a60b2a842eb58a9b2a05e203271689f084a67c744cba4a410ce",
+      "CFRP-008_facq-120Hz_s-Back_Img-2000.zip": "27eba434326f6ec51bd1512d9d6d100a2c6669d4536e376d24871c30e1485817",
+      "CFRP-008_facq-145Hz_s-Front_Img-2000.zip": "27396f810b5c78ebce3e4c11390c9d92675c0b12b02887523bf4411c0e3de003",
+      "GFRP-006_facq-120Hz_s-Back_Img-2000.zip": "647bbd8fc2ebe2a454c29c104a444c9680be2155574093c52e55523cb513f1d2",
+      "GFRP-006_facq-145Hz_s-Front_Img-2000.zip": "ac87ebda801d8625a00cad6df6470e14c05594700e0ae6e5b478ee5572488c64",
+      "GFRP-007_facq-120Hz_s-Back_Img-2000.zip": "6d93dde28261be03f71fa73f96f1dcb01c3e043b40bfda335c9bdc54f4c70f4a",
+      "GFRP-007_facq-145Hz_s-Front_Img-2000.zip": "2a88b02d1f566a89c58f5d3c6f789fad1e85205429b416d31c2da4d6d7ae826b",
+      "GFRP-008_facq-120Hz_s-Back_Img-2000.zip": "bc61434d27a7093c13a0e60699586df4779317dcbc25b1cc6a1186e549e8645b",
+      "GFRP-008_facq-145Hz_s-Front_Img-2000.zip": "9bc0bace3a21ff75d340081c9d16312779557a5c162444372c7dee0681e25ebd"
+    }
+  },
+  "frozen_params": {
+    "m_per_px": 0.0005859375,
+    "rows": [
+      128,
+      192,
+      256,
+      320,
+      384
+    ],
+    "edge_crop_px": 40,
+    "t_window_s": [
+      0.5,
+      8.0
+    ],
+    "bin_t": 5,
+    "WX_m": 0.02,
+    "WT_s": 0.6,
+    "K": 200,
+    "gate_fit_resid": 0.05,
+    "swap_rel": 2.0
+  },
+  "terms": [
+    "const",
+    "v",
+    "v2",
+    "v_x",
+    "v_xx",
+    "vv_x",
+    "div_vv_x"
+  ],
+  "declared_expected_support": [
+    "v",
+    "v_xx"
+  ],
+  "sequences": [
+    {
+      "sequence": "CFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "material": "CFRP",
+      "plate": "CFRP-007",
+      "side": "Back",
+      "fps": 120.0,
+      "flash_frame": 3,
+      "T_amb_C": 24.158,
+      "n_t": 180,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.33564865930308885,
+            "P2": 0.25840941747957136,
+            "P3": 0.30099537600610876,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.6591898660185241,
+            "v2": -0.6254332162646634,
+            "v_x": -0.047423379079269135,
+            "vv_x": 0.04282202719409201
+          },
+          "fit_rel_resid": 0.3164067693460081
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.2996093682525501,
+            "P2": 0.3189768388199539,
+            "P3": 0.29924108921290654,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5971174826759401,
+            "v2": -0.5179234299224622,
+            "div_vv_x": -0.00010279082937055376
+          },
+          "fit_rel_resid": 0.34090764754340946
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.32906079301520574,
+            "P2": 0.27704492499873856,
+            "P3": 0.2624274219228485,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.6069010926674322,
+            "v2": -0.49621624255839203,
+            "div_vv_x": -6.10545761785025e-05
+          },
+          "fit_rel_resid": 0.30101484572536574
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.38954698393335424,
+            "P2": 0.25997613493389743,
+            "P3": 0.26971873587093326,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.6541907099869181,
+            "v2": -0.5558625720370505,
+            "div_vv_x": -5.845342385766553e-05
+          },
+          "fit_rel_resid": 0.2830184552356215
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.3610787324803071,
+            "P2": 0.4220578486878169,
+            "P3": 0.42152073475851565,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.4623590522043973,
+            "v2": -0.41101805318226287,
+            "vv_x": -0.008403096743106372
+          },
+          "fit_rel_resid": 0.4494258862052527
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.3195914945678885,
+          "v2": -0.292414118398221
+        },
+        "fit_rel_resid": 0.5345041030329625,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.54412
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.68351
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.68321
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.68353
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.68353
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.55729
+          },
+          {
+            "drop": "v2",
+            "add": "v_x",
+            "resid": 0.72097
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.72099
+          },
+          {
+            "drop": "v2",
+            "add": "vv_x",
+            "resid": 0.72099
+          },
+          {
+            "drop": "v2",
+            "add": "div_vv_x",
+            "resid": 0.72074
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "CFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "material": "CFRP",
+      "plate": "CFRP-007",
+      "side": "Front",
+      "fps": 145.0,
+      "flash_frame": 5,
+      "T_amb_C": 24.055,
+      "n_t": 217,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.4458902231123765,
+            "P2": 0.2872450119452322,
+            "P3": 0.3249781148248342,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.614721487316714,
+            "v2": -0.5696294198628749
+          },
+          "fit_rel_resid": 0.329866473761306
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.39179032317035983,
+            "P2": 0.25419874751470783,
+            "P3": 0.265957264001073,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.6036171118927629,
+            "v2": -0.5631634659150997
+          },
+          "fit_rel_resid": 0.2769416140235591
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.21806446169923324,
+            "P2": 0.2611548796107835,
+            "P3": 0.25633248916149715,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5595452023412137,
+            "v2": -0.5042712597175755
+          },
+          "fit_rel_resid": 0.2900883656353509
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.36668468612962746,
+            "P2": 0.28518560745177723,
+            "P3": 0.42883789034599223,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.586969900052298,
+            "v2": -0.5551287215379792
+          },
+          "fit_rel_resid": 0.3177666912363031
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.48217544241541943,
+            "P2": 0.35337228220968286,
+            "P3": 0.40443624759647645,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5068520595476553,
+            "v2": -0.51281687931821
+          },
+          "fit_rel_resid": 0.3905783125167833
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.4615615733497396,
+          "v2": -0.4422493104773051
+        },
+        "fit_rel_resid": 0.40802747934939104,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.42039
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.67418
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.67418
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.67418
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.67386
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.43833
+          },
+          {
+            "drop": "v2",
+            "add": "v_x",
+            "resid": 0.72358
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.7234
+          },
+          {
+            "drop": "v2",
+            "add": "vv_x",
+            "resid": 0.72358
+          },
+          {
+            "drop": "v2",
+            "add": "div_vv_x",
+            "resid": 0.7227
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "CFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "material": "CFRP",
+      "plate": "CFRP-008",
+      "side": "Back",
+      "fps": 120.0,
+      "flash_frame": 4,
+      "T_amb_C": 24.106,
+      "n_t": 180,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.16741374933520065,
+            "P2": 0.3191666827996696,
+            "P3": 0.33267617743112515,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.6154399011409203,
+            "v2": -0.6683691867445288
+          },
+          "fit_rel_resid": 0.3517636045407634
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.1938186057625608,
+            "P2": 0.34162972043974027,
+            "P3": 0.27229304531499365,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5847471793317882,
+            "v2": -0.5686544450998555
+          },
+          "fit_rel_resid": 0.4118045741972016
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.1978846244206288,
+            "P2": 0.35127802520384244,
+            "P3": 0.4063034301886913,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5827581765346153,
+            "v2": -0.538389574044989
+          },
+          "fit_rel_resid": 0.417969625118461
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.1659593944842877,
+            "P2": 0.3183638139548204,
+            "P3": 0.3318062250485579,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.6140166677993294,
+            "v2": -0.5986635024674054
+          },
+          "fit_rel_resid": 0.35213733728978186
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.15801401228889006,
+            "P2": 0.3187097594698597,
+            "P3": 0.4804853536154889,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.5858559608502495,
+            "v2": -0.6269129564072657
+          },
+          "fit_rel_resid": 0.39620478518614016
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2",
+          "v_x",
+          "vv_x"
+        ],
+        "coefficients": {
+          "v": 0.3004804628218714,
+          "v2": -0.3182750881795198,
+          "v_x": 0.04761039639223473,
+          "vv_x": -0.04635417156924153
+        },
+        "fit_rel_resid": 0.5854324159114751,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.59349
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.70784
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.70782
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.60485
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.74193
+          },
+          {
+            "drop": "v2",
+            "add": "div_vv_x",
+            "resid": 0.74193
+          },
+          {
+            "drop": "v_x",
+            "add": "const",
+            "resid": 0.55459
+          },
+          {
+            "drop": "v_x",
+            "add": "v_xx",
+            "resid": 0.59501
+          },
+          {
+            "drop": "v_x",
+            "add": "div_vv_x",
+            "resid": 0.59495
+          },
+          {
+            "drop": "vv_x",
+            "add": "const",
+            "resid": 0.55536
+          },
+          {
+            "drop": "vv_x",
+            "add": "v_xx",
+            "resid": 0.59617
+          },
+          {
+            "drop": "vv_x",
+            "add": "div_vv_x",
+            "resid": 0.59611
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "CFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "material": "CFRP",
+      "plate": "CFRP-008",
+      "side": "Front",
+      "fps": 145.0,
+      "flash_frame": 5,
+      "T_amb_C": 24.734,
+      "n_t": 217,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.16978472890914464,
+            "P2": 0.5841402383134308,
+            "P3": 0.5565280491223957,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.2526249779065911,
+            "v2": -0.2430115184207149
+          },
+          "fit_rel_resid": 0.6439424467976854
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.1755133000233149,
+            "P2": 0.5097017879114412,
+            "P3": 0.5751090268504264,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.3598671019129674,
+            "v2": -0.3107784616581474,
+            "v_x": -0.06920969831272906,
+            "vv_x": 0.055722364848424716,
+            "div_vv_x": -5.506157084417102e-05
+          },
+          "fit_rel_resid": 0.5186342551150429
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.15348065756070434,
+            "P2": 0.5222014680541077,
+            "P3": 0.4483777631315124,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.26621289730066705,
+            "v2": -0.23068774379740525
+          },
+          "fit_rel_resid": 0.6259857318147194
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.17598660985903344,
+            "P2": 0.5283874973407346,
+            "P3": 0.5642366454402639,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.2768140232218472,
+            "v2": -0.2598665139103501
+          },
+          "fit_rel_resid": 0.6099144951382209
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.16272328195427666,
+            "P2": 0.4697744167727103,
+            "P3": 0.5236179243530014,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.34939076883665643,
+            "v2": -0.3689051432209293
+          },
+          "fit_rel_resid": 0.5610160670649756
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.156968730034258,
+          "v2": -0.1606311067107588
+        },
+        "fit_rel_resid": 0.6887696441904485,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.6947
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.73652
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.73719
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.73611
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.73698
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.70421
+          },
+          {
+            "drop": "v2",
+            "add": "v_x",
+            "resid": 0.76384
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.76385
+          },
+          {
+            "drop": "v2",
+            "add": "vv_x",
+            "resid": 0.76336
+          },
+          {
+            "drop": "v2",
+            "add": "div_vv_x",
+            "resid": 0.76323
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-006",
+      "side": "Back",
+      "fps": 120.0,
+      "flash_frame": 3,
+      "T_amb_C": 23.986,
+      "n_t": 180,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.07302180622889098,
+            "P2": 0.18263022955633842,
+            "P3": 0.18087419794670936,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.12460316261575197,
+            "v2": -0.21390599904001334
+          },
+          "fit_rel_resid": 0.19839404653910842
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.07155183406034266,
+            "P2": 0.17603398072196855,
+            "P3": 0.1997810123476194,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.13493155350280658,
+            "v2": -0.21337085953302928,
+            "v_x": 0.005772076253742448,
+            "v_xx": 4.196180167454438e-05,
+            "vv_x": -0.004077103289578934,
+            "div_vv_x": -1.711232694080429e-05
+          },
+          "fit_rel_resid": 0.1760392322272919
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.07937407491043177,
+            "P2": 0.19562134104405693,
+            "P3": 0.2486605845797859,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.1208504378675333,
+            "v2": -0.19622137628022676,
+            "v_x": 0.0051085546130997484,
+            "v_xx": 4.279974509363425e-05,
+            "vv_x": -0.003720059775091048,
+            "div_vv_x": -1.6787806550665184e-05
+          },
+          "fit_rel_resid": 0.19594136432905343
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.06992256222525157,
+            "P2": 0.1551678564684577,
+            "P3": 0.16743971530333787,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.14475269595619053,
+            "v2": -0.21841137531789334,
+            "v_x": 0.004522376625743508,
+            "v_xx": 3.5975833468238186e-05,
+            "vv_x": -0.0037148099141747822,
+            "div_vv_x": -1.489632719787965e-05
+          },
+          "fit_rel_resid": 0.15689597967644142
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.13351597609539434,
+            "P2": 0.1431127571374636,
+            "P3": 0.1644247381822686,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.15597952061803005,
+            "v2": -0.23863690093198417
+          },
+          "fit_rel_resid": 0.1653630652849751
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2",
+          "v_x",
+          "v_xx",
+          "vv_x"
+        ],
+        "coefficients": {
+          "v": 0.1426877780811597,
+          "v2": -0.2219475218654501,
+          "v_x": 0.0051855720681581756,
+          "v_xx": 3.719548213522158e-05,
+          "vv_x": -0.003948787923330817,
+          "div_vv_x": -1.519984547355054e-05
+        },
+        "fit_rel_resid": 0.1891578061912913,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.20094
+          },
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.18901
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.1976
+          },
+          {
+            "drop": "v_x",
+            "add": "const",
+            "resid": 0.19597
+          },
+          {
+            "drop": "v_xx",
+            "add": "const",
+            "resid": 0.19777
+          },
+          {
+            "drop": "vv_x",
+            "add": "const",
+            "resid": 0.20104
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-006",
+      "side": "Front",
+      "fps": 145.0,
+      "flash_frame": 4,
+      "T_amb_C": 24.869,
+      "n_t": 217,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.5087950276373253,
+            "P2": 0.1108072745006142,
+            "P3": 0.11291189749192085,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x"
+          ],
+          "coefficients": {
+            "v": 0.21276822366136,
+            "v2": -0.19232672549821547,
+            "v_x": -0.007692550969464763
+          },
+          "fit_rel_resid": 0.12536009014372493
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.4520670883259364,
+            "P2": 0.10252625859848243,
+            "P3": 0.10615218459587382,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": 0.19803008419653712,
+            "v2": -0.17564304335393593,
+            "v_x": -0.02550692146464263,
+            "vv_x": 0.011174568651335648
+          },
+          "fit_rel_resid": 0.10587663382871464
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.40132847593560383,
+            "P2": 0.11552333899403137,
+            "P3": 0.13947342316437758,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x"
+          ],
+          "coefficients": {
+            "v": 0.17423984098492487,
+            "v2": -0.16355159461576618,
+            "v_x": -0.005386848886876394
+          },
+          "fit_rel_resid": 0.1198323425799685
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.39736574099834937,
+            "P2": 0.12410027576824272,
+            "P3": 0.12575790910474127,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x"
+          ],
+          "coefficients": {
+            "v": 0.17260347877037824,
+            "v2": -0.1751406259924996,
+            "v_x": -0.005623171679552421
+          },
+          "fit_rel_resid": 0.12732224728220767
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.3506357784560497,
+            "P2": 0.11034614197793628,
+            "P3": 0.12937677823080873,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.16005738285636695,
+            "v2": -0.18892441445041622
+          },
+          "fit_rel_resid": 0.12482591825965283
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.13455933346297422,
+          "v2": -0.14920586305918654
+        },
+        "fit_rel_resid": 0.19691017535900254,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.20206
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.27009
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.272
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.26881
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.2715
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.22376
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-007",
+      "side": "Back",
+      "fps": 120.0,
+      "flash_frame": 4,
+      "T_amb_C": 24.106,
+      "n_t": 180,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.3323020772347511,
+            "P2": 0.08095013187891266,
+            "P3": 0.09110842200102262,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.1418473905271928,
+            "v2": -0.24702696703999352
+          },
+          "fit_rel_resid": 0.08555855634965256
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.314295019049981,
+            "P2": 0.0772485810032269,
+            "P3": 0.08159719762979573,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.14150444342224533,
+            "v2": -0.23061788421495022
+          },
+          "fit_rel_resid": 0.08323890397700869
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.30820753013406627,
+            "P2": 0.08826061754113258,
+            "P3": 0.09767065745678195,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.14934419419634348,
+            "v2": -0.2313132113234379
+          },
+          "fit_rel_resid": 0.088938651239354
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.3395232445242404,
+            "P2": 0.08749978442996854,
+            "P3": 0.08867968284085488,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": 0.16009777626982097,
+            "v2": -0.2463130820121791,
+            "v_xx": 0.00011516964802349845,
+            "div_vv_x": -0.00014318536447401257
+          },
+          "fit_rel_resid": 0.09390597346267263
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.3302116371386287,
+            "P2": 0.10421526097164625,
+            "P3": 0.1098941996021289,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.14860506983089805,
+            "v2": -0.2530858825292499
+          },
+          "fit_rel_resid": 0.11340334627627019
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2",
+          "v_xx"
+        ],
+        "coefficients": {
+          "v": 0.14055124876854716,
+          "v2": -0.23471838491474759,
+          "v_xx": 7.605631836127418e-05,
+          "div_vv_x": -9.185201972656313e-05
+        },
+        "fit_rel_resid": 0.11636889835341148,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.11765
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v_x",
+            "resid": 0.11706
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "vv_x",
+            "resid": 0.1172
+          },
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.1175
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.19722
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.19724
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.13249
+          },
+          {
+            "drop": "v_xx",
+            "add": "const",
+            "resid": 0.11708
+          },
+          {
+            "drop": "v_xx",
+            "add": "v_x",
+            "resid": 0.1165
+          },
+          {
+            "drop": "v_xx",
+            "add": "vv_x",
+            "resid": 0.11663
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-007",
+      "side": "Front",
+      "fps": 145.0,
+      "flash_frame": 5,
+      "T_amb_C": 24.734,
+      "n_t": 217,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.429520026288901,
+            "P2": 0.1000660487739644,
+            "P3": 0.1013734390839817,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.1546927458411673,
+            "v2": -0.20329680203998646
+          },
+          "fit_rel_resid": 0.10316281879363386
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.4505387325720077,
+            "P2": 0.09920752965610674,
+            "P3": 0.10782116279465671,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.1757150031090976,
+            "v2": -0.2208019454480249
+          },
+          "fit_rel_resid": 0.10042834598243829
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.2094978973878589,
+            "P2": 0.09791317081359305,
+            "P3": 0.10638492724204092,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.17614115810294065,
+            "v2": -0.22692810988063689
+          },
+          "fit_rel_resid": 0.107308077508903
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.33942872466896024,
+            "P2": 0.08364125832893292,
+            "P3": 0.07795886349212884,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.1762925966834145,
+            "v2": -0.24625272521909425
+          },
+          "fit_rel_resid": 0.10756016936724072
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.34667576206785206,
+            "P2": 0.09517393047812912,
+            "P3": 0.12401641512257601,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x"
+          ],
+          "coefficients": {
+            "v": 0.1712369635461966,
+            "v2": -0.2764391954782435,
+            "v_x": 0.004553258549027773
+          },
+          "fit_rel_resid": 0.09851021337207741
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.12053326998189372,
+          "v2": -0.19060935639524848
+        },
+        "fit_rel_resid": 0.20273089530775848,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.20678
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.26035
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.26054
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.2602
+          },
+          {
+            "drop": "v",
+            "add": "div_vv_x",
+            "resid": 0.26035
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.2271
+          },
+          {
+            "drop": "v2",
+            "add": "v_x",
+            "resid": 0.39221
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.39167
+          },
+          {
+            "drop": "v2",
+            "add": "vv_x",
+            "resid": 0.39214
+          },
+          {
+            "drop": "v2",
+            "add": "div_vv_x",
+            "resid": 0.38965
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-008",
+      "side": "Back",
+      "fps": 120.0,
+      "flash_frame": 4,
+      "T_amb_C": 24.089,
+      "n_t": 180,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.14509909245621824,
+            "P2": 0.08897930557918689,
+            "P3": 0.10615673147366418,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.15872319267878693,
+            "v2": -0.2649539557523192,
+            "div_vv_x": -1.8497174306766126e-05
+          },
+          "fit_rel_resid": 0.09188572432243329
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.16123890549722247,
+            "P2": 0.08456938935088995,
+            "P3": 0.08896978531216025,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": 0.16429319095772052,
+            "v2": -0.24766811048230497,
+            "v_xx": 4.7081352397081844e-05,
+            "div_vv_x": -5.81108559080728e-05
+          },
+          "fit_rel_resid": 0.08717102112822141
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.15756735613761996,
+            "P2": 0.09366396719804927,
+            "P3": 0.09981236149483566,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.15648873572221228,
+            "v2": -0.23756008139926768
+          },
+          "fit_rel_resid": 0.099235085341738
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.15943265858778957,
+            "P2": 0.09830401795869871,
+            "P3": 0.08116483937158014,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.15386695916951504,
+            "v2": -0.23988477180560355,
+            "div_vv_x": -2.2822055536771626e-05
+          },
+          "fit_rel_resid": 0.10386595590064836
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.14914816576010714,
+            "P2": 0.13139985952409605,
+            "P3": 0.10853695486720107,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_x"
+          ],
+          "coefficients": {
+            "v": 0.16449499024912886,
+            "v2": -0.26200626802175636,
+            "v_x": -0.0024367063797890577
+          },
+          "fit_rel_resid": 0.13823156948626533
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.14667011814381373,
+          "v2": -0.2383420672450688,
+          "div_vv_x": -1.9538738610647546e-05
+        },
+        "fit_rel_resid": 0.1286119229093412,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.13374
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v_x",
+            "resid": 0.1333
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v_xx",
+            "resid": 0.1293
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "vv_x",
+            "resid": 0.1334
+          },
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.13105
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.22237
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.22151
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.22224
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.14903
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    },
+    {
+      "sequence": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "material": "GFRP",
+      "plate": "GFRP-008",
+      "side": "Front",
+      "fps": 145.0,
+      "flash_frame": 5,
+      "T_amb_C": 24.582,
+      "n_t": 217,
+      "n_x": 432,
+      "per_cut": {
+        "row128": {
+          "preflight": {
+            "P1": 0.14850867188330202,
+            "P2": 0.13243466024136125,
+            "P3": 0.1378418804103749,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.14155274738108178,
+            "v2": -0.20390509555851685,
+            "div_vv_x": -3.365673063171935e-05
+          },
+          "fit_rel_resid": 0.13375723587835395
+        },
+        "row192": {
+          "preflight": {
+            "P1": 0.14602219066253191,
+            "P2": 0.10807602599099028,
+            "P3": 0.10234555952946901,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": 0.16130572753455588,
+            "v2": -0.2155444587619451,
+            "v_xx": -3.435985913870327e-05
+          },
+          "fit_rel_resid": 0.10148532744062762
+        },
+        "row256": {
+          "preflight": {
+            "P1": 0.14930170186708588,
+            "P2": 0.1237497383227008,
+            "P3": 0.13608130090116652,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.1503586970701691,
+            "v2": -0.21216227048356237,
+            "div_vv_x": -4.2361133348439465e-05
+          },
+          "fit_rel_resid": 0.1167010656412729
+        },
+        "row320": {
+          "preflight": {
+            "P1": 0.14731202806388766,
+            "P2": 0.10633048824468244,
+            "P3": 0.10654989133598776,
+            "open": false
+          },
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.14983184323419985,
+            "v2": -0.23216471738585273,
+            "div_vv_x": -3.8421384819086844e-05
+          },
+          "fit_rel_resid": 0.09827475124393191
+        },
+        "row384": {
+          "preflight": {
+            "P1": 0.1354912602824485,
+            "P2": 0.11636919043256859,
+            "P3": 0.13902602412976403,
+            "open": false
+          },
+          "support": [
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": 0.12617840343646045,
+            "v2": -0.2514861155325032
+          },
+          "fit_rel_resid": 0.13508431165523818
+        }
+      },
+      "preflight_open_majority": false,
+      "pooled": {
+        "support": [
+          "div_vv_x",
+          "v",
+          "v2"
+        ],
+        "coefficients": {
+          "v": 0.09907037205256551,
+          "v2": -0.18069068196988694,
+          "div_vv_x": -3.140248975523536e-05
+        },
+        "fit_rel_resid": 0.21015191537400657,
+        "gate_pass": false
+      },
+      "swap": {
+        "alternatives_within_2x": [
+          {
+            "drop": "div_vv_x",
+            "add": "const",
+            "resid": 0.21606
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v_x",
+            "resid": 0.21973
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "v_xx",
+            "resid": 0.21093
+          },
+          {
+            "drop": "div_vv_x",
+            "add": "vv_x",
+            "resid": 0.21966
+          },
+          {
+            "drop": "v",
+            "add": "const",
+            "resid": 0.21365
+          },
+          {
+            "drop": "v",
+            "add": "v_x",
+            "resid": 0.24871
+          },
+          {
+            "drop": "v",
+            "add": "v_xx",
+            "resid": 0.24911
+          },
+          {
+            "drop": "v",
+            "add": "vv_x",
+            "resid": 0.24852
+          },
+          {
+            "drop": "v2",
+            "add": "const",
+            "resid": 0.23357
+          },
+          {
+            "drop": "v2",
+            "add": "v_x",
+            "resid": 0.37203
+          },
+          {
+            "drop": "v2",
+            "add": "v_xx",
+            "resid": 0.37184
+          },
+          {
+            "drop": "v2",
+            "add": "vv_x",
+            "resid": 0.37173
+          }
+        ],
+        "not_identifiable": true
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0,
+        "detail": []
+      }
+    }
+  ],
+  "transfer": [
+    {
+      "from": "CFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "CFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.94536,
+      "pass": false
+    },
+    {
+      "from": "CFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "CFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.74082,
+      "pass": false
+    },
+    {
+      "from": "CFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "CFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.76006,
+      "pass": false
+    },
+    {
+      "from": "CFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "CFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 1.11659,
+      "pass": false
+    },
+    {
+      "from": "CFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "CFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 1.03372,
+      "pass": false
+    },
+    {
+      "from": "CFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "CFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.52043,
+      "pass": false
+    },
+    {
+      "from": "CFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "CFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.57732,
+      "pass": false
+    },
+    {
+      "from": "CFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "CFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.63045,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.16044,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.25314,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.1762,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.25917,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.65569,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.54571,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.66473,
+      "pass": false
+    },
+    {
+      "from": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.59465,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 2.65264,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 1.10697,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.13177,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.30119,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.42815,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.69462,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.25195,
+      "pass": false
+    },
+    {
+      "from": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.23136,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 1.09621,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 1.11444,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.1183,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-120Hz_s-Back_Img-2000.zip",
+      "to": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.33555,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-006_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 1.27469,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-006_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.7159,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-007_facq-120Hz_s-Back_Img-2000.zip",
+      "resid": 0.21336,
+      "pass": false
+    },
+    {
+      "from": "GFRP-008_facq-145Hz_s-Front_Img-2000.zip",
+      "to": "GFRP-007_facq-145Hz_s-Front_Img-2000.zip",
+      "resid": 0.21343,
+      "pass": false
+    }
+  ],
+  "prereg_verdicts": {
+    "R_P1_preflight": {
+      "n_open": 0,
+      "n": 10
+    },
+    "R_S1_support_exact": {
+      "n": 0,
+      "of_gated": 0,
+      "of_total": 10
+    },
+    "R_S2_signs_physical": {
+      "all": false,
+      "n_checked": 0
+    },
+    "R_T1_transfer": {
+      "pass": 0,
+      "n": 32
+    },
+    "R_N1_nulls": {
+      "fd": 0,
+      "n": 100
+    },
+    "R_I1_identifiable": {
+      "n": 0,
+      "of_gated": 0
+    },
+    "R_M1_alpha_by_material": {}
+  },
+  "final_verdict": "REJECTED",
+  "elapsed_s": 556.37
+}

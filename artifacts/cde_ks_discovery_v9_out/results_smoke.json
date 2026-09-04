@@ -1,0 +1,115 @@
+{
+  "run": "CDE_KS_DISCOVERY_V9",
+  "seed": 7,
+  "smoke": true,
+  "protocol": {
+    "frozen_from": "CDE_PDE_DISCOVERY_V8 v1.1",
+    "terms": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x",
+      "u_xxxx"
+    ],
+    "library_extension": "u_xxxx (dichiarata upfront, validata dal track D4)"
+  },
+  "track_D4": {
+    "configs": {
+      "trig_mix/bump/D4_uxxxx/trapezoid": {
+        "best_rel_err": 6.257112407793211e-05,
+        "empirical_order": 7.883245957423841,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          3.487875302956286,
+          0.07070121006694172,
+          6.257112407793211e-05
+        ],
+        "Ns": [
+          65,
+          129,
+          257
+        ]
+      },
+      "trig_mix/bump/D4_uxxxx/simpson": {
+        "best_rel_err": 0.023483641856873787,
+        "empirical_order": 3.9388226109815236,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          5.522973449474666,
+          1.0683568208961685,
+          0.023483641856873787
+        ],
+        "Ns": [
+          65,
+          129,
+          257
+        ]
+      },
+      "gaussian/bump/D4_uxxxx/trapezoid": {
+        "best_rel_err": 8.287498653996296e-07,
+        "empirical_order": 8.75840442407684,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          0.15542052172191143,
+          0.0030722580999257877,
+          8.287498653996296e-07
+        ],
+        "Ns": [
+          65,
+          129,
+          257
+        ]
+      },
+      "gaussian/bump/D4_uxxxx/simpson": {
+        "best_rel_err": 0.0010229810334880245,
+        "empirical_order": 4.223686393282096,
+        "theoretical_order": 4.0,
+        "monotone_decreasing": true,
+        "pass": true,
+        "rel_errs": [
+          0.3570920447051908,
+          0.04771049644073636,
+          0.0010229810334880245
+        ],
+        "Ns": [
+          65,
+          129,
+          257
+        ]
+      }
+    },
+    "d4phi_check": {
+      "max_rel_err_vs_fd": 1.1201413624004486e-06,
+      "pass": true
+    },
+    "gate_pass": true
+  },
+  "ks": {
+    "r_GT_preflight": 1.900452592878672,
+    "preflight_open": false,
+    "true_coeffs": {
+      "uu_x": -1.0,
+      "u_xx": -1.0,
+      "u_xxxx": -1.0
+    },
+    "K_windows": 60,
+    "grid": {
+      "Nx": 512,
+      "Nt": 161,
+      "L": 100.53096491487338,
+      "u_std": 1.2736598132208767
+    },
+    "sigma": {},
+    "skipped": "pre-flight r_GT non superato"
+  },
+  "elapsed_s": 1.14
+}

@@ -1,0 +1,672 @@
+{
+  "run": "CDE_BLIND_PDE_RUNNER_V0",
+  "data": "2026-08-24",
+  "commit": "a285c9f5",
+  "python": "3.13.10",
+  "numpy": "2.5.1",
+  "parametri_congelati": {
+    "TERMS": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x"
+    ],
+    "wx": 1.0,
+    "wt": 0.3,
+    "K": 200,
+    "GATE_P1": 0.05,
+    "GATE_P2": 0.05,
+    "GATE_P3": 0.05,
+    "GATE_FIT": 0.05,
+    "GATE_TRANSFER": 0.05,
+    "FATTORE_IDENT": 2.0,
+    "SEME_CENTRI": 4242,
+    "STAB_B": 100,
+    "STAB_FRAC": 0.6,
+    "STAB_FREQ": 0.8,
+    "LAM_GRID": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ]
+  },
+  "casi": [
+    {
+      "case_id": "case_01",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.02794702,
+        "P2_famiglie": 4.06e-05,
+        "P3_holdout": 3.235e-05
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u_x": -0.69999427,
+        "u_xx": 0.0399989
+      },
+      "resid_fit": 3.974e-05,
+      "resid_transfer": 2.097e-05,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.95
+    },
+    {
+      "case_id": "case_02",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00858365,
+        "P2_famiglie": 0.00079931,
+        "P3_holdout": 0.000727
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u_x": -0.7000563,
+        "u_xx": 0.04002936
+      },
+      "resid_fit": 0.00073698,
+      "resid_transfer": 0.00093121,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.77
+    },
+    {
+      "case_id": "case_03",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00969603,
+        "P2_famiglie": 5.019e-05,
+        "P3_holdout": 5.135e-05
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 1.0
+      },
+      "supporto": [
+        "u",
+        "u_xx",
+        "uu_x"
+      ],
+      "coefficienti": {
+        "u": -0.29998357,
+        "u_xx": 0.06000571,
+        "uu_x": -1.00000537
+      },
+      "resid_fit": 4.451e-05,
+      "resid_transfer": 6.676e-05,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.76
+    },
+    {
+      "case_id": "case_04",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.01685505,
+        "P2_famiglie": 0.00335394,
+        "P3_holdout": 0.00279216
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 1.0,
+        "u^3": 1.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u^2",
+        "u^3",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u^2": 0.79981822,
+        "u^3": -0.80009553,
+        "u_xx": 0.04996789
+      },
+      "resid_fit": 0.00282268,
+      "resid_transfer": 0.0024075,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.7
+    },
+    {
+      "case_id": "case_05",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.0145122,
+        "P2_famiglie": 0.00221813,
+        "P3_holdout": 0.00178618
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 0.0,
+        "u_xxx": 1.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x",
+        "u_xxx"
+      ],
+      "coefficienti": {
+        "u_x": -0.49972482,
+        "u_xxx": -0.02994799
+      },
+      "resid_fit": 0.00217669,
+      "resid_transfer": 0.00388152,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.85
+    },
+    {
+      "case_id": "case_06",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.02035105,
+        "P2_famiglie": 0.00724548,
+        "P3_holdout": 0.00731713
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 0.0,
+        "u^3": 1.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u",
+        "u^3",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u": 1.20138415,
+        "u^3": -1.20074918,
+        "u_xx": 0.0500441
+      },
+      "resid_fit": 0.00646482,
+      "resid_transfer": 0.00619393,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 21.38
+    },
+    {
+      "case_id": "case_07",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.02319619,
+        "P2_famiglie": 0.00027246,
+        "P3_holdout": 0.00025084
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u_xx": 0.09998971
+      },
+      "resid_fit": 0.00025287,
+      "resid_transfer": 0.00017699,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.68
+    },
+    {
+      "case_id": "case_08",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.06800875,
+        "P2_famiglie": 0.00293957,
+        "P3_holdout": 0.00208589
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura"
+      ],
+      "wall_s": 13.39
+    },
+    {
+      "case_id": "case_09",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.0060998,
+        "P2_famiglie": 0.00200227,
+        "P3_holdout": 0.00206898
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 1.0,
+        "uu_x": 1.0
+      },
+      "supporto": [
+        "u_xx",
+        "u_xxx",
+        "uu_x"
+      ],
+      "coefficienti": {
+        "u_xx": 0.02000148,
+        "u_xxx": -0.00999485,
+        "uu_x": -0.99992921
+      },
+      "resid_fit": 0.00206528,
+      "resid_transfer": 0.00187644,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.67
+    },
+    {
+      "case_id": "case_10",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.01070813,
+        "P2_famiglie": 0.00350338,
+        "P3_holdout": 0.00308947
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 0.0,
+        "u^3": 1.0,
+        "u_x": 1.0,
+        "u_xx": 0.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u",
+        "u^3",
+        "u_x"
+      ],
+      "coefficienti": {
+        "u": 0.90122744,
+        "u^3": -0.90090426,
+        "u_x": -0.40029193
+      },
+      "resid_fit": 0.00296945,
+      "resid_transfer": 0.00276009,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 20.05
+    },
+    {
+      "case_id": "case_11",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00454212,
+        "P2_famiglie": 2.985e-05,
+        "P3_holdout": 3.917e-05
+      },
+      "frequenze": {
+        "u": 0.08,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 0.08,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x"
+      ],
+      "coefficienti": {
+        "u_x": -0.37999895
+      },
+      "resid_fit": 3.021e-05,
+      "resid_transfer": 3.654e-05,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.78
+    },
+    {
+      "case_id": "case_12",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.05555212,
+        "P2_famiglie": 0.00010025,
+        "P3_holdout": 0.00010745
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura"
+      ],
+      "wall_s": 13.24
+    },
+    {
+      "case_id": "case_13",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00682003,
+        "P2_famiglie": 8.218e-05,
+        "P3_holdout": 7.353e-05
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 0.0,
+        "u_xx": 0.39,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u"
+      ],
+      "coefficienti": {
+        "u": -0.27999898
+      },
+      "resid_fit": 8.236e-05,
+      "resid_transfer": 8.217e-05,
+      "identificabile": false,
+      "alternative_entro_fattore": [
+        {
+          "supporto": [
+            "u_xx"
+          ],
+          "resid": 8.5e-05,
+          "coefficienti": {
+            "u_xx": 0.031113
+          }
+        }
+      ],
+      "decisione": "NOT_IDENTIFIABLE",
+      "wall_s": 19.92
+    },
+    {
+      "case_id": "case_14",
+      "Nx": 512,
+      "Nt": 81,
+      "preflight": {
+        "P1_quadratura": 0.37834146,
+        "P2_famiglie": 0.99157468,
+        "P3_holdout": 1.01530101
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura",
+        "P2_famiglie",
+        "P3_holdout"
+      ],
+      "wall_s": 1.55
+    },
+    {
+      "case_id": "case_15",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.01755017,
+        "P2_famiglie": 0.9314074,
+        "P3_holdout": 0.94927147
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P2_famiglie",
+        "P3_holdout"
+      ],
+      "wall_s": 13.31
+    },
+    {
+      "case_id": "case_16",
+      "Nx": 512,
+      "Nt": 81,
+      "preflight": {
+        "P1_quadratura": 0.29267457,
+        "P2_famiglie": 1.82464422,
+        "P3_holdout": 1.05857354
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura",
+        "P2_famiglie",
+        "P3_holdout"
+      ],
+      "wall_s": 1.57
+    },
+    {
+      "case_id": "case_17",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00695101,
+        "P2_famiglie": 0.00513197,
+        "P3_holdout": 0.00466572
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 0.0,
+        "u^3": 1.0,
+        "u_x": 0.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u",
+        "u^3",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u": 0.58531658,
+        "u^3": -0.08229218,
+        "u_xx": 0.04971881
+      },
+      "resid_fit": 0.00461901,
+      "resid_transfer": 0.00508093,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.76
+    },
+    {
+      "case_id": "case_18",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.0071844,
+        "P2_famiglie": 0.03375416,
+        "P3_holdout": 0.02416643
+      },
+      "frequenze": {
+        "u": 1.0,
+        "u^2": 1.0,
+        "u^3": 1.0,
+        "u_x": 1.0,
+        "u_xx": 1.0,
+        "u_xxx": 1.0,
+        "uu_x": 1.0
+      },
+      "supporto": [
+        "u",
+        "u^2",
+        "u^3",
+        "u_x",
+        "u_xx",
+        "u_xxx",
+        "uu_x"
+      ],
+      "coefficienti": {
+        "u": 0.04605212,
+        "u^2": 0.02480706,
+        "u^3": -0.05197946,
+        "u_x": 0.01295322,
+        "u_xx": 0.07266384,
+        "u_xxx": 0.00385305,
+        "uu_x": 0.10514972
+      },
+      "resid_fit": 0.01983496,
+      "resid_transfer": 0.77004929,
+      "decisione": "ABSTAIN_TRANSFER",
+      "wall_s": 19.9
+    },
+    {
+      "case_id": "case_19",
+      "Nx": 64,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.31191323,
+        "P2_famiglie": 2.04148734,
+        "P3_holdout": 0.49272876
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura",
+        "P2_famiglie",
+        "P3_holdout"
+      ],
+      "wall_s": 19.39
+    },
+    {
+      "case_id": "case_20",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.06506527,
+        "P2_famiglie": 0.03440176,
+        "P3_holdout": 0.0274676
+      },
+      "decisione": "ABSTAIN_PREFLIGHT",
+      "cancelli_chiusi": [
+        "P1_quadratura"
+      ],
+      "wall_s": 13.34
+    },
+    {
+      "case_id": "case_21",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.01957839,
+        "P2_famiglie": 9.415e-05,
+        "P3_holdout": 8.633e-05
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u_x": -0.24999903,
+        "u_xx": 0.06999612
+      },
+      "resid_fit": 9.225e-05,
+      "resid_transfer": 6.115e-05,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.83
+    },
+    {
+      "case_id": "case_22",
+      "Nx": 512,
+      "Nt": 401,
+      "preflight": {
+        "P1_quadratura": 0.00972846,
+        "P2_famiglie": 0.00208206,
+        "P3_holdout": 0.00154109
+      },
+      "frequenze": {
+        "u": 0.0,
+        "u^2": 0.0,
+        "u^3": 0.0,
+        "u_x": 1.0,
+        "u_xx": 1.0,
+        "u_xxx": 0.0,
+        "uu_x": 0.0
+      },
+      "supporto": [
+        "u_x",
+        "u_xx"
+      ],
+      "coefficienti": {
+        "u_x": -0.2500561,
+        "u_xx": 0.06994422
+      },
+      "resid_fit": 0.0018864,
+      "resid_transfer": 0.00204368,
+      "identificabile": true,
+      "alternative_entro_fattore": [],
+      "decisione": "CLAIM",
+      "wall_s": 19.93
+    }
+  ],
+  "elapsed_s": 374.7
+}

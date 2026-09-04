@@ -1,0 +1,924 @@
+{
+  "run": "CDE_BLIND_PDE2_SCORER_V0",
+  "data": "2026-08-24",
+  "commit": "38eb97e5",
+  "python": "3.13.10",
+  "numpy": "2.5.1",
+  "audit_cecita": {
+    "riferimenti_sospetti_nel_risolutore": [],
+    "risolutore_cieco": true,
+    "sha256_verita_atteso": "793f77cd26199f22663e21da19fd78929a0d6e0f9263f3c5f541daa1387564c4",
+    "sha256_verita_attuale": "793f77cd26199f22663e21da19fd78929a0d6e0f9263f3c5f541daa1387564c4",
+    "sigillo_intatto": true,
+    "sha256_risolutore": "df6071bb124d13c27ac623763d2a195cead0cbf4a9ecdfda3bfa3d8dbceb0d32",
+    "sha256_generatore": "b187ca4530559fed8256a6bf7d511cbfd3b0add9f2db7829ba60d9f1fda9f69f"
+  },
+  "per_braccio": {
+    "baseline": {
+      "recuperi_corretti": 12,
+      "recuperabili": 12,
+      "falsi_positivi": 4,
+      "flag_identificabilita": 2,
+      "non_identificabili": 4,
+      "astensioni_corrette": 3,
+      "astensioni_attese": 6,
+      "decoy_mantenuti": 2,
+      "decoy": 2
+    },
+    "corretto": {
+      "recuperi_corretti": 12,
+      "recuperabili": 12,
+      "falsi_positivi": 0,
+      "flag_identificabilita": 4,
+      "non_identificabili": 4,
+      "astensioni_corrette": 6,
+      "astensioni_attese": 6,
+      "decoy_mantenuti": 2,
+      "decoy": 2
+    }
+  },
+  "discordanze": [
+    {
+      "case_id": "case_11",
+      "famiglia": "NON_IDENTIFICABILE",
+      "baseline": "CLAIM",
+      "corretto": "NOT_IDENTIFIABLE",
+      "baseline_corretto": false,
+      "corretto_corretto": true
+    },
+    {
+      "case_id": "case_13",
+      "famiglia": "NON_IDENTIFICABILE",
+      "baseline": "ABSTAIN_SUPPORTO_VUOTO",
+      "corretto": "NOT_IDENTIFIABLE",
+      "baseline_corretto": true,
+      "corretto_corretto": true
+    },
+    {
+      "case_id": "case_17",
+      "famiglia": "SURROGATO",
+      "baseline": "CLAIM",
+      "corretto": "ABSTAIN_AMPIEZZA",
+      "baseline_corretto": false,
+      "corretto_corretto": true
+    },
+    {
+      "case_id": "case_18",
+      "famiglia": "SURROGATO",
+      "baseline": "CLAIM",
+      "corretto": "ABSTAIN_AMPIEZZA",
+      "baseline_corretto": false,
+      "corretto_corretto": true
+    },
+    {
+      "case_id": "case_19",
+      "famiglia": "SURROGATO",
+      "baseline": "CLAIM",
+      "corretto": "ABSTAIN_AMPIEZZA",
+      "baseline_corretto": false,
+      "corretto_corretto": true
+    }
+  ],
+  "cancelli": {
+    "H1_primario": true,
+    "H2_chiusura": true,
+    "H3_costo_decoy": true
+  },
+  "verdetto": "PASS",
+  "dettaglio": {
+    "baseline": [
+      {
+        "case_id": "case_01",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 1.656e-05,
+          "resid_transfer": 1.973e-05,
+          "resid_ampiezza": 2.024e-05,
+          "max_corr": 0.92322525,
+          "err_coef_rel_max": 1.1e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_02",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_xx",
+            "uu_x"
+          ],
+          "resid_fit": 0.00140161,
+          "resid_transfer": 0.00295246,
+          "resid_ampiezza": 0.00106661,
+          "max_corr": 0.94592281,
+          "err_coef_rel_max": 0.000387,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_03",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_x",
+            "u_xx"
+          ],
+          "resid_fit": 2.312e-05,
+          "resid_transfer": 2.382e-05,
+          "resid_ampiezza": 2.999e-05,
+          "max_corr": 0.94034285,
+          "err_coef_rel_max": 5.7e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_04",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "resid_fit": 0.00102707,
+          "resid_transfer": 0.00092051,
+          "resid_ampiezza": 0.00148059,
+          "max_corr": 0.98993827,
+          "err_coef_rel_max": 0.000215,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_05",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_xx",
+            "u_xxx",
+            "uu_x"
+          ],
+          "resid_fit": 0.0015106,
+          "resid_transfer": 0.00184846,
+          "resid_ampiezza": 0.00132279,
+          "max_corr": 0.93733259,
+          "err_coef_rel_max": 0.000268,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_06",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 8.236e-05,
+          "resid_transfer": 0.0001006,
+          "resid_ampiezza": 4.14e-05,
+          "max_corr": 0.95189274,
+          "err_coef_rel_max": 1.6e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_07",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_x",
+            "u_xxx"
+          ],
+          "resid_fit": 0.00028099,
+          "resid_transfer": 0.0002755,
+          "resid_ampiezza": 0.0003206,
+          "max_corr": 0.95581435,
+          "err_coef_rel_max": 0.000438,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_08",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u^2",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00193721,
+          "resid_transfer": 0.00382042,
+          "resid_ampiezza": 0.00450714,
+          "max_corr": 0.91790363,
+          "err_coef_rel_max": 0.001334,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_09",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_x",
+            "u_xx",
+            "uu_x"
+          ],
+          "resid_fit": 3.229e-05,
+          "resid_transfer": 3.077e-05,
+          "resid_ampiezza": 3.057e-05,
+          "max_corr": 0.94036938,
+          "err_coef_rel_max": 1.6e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_10",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00308535,
+          "resid_transfer": 0.00391312,
+          "resid_ampiezza": 0.00913057,
+          "max_corr": 0.96639515,
+          "err_coef_rel_max": 0.00037,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_11",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_x"
+          ],
+          "resid_fit": 2.871e-05,
+          "resid_transfer": 2.955e-05,
+          "resid_ampiezza": 2.542e-05,
+          "max_corr": 1.0,
+          "corretto": false,
+          "falso_positivo": true,
+          "flag_identificabilita": false,
+          "vincolo": {
+            "valore_stimato": -0.519996,
+            "valore_atteso": -0.52,
+            "sul_vincolo": true
+          },
+          "modo_fallimento": "ha affermato un membro della famiglia degenere"
+        }
+      },
+      {
+        "case_id": "case_12",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [
+            "u"
+          ],
+          "resid_fit": 0.00121285,
+          "resid_transfer": 0.00138509,
+          "resid_ampiezza": 0.00104474,
+          "max_corr": 0.99999973,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": {
+            "valore_stimato": 0.419978,
+            "valore_atteso": 0.42,
+            "sul_vincolo": true
+          }
+        }
+      },
+      {
+        "case_id": "case_13",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "ABSTAIN_SUPPORTO_VUOTO",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": 0.99999984,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": false,
+          "vincolo": null
+        }
+      },
+      {
+        "case_id": "case_14",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [
+            "u"
+          ],
+          "resid_fit": 0.00013254,
+          "resid_transfer": 0.00013184,
+          "resid_ampiezza": 0.00013361,
+          "max_corr": 1.0,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": {
+            "valore_stimato": 0.199998,
+            "valore_atteso": 0.2,
+            "sul_vincolo": true
+          }
+        }
+      },
+      {
+        "case_id": "case_15",
+        "famiglia": "DECOY",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 0.00010445,
+          "resid_transfer": 9.374e-05,
+          "resid_ampiezza": 0.00011729,
+          "max_corr": 0.99878562,
+          "err_coef_rel_max": 0.000749,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_16",
+        "famiglia": "DECOY",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 0.00012506,
+          "resid_transfer": 0.00011169,
+          "resid_ampiezza": 0.00010341,
+          "max_corr": 0.99987813,
+          "err_coef_rel_max": 0.001154,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_17",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00251901,
+          "resid_transfer": 0.00661525,
+          "resid_ampiezza": 0.06046867,
+          "max_corr": 0.95865395,
+          "corretto": false,
+          "falso_positivo": true,
+          "modo_fallimento": "ha affermato una legge dove non ce n'e'"
+        }
+      },
+      {
+        "case_id": "case_18",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00368546,
+          "resid_transfer": 0.00998211,
+          "resid_ampiezza": 0.28702349,
+          "max_corr": 0.92902182,
+          "corretto": false,
+          "falso_positivo": true,
+          "modo_fallimento": "ha affermato una legge dove non ce n'e'"
+        }
+      },
+      {
+        "case_id": "case_19",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00556314,
+          "resid_transfer": 0.02127819,
+          "resid_ampiezza": 0.38137876,
+          "max_corr": 0.98754192,
+          "corretto": false,
+          "falso_positivo": true,
+          "modo_fallimento": "ha affermato una legge dove non ce n'e'"
+        }
+      },
+      {
+        "case_id": "case_20",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_21",
+        "famiglia": "CONTROLLO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_22",
+        "famiglia": "CONTROLLO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      }
+    ],
+    "corretto": [
+      {
+        "case_id": "case_01",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 1.656e-05,
+          "resid_transfer": 1.973e-05,
+          "resid_ampiezza": 2.024e-05,
+          "max_corr": 0.92322525,
+          "err_coef_rel_max": 1.1e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_02",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_xx",
+            "uu_x"
+          ],
+          "resid_fit": 0.00140161,
+          "resid_transfer": 0.00295246,
+          "resid_ampiezza": 0.00106661,
+          "max_corr": 0.94592281,
+          "err_coef_rel_max": 0.000387,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_03",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_x",
+            "u_xx"
+          ],
+          "resid_fit": 2.312e-05,
+          "resid_transfer": 2.382e-05,
+          "resid_ampiezza": 2.999e-05,
+          "max_corr": 0.94034285,
+          "err_coef_rel_max": 5.7e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_04",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^2",
+            "u_xx"
+          ],
+          "resid_fit": 0.00102707,
+          "resid_transfer": 0.00092051,
+          "resid_ampiezza": 0.00148059,
+          "max_corr": 0.98993827,
+          "err_coef_rel_max": 0.000215,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_05",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_xx",
+            "u_xxx",
+            "uu_x"
+          ],
+          "resid_fit": 0.0015106,
+          "resid_transfer": 0.00184846,
+          "resid_ampiezza": 0.00132279,
+          "max_corr": 0.93733259,
+          "err_coef_rel_max": 0.000268,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_06",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 8.236e-05,
+          "resid_transfer": 0.0001006,
+          "resid_ampiezza": 4.14e-05,
+          "max_corr": 0.95189274,
+          "err_coef_rel_max": 1.6e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_07",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_x",
+            "u_xxx"
+          ],
+          "resid_fit": 0.00028099,
+          "resid_transfer": 0.0002755,
+          "resid_ampiezza": 0.0003206,
+          "max_corr": 0.95581435,
+          "err_coef_rel_max": 0.000438,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_08",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u^2",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00193721,
+          "resid_transfer": 0.00382042,
+          "resid_ampiezza": 0.00450714,
+          "max_corr": 0.91790363,
+          "err_coef_rel_max": 0.001334,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_09",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u_x",
+            "u_xx",
+            "uu_x"
+          ],
+          "resid_fit": 3.229e-05,
+          "resid_transfer": 3.077e-05,
+          "resid_ampiezza": 3.057e-05,
+          "max_corr": 0.94036938,
+          "err_coef_rel_max": 1.6e-05,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_10",
+        "famiglia": "RECUPERABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00308535,
+          "resid_transfer": 0.00391312,
+          "resid_ampiezza": 0.00913057,
+          "max_corr": 0.96639515,
+          "err_coef_rel_max": 0.00037,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_11",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": 1.0,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": null
+        }
+      },
+      {
+        "case_id": "case_12",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.01,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": 0.99999973,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": null
+        }
+      },
+      {
+        "case_id": "case_13",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.02,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": 0.99999984,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": null
+        }
+      },
+      {
+        "case_id": "case_14",
+        "famiglia": "NON_IDENTIFICABILE",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "NOT_IDENTIFIABLE",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": 1.0,
+          "corretto": true,
+          "falso_positivo": false,
+          "flag_identificabilita": true,
+          "vincolo": null
+        }
+      },
+      {
+        "case_id": "case_15",
+        "famiglia": "DECOY",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 0.00010445,
+          "resid_transfer": 9.374e-05,
+          "resid_ampiezza": 0.00011729,
+          "max_corr": 0.99878562,
+          "err_coef_rel_max": 0.000749,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_16",
+        "famiglia": "DECOY",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "CLAIM",
+          "supporto_stimato": [
+            "u",
+            "u_xx"
+          ],
+          "resid_fit": 0.00012506,
+          "resid_transfer": 0.00011169,
+          "resid_ampiezza": 0.00010341,
+          "max_corr": 0.99987813,
+          "err_coef_rel_max": 0.001154,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_17",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_AMPIEZZA",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00251901,
+          "resid_transfer": 0.00661525,
+          "resid_ampiezza": 0.06046867,
+          "max_corr": 0.95865395,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_18",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_AMPIEZZA",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00368546,
+          "resid_transfer": 0.00998211,
+          "resid_ampiezza": 0.28702349,
+          "max_corr": 0.92902182,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_19",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_AMPIEZZA",
+          "supporto_stimato": [
+            "u",
+            "u^3",
+            "u_xx"
+          ],
+          "resid_fit": 0.00556314,
+          "resid_transfer": 0.02127819,
+          "resid_ampiezza": 0.38137876,
+          "max_corr": 0.98754192,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_20",
+        "famiglia": "SURROGATO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_21",
+        "famiglia": "CONTROLLO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      },
+      {
+        "case_id": "case_22",
+        "famiglia": "CONTROLLO",
+        "sigma": 0.0,
+        "esito": {
+          "decisione": "ABSTAIN_PREFLIGHT",
+          "supporto_stimato": [],
+          "resid_fit": null,
+          "resid_transfer": null,
+          "resid_ampiezza": null,
+          "max_corr": null,
+          "corretto": true,
+          "falso_positivo": false
+        }
+      }
+    ]
+  }
+}

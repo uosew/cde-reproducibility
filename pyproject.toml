@@ -1,0 +1,10 @@
+[project]
+name = "cde-reproducibility"
+version = "1.0.0"
+description = "Reproducibility package for 'Epistemically Gated Weak-Form Discovery of Nonlinear PDEs Under Noise': frozen code subset, committed artifacts, builders that regenerate every number and figure, and tests that gate publication."
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [{name = "Valentino Berardi-Montesi"}]
+dependencies = ["numpy>=2.3,<3", "scipy>=1.14", "matplotlib>=3.8"]
+[project.optional-dependencies]
+dev = ["pytest>=8"]

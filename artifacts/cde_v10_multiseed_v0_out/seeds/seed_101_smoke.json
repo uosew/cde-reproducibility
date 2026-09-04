@@ -1,0 +1,93 @@
+{
+ "seed": 101,
+ "sigmas": [
+  "0.0",
+  "0.01",
+  "0.02",
+  "0.05",
+  "0.1"
+ ],
+ "with_breakdown": false,
+ "systems": {
+  "allen_cahn": {
+   "r_GT_preflight": 0.002512650558646854,
+   "preflight_open": false,
+   "true_coeffs": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "K_windows": 60,
+   "grid": {
+    "Nx": 256,
+    "Nt": 801
+   },
+   "sigma": {},
+   "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+  },
+  "fisher_kpp": {
+   "r_GT_preflight": 0.002059954297064766,
+   "preflight_open": false,
+   "true_coeffs": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "K_windows": 60,
+   "grid": {
+    "Nx": 256,
+    "Nt": 601
+   },
+   "sigma": {},
+   "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+  },
+  "burgers": {
+   "r_GT_preflight": 0.004214555543354173,
+   "preflight_open": false,
+   "true_coeffs": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "K_windows": 60,
+   "grid": {
+    "Nx": 256,
+    "Nt": 801
+   },
+   "sigma": {},
+   "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+  },
+  "kdv": {
+   "r_GT_preflight": 0.1318126609464037,
+   "preflight_open": false,
+   "true_coeffs": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "K_windows": 60,
+   "grid": {
+    "Nx": 256,
+    "Nt": 401
+   },
+   "sigma": {},
+   "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+  },
+  "ks": {
+   "r_GT_preflight": 0.09167002499740019,
+   "preflight_open": false,
+   "true_coeffs": {
+    "uu_x": -1.0,
+    "u_xx": -1.0,
+    "u_xxxx": -1.0
+   },
+   "K_windows": 60,
+   "grid": {
+    "Nx": 512,
+    "Nt": 161,
+    "L": 100.53096491487338,
+    "u_std": 1.346890956796205
+   },
+   "sigma": {},
+   "skipped": "pre-flight r_GT non superato"
+  }
+ }
+}

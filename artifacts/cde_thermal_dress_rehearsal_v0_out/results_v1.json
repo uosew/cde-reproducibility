@@ -1,0 +1,366 @@
+{
+  "run": "CDE_THERMAL_DRESS_REHEARSAL_V0",
+  "variant": "v1",
+  "design": "EXPERIMENTAL_DESIGN_THERMAL_V0_2026_07_31.md (+ emendamento libreria)",
+  "synthetic_and_declared": true,
+  "camera_spec": {
+    "px": 160,
+    "hz": 5.0,
+    "noise_C": 0.3,
+    "drift_C": 0.2,
+    "quant_C": 0.1
+  },
+  "physics": {
+    "alpha": 9.7e-05,
+    "beta": 0.02,
+    "gamma_vardiff": 0.004
+  },
+  "terms": [
+    "const",
+    "v",
+    "v2",
+    "v_x",
+    "v_xx",
+    "vv_x",
+    "div_vv_x"
+  ],
+  "arms": {
+    "linear": {
+      "ics": {
+        "ic0": {
+          "support": [
+            "v",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.020305044362736002,
+            "v_x": 0.00047713529870463595,
+            "v_xx": 0.00010296215667231528,
+            "vv_x": -3.737210487741238e-05
+          },
+          "fit_rel_resid": 0.04107890106239527,
+          "preflight": {
+            "P1": 0.06547949194260962,
+            "P2": 0.05573905913182006,
+            "P3": 0.04161168046303879,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic1": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": -0.04281204350145916,
+            "v2": 0.00017309273970905206,
+            "div_vv_x": 1.5329918395574003e-06
+          },
+          "fit_rel_resid": 0.025126124865311048,
+          "preflight": {
+            "P1": 0.03973704874847687,
+            "P2": 0.026481289805638297,
+            "P3": 0.021355197663175268,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic2": {
+          "support": [
+            "v",
+            "v2",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.02255502195936309,
+            "v2": 0.00014541750010696098,
+            "v_xx": 9.793307289100428e-05
+          },
+          "fit_rel_resid": 0.042022402041961775,
+          "preflight": {
+            "P1": 0.05578080476230662,
+            "P2": 0.04696901654053738,
+            "P3": 0.04145240876222116,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic3": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.027316141202069703,
+            "v2": 6.887969368532458e-05,
+            "v_x": 0.0005117257162544159,
+            "v_xx": 4.980600526258533e-05,
+            "vv_x": -1.325350178583693e-05,
+            "div_vv_x": 1.0333825514666898e-06
+          },
+          "fit_rel_resid": 0.029039235799586654,
+          "preflight": {
+            "P1": 0.07475174982162006,
+            "P2": 0.040196716257663176,
+            "P3": 0.03774454637983179,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic4": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.02726827690653369,
+            "v2": 0.00027319792892044104,
+            "v_x": -0.0001849707957055613,
+            "v_xx": 5.994288136982532e-05,
+            "div_vv_x": 2.0738286668678335e-06
+          },
+          "fit_rel_resid": 0.03315095268257112,
+          "preflight": {
+            "P1": 0.05322933419807296,
+            "P2": 0.0421367585958815,
+            "P3": 0.03722837364662179,
+            "open": true
+          },
+          "support_true": false
+        }
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0
+      },
+      "transfer": {
+        "r": [
+          0.29325,
+          0.09999,
+          0.17482,
+          0.1441
+        ],
+        "all_pass": false
+      },
+      "swap_ic0": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v_x",
+            "add": "const",
+            "resid": 0.03964
+          },
+          {
+            "drop": "v_x",
+            "add": "v2",
+            "resid": 0.04199
+          },
+          {
+            "drop": "v_x",
+            "add": "div_vv_x",
+            "resid": 0.04542
+          },
+          {
+            "drop": "vv_x",
+            "add": "const",
+            "resid": 0.04051
+          },
+          {
+            "drop": "vv_x",
+            "add": "v2",
+            "resid": 0.04475
+          },
+          {
+            "drop": "vv_x",
+            "add": "div_vv_x",
+            "resid": 0.05099
+          }
+        ],
+        "not_identifiable": true
+      },
+      "ladder": {
+        "verdict": "REJECTED_TRANSFER",
+        "blocked_at": "transfer_gate",
+        "state": {
+          "operator_valid": true,
+          "numerical_preflight": true,
+          "support_stable": true,
+          "fit_gate": true,
+          "transfer_gate": false,
+          "identifiability_gate": false,
+          "replication": true
+        }
+      }
+    },
+    "vardiff": {
+      "ics": {
+        "ic0": {
+          "support": [
+            "v",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.020898634425175103,
+            "v_xx": 9.29606610996302e-05
+          },
+          "fit_rel_resid": 0.057940119753237936,
+          "preflight": {
+            "P1": 0.06869414165907241,
+            "P2": 0.05747639605987565,
+            "P3": 0.04303577207495744,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic1": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2"
+          ],
+          "coefficients": {
+            "v": -0.04399468195695964,
+            "v2": 0.00014452287008518832,
+            "div_vv_x": 1.5668826695485755e-06
+          },
+          "fit_rel_resid": 0.026798858501715494,
+          "preflight": {
+            "P1": 0.04125913453817812,
+            "P2": 0.026462711916978358,
+            "P3": 0.020304764496765725,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic2": {
+          "support": [
+            "v",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.020128528829119828,
+            "v_x": -0.0005150253699549196,
+            "v_xx": 0.00011202498056947666,
+            "vv_x": 4.89774766148568e-05
+          },
+          "fit_rel_resid": 0.04088235322976531,
+          "preflight": {
+            "P1": 0.05990593597504891,
+            "P2": 0.048728869256452256,
+            "P3": 0.04066973231391656,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic3": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx",
+            "vv_x"
+          ],
+          "coefficients": {
+            "v": -0.027635995084727593,
+            "v2": 6.760357879438264e-05,
+            "v_x": 0.0005984087602416777,
+            "v_xx": 4.8717612655192204e-05,
+            "vv_x": -1.5736939480238152e-05,
+            "div_vv_x": 1.4767217038619723e-06
+          },
+          "fit_rel_resid": 0.028331226874998554,
+          "preflight": {
+            "P1": 0.08145608928354968,
+            "P2": 0.03886453390920547,
+            "P3": 0.03894512331284592,
+            "open": true
+          },
+          "support_true": false
+        },
+        "ic4": {
+          "support": [
+            "div_vv_x",
+            "v",
+            "v2",
+            "v_x",
+            "v_xx"
+          ],
+          "coefficients": {
+            "v": -0.027889327563415302,
+            "v2": 0.00030670779055816486,
+            "v_x": -0.00021217369499494602,
+            "v_xx": 5.7886980653399286e-05,
+            "div_vv_x": 2.625225691874118e-06
+          },
+          "fit_rel_resid": 0.03547465323677001,
+          "preflight": {
+            "P1": 0.054955439048894966,
+            "P2": 0.043840882405884504,
+            "P3": 0.039800125498109025,
+            "open": true
+          },
+          "support_true": false
+        }
+      },
+      "nulls": {
+        "n": 10,
+        "fd": 0
+      },
+      "transfer": {
+        "r": [
+          0.32528,
+          0.05252,
+          0.17909,
+          0.11937
+        ],
+        "all_pass": false
+      },
+      "swap_ic0": {
+        "alternatives_within_2x": [
+          {
+            "drop": "v_xx",
+            "add": "div_vv_x",
+            "resid": 0.10349
+          }
+        ],
+        "not_identifiable": true
+      },
+      "ladder": {
+        "verdict": "ABSTAIN_GATE",
+        "blocked_at": "fit_gate",
+        "state": {
+          "operator_valid": true,
+          "numerical_preflight": true,
+          "support_stable": true,
+          "fit_gate": false,
+          "transfer_gate": false,
+          "identifiability_gate": false,
+          "replication": true
+        }
+      }
+    }
+  },
+  "rehearsal_verdicts": {
+    "R1_preflight_opens": true,
+    "R2_linear_support_and_alpha": false,
+    "R2_alpha_hat": 0.00010296215667231528,
+    "R2_alpha_true": 9.7e-05,
+    "R3_vardiff_detected": false,
+    "R4_transfer": false,
+    "R5_nulls": true
+  },
+  "elapsed_s": 156.0
+}

@@ -1,0 +1,147 @@
+{
+  "run": "CDE_V10_CAPABILITY_MATRIX_V0",
+  "matrix": [
+    {
+      "capability": "Adeguatezza numerica senza oracle",
+      "positive_evidence": "accordo NOP/oracle 5/5",
+      "negative_control": "2 config sottorisolte (kdv/ks lowres) rifiutate",
+      "replica": "py312 bit-identica (66/66 campi)",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Exact support recovery",
+      "positive_evidence": "v1 25/25 celle; overcomplete 25/25 con 12 termini",
+      "negative_control": "wrong-library: 4/26 sostituti sotto gate fit (FKPP)",
+      "replica": "seed 11 + py312 bit-identica",
+      "status": "PARTIAL",
+      "dossier": {
+        "path": "cde_v10_fdr_observability_v0_out/claim_card.md",
+        "verdict": "NOT_TESTABLE"
+      }
+    },
+    {
+      "capability": "Null rejection",
+      "positive_evidence": "0/120 FD v1 (+30 seed MS30 in corso)",
+      "negative_control": "shuffle temporali + surrogati di fase; senza gate: 30/120",
+      "replica": "py312 bit-identica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Robustezza a librerie sovracomplete",
+      "positive_evidence": "25/25 esatte, 0 celle con spuri (u^4, u_xxxxx, u^2u_x aggiunti)",
+      "negative_control": "gate D5 validato prima dell'uso (1.4e-9)",
+      "replica": "py312 bit-identica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Identificabilita' (swap test)",
+      "positive_evidence": "4/5 sistemi identificabili in modo unico",
+      "negative_control": "FKPP: 5 celle NOT_IDENTIFIABLE rilevate (corr(u^2,u^3)=0.995)",
+      "replica": "da completare (ITG non ancora replicato su 312)",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Transfer cross-traiettoria",
+      "positive_evidence": "4/4 sostituti catturati; claim vere 23/25",
+      "negative_control": "traiettoria IC indipendente + FKPP bassa ampiezza",
+      "replica": "da completare",
+      "status": "PARTIAL",
+      "dossier": {
+        "path": "cde_v10_identifiability_gate_v0_out/claim_card_transfer.md",
+        "verdict": "REJECTED"
+      }
+    },
+    {
+      "capability": "Gestione misspecification (fit+transfer)",
+      "positive_evidence": "22/26 astensioni al fit; i 4 residui catturati dal transfer (0 claim errate finali)",
+      "negative_control": "leave-one-true-term-out, 13 config x 2 sigma",
+      "replica": "py312 (WLC) bit-identica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Governance della claim (ladder)",
+      "positive_evidence": "7/7 failure iniettate bloccate al livello giusto; riclassificazione v1: {\"CLAIM\": 18, \"REJECTED_TRANSFER\": 2, \"NOT_IDENTIFIABLE\": 5}",
+      "negative_control": "nessuna riabilitazione a valle possibile",
+      "replica": "deterministica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Invarianze infrastrutturali (metamorphic)",
+      "positive_evidence": "9/9 (permutazioni, riscalamenti, unita', determinismo)",
+      "negative_control": "duplicazione nulli e inversione temporale bloccate",
+      "replica": "deterministica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Auditabilita'/antifrode",
+      "positive_evidence": "tampering rilevato 9/9, campo preciso; 7 artifact reali 0 violazioni",
+      "negative_control": "9 manipolazioni (anche con hash rigenerato)",
+      "replica": "deterministica",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Integrita' ambiente runtime",
+      "positive_evidence": "14 envelope certificati; 1 blocco reale in produzione",
+      "negative_control": "canary elisione numpy (incidente 3.14 quarantenato)",
+      "replica": "matrice 3.12/3.13",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Evidenza statistica multi-seed e breakdown",
+      "positive_evidence": "738/750 celle standard su 30 seed; nulli 0/1500 (CP95 0.0025); sigma*_claim prima o insieme al supporto in 52/52 (supporto mai prima)",
+      "negative_control": "breakdown 15-40%: AC 10-15%, KdV ~30%, Burgers ~40%, KS 10/10 al 30% e 3/10 al 40%",
+      "replica": "replica312 seed 100..102 presente (3 checkpoint)",
+      "status": "SUPPORTED",
+      "dossier": null
+    },
+    {
+      "capability": "Validazione su dati sperimentali reali",
+      "positive_evidence": "nessuna legge recuperata; campagna reale eseguita su 10 sequenze misurate (termografia pulsata, DOI 10.17632/v4knrwgj9y.2), preregistrata e replicata 3.13/3.12",
+      "negative_control": "preflight chiude 10/10; limite quantificato: P3 migliore 0.0780 vs gate 0.05 (fattore 1.6x); nulli 0/100 FD",
+      "replica": "py312 identica",
+      "status": "NOT_TESTED",
+      "dossier": {
+        "path": "CLAIM_CARD_RIGA_DATI_REALI_2026-08-24.md",
+        "verdict": "NOT_TESTABLE"
+      }
+    },
+    {
+      "capability": "Generalizzazione blind su PDE mai viste",
+      "positive_evidence": "recupero 9/10 (blind 1) e 12/12 (blind 2); supporto esatto in tutti, coefficienti entro 1.7e-03; 2 pannelli disgiunti, verita' sigillata e cecita' verificata",
+      "negative_control": "pipeline di produzione: 6 falsi positivi su 42 casi \u2014 i due modi di fallimento si REPLICANO su dati nuovi. Braccio corretto: 0, senza perdere recuperi ne' decoy",
+      "replica": "campagna 2 replica la campagna 1 su pannello disgiunto",
+      "status": "PARTIAL",
+      "dossier": {
+        "path": "REPORT_BLIND_PDE2_2026-08-24.md",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "capability": "Distinzione legge vera / surrogato efficace",
+      "positive_evidence": "il gate di ampiezza ferma 3/3 surrogati raggiunti (sin(u) x2, tanh(u)): residui 0.0605, 0.2870, 0.3814 contro 0.05",
+      "negative_control": "senza il gate il motore afferma lo sviluppo di Taylor del termine fuori libreria, con fit e transfer sotto soglia. Margine sottile: il surrogato piu' facile rompe di 1.2x, il peggior recuperabile sta a 0.0091 \u2014 separazione fattore 6.6, non i 4 ordini dello screening. Il cancello sposta la classe di fallimento",
+      "replica": "non integrato nella pipeline di produzione",
+      "status": "PARTIAL",
+      "dossier": {
+        "path": "REPORT_BLIND_PDE2_2026-08-24.md",
+        "verdict": "PASS"
+      }
+    }
+  ],
+  "counts": {
+    "SUPPORTED": 10,
+    "PARTIAL": 4,
+    "NOT_TESTED": 1
+  },
+  "ms30_seeds_done": 30,
+  "elapsed_s": 0.01
+}

@@ -1,0 +1,95 @@
+{
+  "run": "CDE_V10_GATE_ABLATION_V0",
+  "ablations": {
+    "A1_no_residual_gate": {
+      "failure_class": "nulli con supporto statisticamente stabile",
+      "nulls_total": 120,
+      "fd_with_gate": 0,
+      "fd_without_gate_stable_nonempty": 30,
+      "per_arm_stable_nonempty": {
+        "v8-s7/allen_cahn": 0,
+        "v8-s7/fisher_kpp": 3,
+        "v8-s7/burgers": 4,
+        "v8-s7/kdv": 5,
+        "v8-s11/allen_cahn": 1,
+        "v8-s11/fisher_kpp": 3,
+        "v8-s11/burgers": 4,
+        "v8-s11/kdv": 3,
+        "v9-s7/ks": 0,
+        "v9-s11/ks": 0,
+        "ext-s7/burgers": 4,
+        "ext-s7/fisher_kpp": 3
+      },
+      "archived_v10_run_fd": {
+        "allen_cahn": 0,
+        "fisher_kpp": 3,
+        "burgers": 4,
+        "kdv": 5
+      },
+      "conclusion": "rimuovendo il gate residuo, 30/120 nulli diventerebbero false discovery (v1.1: 0)"
+    },
+    "A2_no_preflight": {
+      "failure_class": "dataset sottorisolti ammessi alla discovery",
+      "underresolved_admitted": {
+        "kdv_lowres": {
+          "r_GT": 0.00994646670984342,
+          "r_LS": 0.009572357284485621
+        },
+        "ks_lowres": {
+          "r_GT": 0.07962967575182045,
+          "r_LS": 0.04582683882141309
+        }
+      },
+      "conclusion": "senza preflight, 2 configurazioni con errore operatore 1e-2..8e-2 (vs gate 1e-3) entrerebbero in discovery; il NOP le rifiuta senza oracle (5/5)"
+    },
+    "A3_no_empty_support": {
+      "failure_class": "impossibilita' strutturale di astenersi",
+      "proxy": "baseline STLSQ paired (nessun supporto vuoto candidato)",
+      "baseline_null_fd": "49/50",
+      "empty_reachable_in_grid": "33/50",
+      "cde_null_fd": "0 (120 nulli v1)",
+      "conclusion": "senza astensione un pipeline STLSQ dichiara 49/50 falsi sui medesimi nulli, anche quando il modello vuoto e' raggiungibile (33/50)"
+    },
+    "A4_no_transfer": {
+      "failure_class": "sostituti strutturali che spiegano una singola traiettoria",
+      "false_substitutes_without_itg": 4,
+      "caught_by_transfer": 4,
+      "conclusion": "senza il transfer gate, 4 equazioni sostituite (tutte FKPP) resterebbero claim; con ITG: 0"
+    },
+    "A5_no_identifiability": {
+      "failure_class": "claim dichiarate uniche su dati che non discriminano leggi concorrenti",
+      "not_identifiable_cells": {
+        "fisher_kpp": [
+          "0.0",
+          "0.01",
+          "0.02",
+          "0.05",
+          "0.1"
+        ]
+      },
+      "n_cells": 5,
+      "conclusion": "senza swap test, 5 celle (FKPP, tutte le sigma) verrebbero dichiarate identificate in modo unico mentre un supporto alternativo spiega gli stessi dati sotto il 5%"
+    },
+    "A6_no_runtime_guard": {
+      "failure_class": "contaminazione numerica silente dell'ambiente",
+      "envelopes_with_guard_report": 14,
+      "documented_incidents": [
+        "mutazione operandi numpy 2.2.6+py3.14 (firma spuria 'spatial-operator' in una campagna storica)",
+        "blocco in produzione: downgrade numpy silente da install di terze parti (primo intervento reale del guard)"
+      ],
+      "conclusion": "senza guard, 14 envelope perderebbero la certificazione d'ambiente e i due incidenti documentati sarebbero passati inosservati"
+    },
+    "A7_no_replication": {
+      "failure_class": "dipendenza non rilevata dal runtime",
+      "numeric_fields_bit_identical": {
+        "v8": "373/373",
+        "v10_nop": "66/66",
+        "v10_wlc": "482/482"
+      },
+      "total": "921/921",
+      "conclusion": "la replica certifica 921/921 campi numerici bit-identici tra CPython 3.13 e 3.12; senza di essa questa proprieta' sarebbe non verificata"
+    }
+  },
+  "thesis": "ogni gate intercetta una classe distinta e osservabile di falsa discovery; la rimozione di ciascuno riapre almeno una classe specifica",
+  "elapsed_s": 0.04
+}

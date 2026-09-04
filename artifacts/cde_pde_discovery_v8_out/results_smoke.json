@@ -1,0 +1,100 @@
+{
+  "run": "CDE_PDE_DISCOVERY_V8",
+  "seed": 7,
+  "smoke": true,
+  "protocol": {
+    "terms": [
+      "u",
+      "u^2",
+      "u^3",
+      "u_x",
+      "u_xx",
+      "u_xxx",
+      "uu_x"
+    ],
+    "stability_B": 100,
+    "subsample_frac": 0.6,
+    "freq_threshold": 0.8,
+    "lam_grid": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "sigmas": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "gate_coef_relerr": 0.05,
+    "gate_r_gt": 0.001
+  },
+  "systems": {
+    "allen_cahn": {
+      "r_GT_preflight": 0.004264025432482962,
+      "preflight_open": false,
+      "true_coeffs": {
+        "u_xx": 0.05,
+        "u": 1.0,
+        "u^3": -1.0
+      },
+      "K_windows": 60,
+      "grid": {
+        "Nx": 256,
+        "Nt": 801
+      },
+      "sigma": {},
+      "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+    },
+    "fisher_kpp": {
+      "r_GT_preflight": 0.0019610132617624647,
+      "preflight_open": false,
+      "true_coeffs": {
+        "u_xx": 0.05,
+        "u": 1.0,
+        "u^2": -1.0
+      },
+      "K_windows": 60,
+      "grid": {
+        "Nx": 256,
+        "Nt": 601
+      },
+      "sigma": {},
+      "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+    },
+    "burgers": {
+      "r_GT_preflight": 0.0027674976226313183,
+      "preflight_open": false,
+      "true_coeffs": {
+        "uu_x": -1.0,
+        "u_xx": 0.08
+      },
+      "K_windows": 60,
+      "grid": {
+        "Nx": 256,
+        "Nt": 801
+      },
+      "sigma": {},
+      "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+    },
+    "kdv": {
+      "r_GT_preflight": 0.20328941348583482,
+      "preflight_open": false,
+      "true_coeffs": {
+        "uu_x": -1.0,
+        "u_xxx": -0.0484
+      },
+      "K_windows": 60,
+      "grid": {
+        "Nx": 256,
+        "Nt": 401
+      },
+      "sigma": {},
+      "skipped": "pre-flight r_GT non superato: discovery non eseguita"
+    }
+  },
+  "elapsed_s": 13.7
+}

@@ -1,0 +1,311 @@
+{
+  "generato": "2026-08-24",
+  "commit": "80d55fd1",
+  "molt_ampiezza": 2.0,
+  "casi": [
+    {
+      "case_id": "case_01",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.15,
+        "u": -0.6
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "diffusione con decadimento",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_02",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "uu_x": -1.0,
+        "u_xx": 0.045
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Burgers, viscosita' nuova",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_03",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.9,
+        "u_xx": 0.025,
+        "u": 0.4
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione-diffusione-crescita",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_04",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.06,
+        "u": 0.7,
+        "u^2": -0.35
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "logistica su campo positivo",
+      "sigma": 0.02,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_05",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "uu_x": -1.0,
+        "u_xx": 0.035,
+        "u_xxx": -0.02
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Burgers-KdV, bilancio nuovo",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_06",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.08,
+        "u^3": -0.5
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "diffusione con saturazione cubica",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_07",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.6,
+        "u_xxx": -0.045
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione dispersiva, IC multimodo",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_08",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.04,
+        "u^2": 0.5,
+        "u^3": -0.6
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "reazione quadratica e cubica",
+      "sigma": 0.01,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_09",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_x": -0.3,
+        "u_xx": 0.05,
+        "uu_x": -1.0
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "avvezione lineare e nonlineare insieme",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_10",
+      "famiglia": "RECUPERABILE",
+      "coeff_veri": {
+        "u_xx": 0.12,
+        "u": 0.8,
+        "u^3": -0.8
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "Newell-Whitehead, coefficienti nuovi",
+      "sigma": 0.02,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_11",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_x": -0.6,
+        "u_xxx": -0.02
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "modo singolo k=2: u_xxx = -4u_x, famiglia a-4b=-0.52",
+      "sigma": 0.0,
+      "vincolo": {
+        "termini": [
+          "u_x",
+          "u_xxx"
+        ],
+        "pesi": [
+          1.0,
+          -4.0
+        ],
+        "valore": -0.52
+      }
+    },
+    {
+      "case_id": "case_12",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_xx": 0.08,
+        "u": 0.5
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "modo singolo k=1 CON RUMORE: u_xx = -u, famiglia b-a=0.42",
+      "sigma": 0.01,
+      "vincolo": {
+        "termini": [
+          "u",
+          "u_xx"
+        ],
+        "pesi": [
+          1.0,
+          -1.0
+        ],
+        "valore": 0.42
+      }
+    },
+    {
+      "case_id": "case_13",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_xx": 0.03,
+        "u": -0.2
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "modo singolo k=3 CON RUMORE: u_xx = -9u, famiglia -9a+b=-0.47",
+      "sigma": 0.02,
+      "vincolo": {
+        "termini": [
+          "u_xx",
+          "u"
+        ],
+        "pesi": [
+          -9.0,
+          1.0
+        ],
+        "valore": -0.47
+      }
+    },
+    {
+      "case_id": "case_14",
+      "famiglia": "NON_IDENTIFICABILE",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u": 0.4
+      },
+      "esito_atteso": "ABSTAIN_OR_FLAG",
+      "motivo": "modo singolo k=2: u_xx = -4u, famiglia b-4a=0.20",
+      "sigma": 0.0,
+      "vincolo": {
+        "termini": [
+          "u",
+          "u_xx"
+        ],
+        "pesi": [
+          1.0,
+          -4.0
+        ],
+        "valore": 0.2
+      }
+    },
+    {
+      "case_id": "case_15",
+      "famiglia": "DECOY",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u": 0.3
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "due modi, secondo con peso 0.03: quasi degenere ma identificabile",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_16",
+      "famiglia": "DECOY",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "u": 0.3
+      },
+      "esito_atteso": "CLAIM",
+      "motivo": "due modi, secondo con peso 0.01: al limite della soglia",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_17",
+      "famiglia": "SURROGATO",
+      "coeff_veri": {
+        "u_xx": 0.04,
+        "sin(u)": 0.5
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "sin(u) fuori libreria, ampiezza moderata",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_18",
+      "famiglia": "SURROGATO",
+      "coeff_veri": {
+        "u_xx": 0.06,
+        "sin(u)": 0.4
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "sin(u) fuori libreria, ampiezza maggiore",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_19",
+      "famiglia": "SURROGATO",
+      "coeff_veri": {
+        "u_xx": 0.05,
+        "tanh(u)": 0.4
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "tanh(u) fuori libreria: Taylor u - u^3/3 e' tutto in libreria",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_20",
+      "famiglia": "SURROGATO",
+      "coeff_veri": {
+        "u_xx": 0.03,
+        "u_xxxx": -0.006
+      },
+      "esito_atteso": "ABSTAIN",
+      "motivo": "u_xxxx fuori libreria: nessun polinomio in u lo imita",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_21",
+      "famiglia": "CONTROLLO",
+      "coeff_veri": {},
+      "esito_atteso": "ABSTAIN",
+      "motivo": "rumore filtrato",
+      "sigma": 0.0,
+      "vincolo": null
+    },
+    {
+      "case_id": "case_22",
+      "famiglia": "CONTROLLO",
+      "coeff_veri": {},
+      "esito_atteso": "ABSTAIN",
+      "motivo": "surrogato di fase",
+      "sigma": 0.0,
+      "vincolo": null
+    }
+  ]
+}

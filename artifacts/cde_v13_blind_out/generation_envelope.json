@@ -1,0 +1,62 @@
+{
+ "run": "CDE_V13_BLIND_GENERATOR_V0",
+ "prereg": "PREREGISTRAZIONE_CDE_V13_REPLICA_LARGA_SCALA_2026_08_02.md",
+ "generato": "2026-08-02T17:03:18.418623+00:00",
+ "commit": "b86ec58bd726",
+ "runtime_guard": {
+  "status": "PASS",
+  "python_version": "3.13.10",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "/Users/valentinoberardi/Desktop/LB/.venv313/bin/python",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv313",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
+  },
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-08-02T16:13:41Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "casi": 603,
+ "per_classe": 67,
+ "classi": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I"
+ ],
+ "semi": {
+  "modello": 700000,
+  "degrado": 710000,
+  "nullo": 900000
+ },
+ "composizione": {
+  "rappresentabili": 268,
+  "nulli": 67,
+  "non_rappresentabili": 268
+ },
+ "avvertenza": "La verita' e' sigillata in sealed/truth.json e non va letta finche' entrambi i nodi non hanno prodotto tutti i verdetti."
+}

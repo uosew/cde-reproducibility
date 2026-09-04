@@ -1,0 +1,6 @@
+# Versions the artifacts were produced and the paper is rebuilt with (CPython 3.13.10, macOS arm64; py3.12 replica in the manifest).
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.1
+pytest==8.4.1
+# The paired baseline artifact was produced with pysindy==2.1.0; it is not needed to rebuild the paper.

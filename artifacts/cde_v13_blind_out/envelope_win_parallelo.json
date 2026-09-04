@@ -1,0 +1,145 @@
+{
+ "prereg": "PREREGISTRAZIONE_CDE_V13_REPLICA_LARGA_SCALA_2026_08_02.md",
+ "nodo": "win",
+ "worker": 12,
+ "intervalli": [
+  [
+   251,
+   280
+  ],
+  [
+   281,
+   310
+  ],
+  [
+   311,
+   340
+  ],
+  [
+   341,
+   370
+  ],
+  [
+   371,
+   399
+  ],
+  [
+   400,
+   428
+  ],
+  [
+   429,
+   457
+  ],
+  [
+   458,
+   486
+  ],
+  [
+   487,
+   515
+  ],
+  [
+   516,
+   544
+  ],
+  [
+   545,
+   573
+  ],
+  [
+   574,
+   602
+  ]
+ ],
+ "casi_totali": 352,
+ "durata_s": 5789.5,
+ "generato": "2026-08-02T20:13:59.198975+00:00",
+ "nota": "Parallelizzazione fra processi: i casi sono indipendenti e deterministici, quindi i verdetti non dipendono da come il lavoro e' stato ripartito.",
+ "esiti_worker": [
+  {
+   "worker": 0,
+   "da": 251,
+   "a": 280,
+   "etichetta": "win_00",
+   "returncode": 0
+  },
+  {
+   "worker": 1,
+   "da": 281,
+   "a": 310,
+   "etichetta": "win_01",
+   "returncode": 0
+  },
+  {
+   "worker": 2,
+   "da": 311,
+   "a": 340,
+   "etichetta": "win_02",
+   "returncode": 0
+  },
+  {
+   "worker": 3,
+   "da": 341,
+   "a": 370,
+   "etichetta": "win_03",
+   "returncode": 0
+  },
+  {
+   "worker": 4,
+   "da": 371,
+   "a": 399,
+   "etichetta": "win_04",
+   "returncode": 0
+  },
+  {
+   "worker": 5,
+   "da": 400,
+   "a": 428,
+   "etichetta": "win_05",
+   "returncode": 0
+  },
+  {
+   "worker": 6,
+   "da": 429,
+   "a": 457,
+   "etichetta": "win_06",
+   "returncode": 0
+  },
+  {
+   "worker": 7,
+   "da": 458,
+   "a": 486,
+   "etichetta": "win_07",
+   "returncode": 0
+  },
+  {
+   "worker": 8,
+   "da": 487,
+   "a": 515,
+   "etichetta": "win_08",
+   "returncode": 0
+  },
+  {
+   "worker": 9,
+   "da": 516,
+   "a": 544,
+   "etichetta": "win_09",
+   "returncode": 0
+  },
+  {
+   "worker": 10,
+   "da": 545,
+   "a": 573,
+   "etichetta": "win_10",
+   "returncode": 0
+  },
+  {
+   "worker": 11,
+   "da": 574,
+   "a": 602,
+   "etichetta": "win_11",
+   "returncode": 0
+  }
+ ]
+}

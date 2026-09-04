@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/cde_v8_avversariale_v0/_motore_sigmas_estese.py", line 58, in <module>
+    _spec7.loader.exec_module(V7)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "<frozen importlib._bootstrap_external>", line 1019, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1156, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1214, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/cde_v8_avversariale_v0/CDE_WEAK_OPERATOR_COMPONENTWISE_IDENTITY_V7.py'

@@ -1,0 +1,82 @@
+{
+ "numbers": [
+  {
+   "claim": "exact support on 5 PDEs, 0-10% noise, seeds 7 and 11; max coefficient error",
+   "value": "1.11%",
+   "artifact": "cde_pde_discovery_v8_out/*/results.json, cde_ks_discovery_v9_out/*/results.json",
+   "code": "CDE_PDE_DISCOVERY_V8.py, CDE_KS_DISCOVERY_V9.py",
+   "campaign": "V8 / V9 (protocol v1.1)",
+   "builder": "build_research_note_v0.py (asserts)",
+   "where": "abstract, Results"
+  },
+  {
+   "claim": "0 false discoveries in null controls",
+   "value": "0 / 120",
+   "artifact": "results.json nulls sections",
+   "code": "CDE_PDE_DISCOVERY_V8.py",
+   "campaign": "V8 / V9 / external solver",
+   "builder": "build_research_note_v0.py",
+   "where": "abstract, Results, Conclusion"
+  },
+  {
+   "claim": "PySINDy null false discoveries, vanilla vs + epistemic gate",
+   "value": "49/50 -> 0/50",
+   "artifact": "cde_v8_pysindy_baseline_v0_out/results.json",
+   "code": "baseline runner (PySINDy 2.1.0) + gate transplant",
+   "campaign": "paired baseline",
+   "builder": "build_note_figures_v0.py fig_gate_null",
+   "where": "Results 6.4, Fig. 3b"
+  },
+  {
+   "claim": "V13 sealed replica: false claims / opportunities",
+   "value": "14 / 423 (3.3%)",
+   "artifact": "cde_v13_blind_out/unblinding_report.json",
+   "code": "CDE_V13_BLIND_DISCOVERER_V0.py + CDE_V13_BLIND_UNBLINDING_V0.py",
+   "campaign": "V13 replica (prereg 2026-08-02)",
+   "builder": "build_research_note_latex_v0.py (asserts)",
+   "where": "abstract, Section 8.1"
+  },
+  {
+   "claim": "V13: false claims on nulls / on non-representable",
+   "value": "0/67 and 0/268",
+   "artifact": "cde_v13_blind_out/unblinding_report.json",
+   "code": "CDE_V13_BLIND_UNBLINDING_V0.py",
+   "campaign": "V13 replica",
+   "builder": "build_research_note_latex_v0.py",
+   "where": "Section 8.1"
+  },
+  {
+   "claim": "V13: Mac/Windows agreement on shared cases",
+   "value": "100/100",
+   "artifact": "cde_v13_blind_out/verdicts_{mac,win}.json",
+   "code": "CDE_V13_BLIND_UNBLINDING_V0.py domanda_B",
+   "campaign": "V13 replica",
+   "builder": "build_research_note_latex_v0.py",
+   "where": "Section 8.1"
+  },
+  {
+   "claim": "resolution bound, diagnostic: violations at k=1 / k=2",
+   "value": "2 / 0 on 44 claims",
+   "artifact": "cde_risoluzione_claim_out/esito_stage1.json",
+   "code": "CDE_RISOLUZIONE_CLAIM_V0.py, CDE_RISOLUZIONE_ANALYZER_V0.py",
+   "campaign": "Stage 1 (prereg 2026-09-03)",
+   "builder": "build_research_note_latex_v0.py",
+   "where": "Section 8.2, Fig. 4a"
+  },
+  {
+   "claim": "blind-4: claims / sub-support / violations / verdict",
+   "value": "59 / 8 / 0 / CONFIRMED",
+   "artifact": "cde_blind4_out/scoring.json, claim_dettaglio.json",
+   "code": "CDE_BLIND4_RUNNER_V0.py + CDE_BLIND4_SCORER_V0.py",
+   "campaign": "blind-4 (prereg 2026-09-03, truth sha in envelope)",
+   "builder": "build_research_note_latex_v0.py, build_note_figures_v0.py fig_resolution",
+   "where": "Section 8.2, Fig. 4b"
+  }
+ ],
+ "artifact_sha256_16": {
+  "cde_v13_blind_out/unblinding_report.json": "04d08889eddb7fa2",
+  "cde_blind4_out/scoring.json": "945dc846e72f94dd",
+  "cde_risoluzione_claim_out/esito_stage1.json": "fd8d06d5ef70dad2",
+  "cde_v8_pysindy_baseline_v0_out/results.json": "76d4e6bccfdb2bec"
+ }
+}
