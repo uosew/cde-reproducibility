@@ -1,6 +1,6 @@
 # cde-reproducibility
 
-Reproducibility package for the research note **"Epistemically Gated Weak-Form Discovery of Nonlinear PDEs Under Noise"** (V. Berardi-Montesi, 2026; `paper/main.tex`). It is a frozen subset of a larger private research repository: exactly the code that produced the artifacts the paper is built from, the artifacts themselves, and the builders that regenerate every number and figure from them. It is deliberately small and boring: a reviewer should be able to see that *this code generates that result*, and nothing else.
+Reproducibility package for the research note **"Epistemically Gated Weak-Form Discovery of Nonlinear PDEs Under Noise"** (V. Berardi, 2026; `paper/main.tex`). It is a frozen subset of a larger private research repository: exactly the code that produced the artifacts the paper is built from, the artifacts themselves, and the builders that regenerate every number and figure from them. It is deliberately small and boring: a reviewer should be able to see that *this code generates that result*, and nothing else.
 
 ## What is in here
 
