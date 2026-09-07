@@ -9,7 +9,8 @@ from pathlib import Path
 import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; OUT = ART / "cde_blind4_out"; CASES = OUT / "cases"; SEALED = OUT / "sealed"
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; OUT = ART / "cde_blind4_out"; CASES = OUT / "cases"; SEALED = OUT / "sealed"
 def _L(n, f):
     s = importlib.util.spec_from_file_location(n, BASE / f); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 G13 = _L("g13", "CDE_V13_BLIND_GENERATOR_V0.py"); G11 = G13.G11

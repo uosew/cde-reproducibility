@@ -41,6 +41,7 @@ import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT = ART / "cde_v8_external_solver_replication_v0_out"
 

@@ -34,7 +34,8 @@ from pathlib import Path
 import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; ROOT = BASE.parent; OUT = ART / "cde_v13_blind_out"
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; ROOT = BASE.parent; OUT = ART / "cde_v13_blind_out"
 PREREG = "PREREGISTRAZIONE_CDE_V13_REPLICA_LARGA_SCALA_2026_08_02.md"
 SOGLIA_OPPORTUNITA = 350
 

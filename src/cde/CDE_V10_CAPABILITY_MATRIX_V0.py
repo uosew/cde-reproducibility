@@ -26,6 +26,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT = ART / "cde_v10_capability_matrix_v0_out"
 MD = BASE / "CDE_V10_CAPABILITY_MATRIX.md"

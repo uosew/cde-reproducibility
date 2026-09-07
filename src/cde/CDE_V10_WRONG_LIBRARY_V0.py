@@ -35,6 +35,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT = ART / "cde_v10_wrong_library_v0_out"
 PREREG = "PREREGISTRATION_PROTOCOL_V2_2026_07_30.md @ bb8f3427"

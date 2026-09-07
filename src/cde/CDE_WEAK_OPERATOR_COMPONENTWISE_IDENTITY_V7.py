@@ -55,6 +55,7 @@ from scipy.integrate import quad, simpson
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT = ART / "cde_weak_operator_componentwise_identity_v7_out"
 

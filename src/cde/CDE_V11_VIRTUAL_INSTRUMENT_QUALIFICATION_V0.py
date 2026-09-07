@@ -33,6 +33,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT = ART / "cde_v11_virtual_instrument_v0_out"
 SPEC_MD = BASE / "HARDWARE_SPEC_ENVELOPE.md"

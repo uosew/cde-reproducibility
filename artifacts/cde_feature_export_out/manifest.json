@@ -1,0 +1,673 @@
+{
+ "run": "CDE_ESPORTA_FEATURE_V0",
+ "prereg": "PREREGISTRAZIONE_BASELINE_INDIPENDENTE_JULIA_2026-09-07.md",
+ "prereg_sha256": "e29c3316bfab89d4fcf436facfbfc06eaa5805b5d75b7a9516475bce88513d74",
+ "generato": "2026-09-07T19:03:16.798277+00:00",
+ "seme": 7,
+ "terms": [
+  "u",
+  "u^2",
+  "u^3",
+  "u_x",
+  "u_xx",
+  "u_xxx",
+  "uu_x"
+ ],
+ "runtime_guard": {
+  "status": "PASS",
+  "python_version": "3.13.10",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
+  },
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-09-07T19:03:16Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "celle": {
+  "allen_cahn_sigma0.0": {
+   "tipo": "vera",
+   "sistema": "allen_cahn",
+   "sigma": 0.0,
+   "supporto_vero": [
+    "u",
+    "u^3",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "sha256": "76e535b0b04ada62ed5adbaf133911b3becd26dae846695dbfc8ccb6d8dec3e1"
+  },
+  "allen_cahn_sigma0.01": {
+   "tipo": "vera",
+   "sistema": "allen_cahn",
+   "sigma": 0.01,
+   "supporto_vero": [
+    "u",
+    "u^3",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "sha256": "b740bb943db223475f2efad481f382fa1314cc2d71935531669f438d3e7d58af"
+  },
+  "allen_cahn_sigma0.02": {
+   "tipo": "vera",
+   "sistema": "allen_cahn",
+   "sigma": 0.02,
+   "supporto_vero": [
+    "u",
+    "u^3",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "sha256": "2ae7cab37609bfad67ca06c518acf1498b7cfde4de8dba25ec10ef05ca0ce873"
+  },
+  "allen_cahn_sigma0.05": {
+   "tipo": "vera",
+   "sistema": "allen_cahn",
+   "sigma": 0.05,
+   "supporto_vero": [
+    "u",
+    "u^3",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "sha256": "eaacc8ce0dca58cbc88b6f131a31f858892efbe7a6fe11db950a897348e66e94"
+  },
+  "allen_cahn_sigma0.1": {
+   "tipo": "vera",
+   "sistema": "allen_cahn",
+   "sigma": 0.1,
+   "supporto_vero": [
+    "u",
+    "u^3",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^3": -1.0
+   },
+   "sha256": "627f6a382023cc6f108a2409630d7ce54e5959a8f056243ebf3adc1d9ac513e0"
+  },
+  "allen_cahn_null_shuffle_t_0": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "shuffle_t",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "e8b78f9cd810d2a160dc30d4615609bee7cd00cf4037bf547ef84ee889962ce9"
+  },
+  "allen_cahn_null_shuffle_t_1": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "shuffle_t",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "eca4ad0a0dbe82c955a2ba869db90b29f97d7dd52e7dd00e234bd65e91207330"
+  },
+  "allen_cahn_null_shuffle_t_2": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "shuffle_t",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "2e351dd8131f70d33835e2d32a44bd9b8e11af02feecefcf9a25eac1d59b00d0"
+  },
+  "allen_cahn_null_shuffle_t_3": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "shuffle_t",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "636e389c259e8aecc95bc7fbf67ffc28f8480f4991227979a93b0c05a9183a83"
+  },
+  "allen_cahn_null_shuffle_t_4": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "shuffle_t",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "399dace40f3dc13ab86c4dd68f15a8b94cb1cc9ba0a721e2f264fa22c00c416c"
+  },
+  "allen_cahn_null_phase_surrogate_0": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "phase_surrogate",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "bdfb1ba99821872c4c8567d0ef2d3a382ecb45ddb47971d79cf8d5749c2dd972"
+  },
+  "allen_cahn_null_phase_surrogate_1": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "phase_surrogate",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "f3e9df10601506829a08c867ecb0a574894a9937c48af3a43ef0e93323fcae46"
+  },
+  "allen_cahn_null_phase_surrogate_2": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "phase_surrogate",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "8f7e28a3100c1a79b9061fda9135eb576c6038ba7c9f3d5658f77ba75979cb18"
+  },
+  "allen_cahn_null_phase_surrogate_3": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "phase_surrogate",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "b5a93df4a8449e204ee44c782e3519e0deb500289db05f961780cc88ee6e8ea5"
+  },
+  "allen_cahn_null_phase_surrogate_4": {
+   "tipo": "nullo",
+   "sistema": "allen_cahn",
+   "kind": "phase_surrogate",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "f3fe5461dbaff39e937fc83dc1d09e2c042c2e6b668745a6b49e75b1d24843a9"
+  },
+  "fisher_kpp_sigma0.0": {
+   "tipo": "vera",
+   "sistema": "fisher_kpp",
+   "sigma": 0.0,
+   "supporto_vero": [
+    "u",
+    "u^2",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "sha256": "7d5610cf34c9db8cb03ca273d067561b716269670259bb53746ceb70688ab937"
+  },
+  "fisher_kpp_sigma0.01": {
+   "tipo": "vera",
+   "sistema": "fisher_kpp",
+   "sigma": 0.01,
+   "supporto_vero": [
+    "u",
+    "u^2",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "sha256": "15aa8c8227435fdb94a038b7e28de3ac982b103ea7339557433b52b8f573bfe7"
+  },
+  "fisher_kpp_sigma0.02": {
+   "tipo": "vera",
+   "sistema": "fisher_kpp",
+   "sigma": 0.02,
+   "supporto_vero": [
+    "u",
+    "u^2",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "sha256": "0c82963156b97f89834576140aca90b3c9f40914a9171c830b7aa92bd45a8b42"
+  },
+  "fisher_kpp_sigma0.05": {
+   "tipo": "vera",
+   "sistema": "fisher_kpp",
+   "sigma": 0.05,
+   "supporto_vero": [
+    "u",
+    "u^2",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "sha256": "c9a2087ca0c6c2865ffc55152980b127e3b524143dbdb2c675ffb867481350d5"
+  },
+  "fisher_kpp_sigma0.1": {
+   "tipo": "vera",
+   "sistema": "fisher_kpp",
+   "sigma": 0.1,
+   "supporto_vero": [
+    "u",
+    "u^2",
+    "u_xx"
+   ],
+   "coeff_veri": {
+    "u_xx": 0.05,
+    "u": 1.0,
+    "u^2": -1.0
+   },
+   "sha256": "dcd726e6c6d7f7c02da7926641675b98d95e76a3e4339e526e5db4b2629a89ca"
+  },
+  "fisher_kpp_null_shuffle_t_0": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "shuffle_t",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "789206027b039f74b65c897c26c49e5a6b4916d4b46667467b53823d12e1a723"
+  },
+  "fisher_kpp_null_shuffle_t_1": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "shuffle_t",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "759cf84c316768f52c55f2fab2104021a88a3492bff5282eae3b62f27eeb1ee0"
+  },
+  "fisher_kpp_null_shuffle_t_2": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "shuffle_t",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "8dfee4621a9ef79995c28ae5737a2e19b543ee38f67050a11a4c80dc988cf9fd"
+  },
+  "fisher_kpp_null_shuffle_t_3": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "shuffle_t",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "c715c34971710eb08bfed721ce167ba221720359a9008aa6955181158ba8ff5d"
+  },
+  "fisher_kpp_null_shuffle_t_4": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "shuffle_t",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "58d12db13f915f0c97ac6bbfa8882b19248809362f695e0301a632f1b7249bbe"
+  },
+  "fisher_kpp_null_phase_surrogate_0": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "phase_surrogate",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "f9025fce3a673cb2d5f7e4349af8b082173923f76d1ab9646d1a15ffdc298b16"
+  },
+  "fisher_kpp_null_phase_surrogate_1": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "phase_surrogate",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "026cfc2bafac3a555f8600925696e20bfa01c8bc41e9e0da3b760a56615478ea"
+  },
+  "fisher_kpp_null_phase_surrogate_2": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "phase_surrogate",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "f700642f171272ed99bd52925bdde5f39ea533091f114a1cbffc6ed9948d4a04"
+  },
+  "fisher_kpp_null_phase_surrogate_3": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "phase_surrogate",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "42fe25da45fc4b2c279e098e5d3fab15926fa348d2d8ad2944f6ef6bc2a21075"
+  },
+  "fisher_kpp_null_phase_surrogate_4": {
+   "tipo": "nullo",
+   "sistema": "fisher_kpp",
+   "kind": "phase_surrogate",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "70e657ecbff594c944576d9387a87bf6795f2b3af6c2520318678dff7c366782"
+  },
+  "burgers_sigma0.0": {
+   "tipo": "vera",
+   "sistema": "burgers",
+   "sigma": 0.0,
+   "supporto_vero": [
+    "u_xx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "sha256": "d8d35967c113437ceda682b74e1a4e0d009d6a9ad256faf1f43c4bab2626cdce"
+  },
+  "burgers_sigma0.01": {
+   "tipo": "vera",
+   "sistema": "burgers",
+   "sigma": 0.01,
+   "supporto_vero": [
+    "u_xx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "sha256": "b28f3d193ea54be7615ffe636d63154c27be8832f0c7aeb4644c189b7c086c1c"
+  },
+  "burgers_sigma0.02": {
+   "tipo": "vera",
+   "sistema": "burgers",
+   "sigma": 0.02,
+   "supporto_vero": [
+    "u_xx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "sha256": "341a3fc0587343da78ee33298d194403406f9391121db5a8fa4cf49f0b0f72aa"
+  },
+  "burgers_sigma0.05": {
+   "tipo": "vera",
+   "sistema": "burgers",
+   "sigma": 0.05,
+   "supporto_vero": [
+    "u_xx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "sha256": "cfede7b38f613835127a4e28a212c4f46ea164e561d1e529199721632b311412"
+  },
+  "burgers_sigma0.1": {
+   "tipo": "vera",
+   "sistema": "burgers",
+   "sigma": 0.1,
+   "supporto_vero": [
+    "u_xx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xx": 0.08
+   },
+   "sha256": "757176d5dfaef16e2af4015329ca461313482bb431c123477415aade3fb9d5a1"
+  },
+  "burgers_null_shuffle_t_0": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "shuffle_t",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "e0b309130cbcf8e3ae60c8cdb7c2215a7943cf54c5081852750c43fd9e580e6e"
+  },
+  "burgers_null_shuffle_t_1": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "shuffle_t",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "785bfd075ca88449c4b19595a8bd9e7dd38d68d4700bfa9ead80f7c5f5dfeb1b"
+  },
+  "burgers_null_shuffle_t_2": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "shuffle_t",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "db770d4e9e524fc9033c7f0980b9b8851264a1e98bfd96efe23ea068723bbbc0"
+  },
+  "burgers_null_shuffle_t_3": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "shuffle_t",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "a02b30a026802f65fb726a3d108c344e98006de8b74c573bf88f3f9ea74f3f79"
+  },
+  "burgers_null_shuffle_t_4": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "shuffle_t",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "18ebaabd5bbf6deb154e9bec4f04c8c1b47c5aacb432eb66af070f734531ab6f"
+  },
+  "burgers_null_phase_surrogate_0": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "phase_surrogate",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "9625288a00e30c4da06179d2822656176efe5a704df930e401ce0d6f28e2c8ee"
+  },
+  "burgers_null_phase_surrogate_1": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "phase_surrogate",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "46717271f7f68c3c4d5fe7423ce45692bb805c4e4e3ad2c67284c0c8b0ded983"
+  },
+  "burgers_null_phase_surrogate_2": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "phase_surrogate",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "dc7a09d9596a61a8270ee6323d8e1103ef6111b9ac1dc394bf1b856b120ca16c"
+  },
+  "burgers_null_phase_surrogate_3": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "phase_surrogate",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "99ec7439e9bc679c25e528df3fe7a7683075830ae293f1d32055313d53fc7097"
+  },
+  "burgers_null_phase_surrogate_4": {
+   "tipo": "nullo",
+   "sistema": "burgers",
+   "kind": "phase_surrogate",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "2dfe59283e5241b57f7fcad5214a9ce7ed198ce5ba1efc52c08755c84784c5ad"
+  },
+  "kdv_sigma0.0": {
+   "tipo": "vera",
+   "sistema": "kdv",
+   "sigma": 0.0,
+   "supporto_vero": [
+    "u_xxx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "sha256": "a18759025fa7ec859d73ae9a78267f1fb82c8a173c1c509ab5481c88ee5165f7"
+  },
+  "kdv_sigma0.01": {
+   "tipo": "vera",
+   "sistema": "kdv",
+   "sigma": 0.01,
+   "supporto_vero": [
+    "u_xxx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "sha256": "8fdf34d77343d266eeb905e0fb3758e2c7b2baa23549333aa6013b77afbd5760"
+  },
+  "kdv_sigma0.02": {
+   "tipo": "vera",
+   "sistema": "kdv",
+   "sigma": 0.02,
+   "supporto_vero": [
+    "u_xxx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "sha256": "c8558e96fb294ae7793c93124f0dafaf8d2fee90d7164a43833cbbb0d0025ff7"
+  },
+  "kdv_sigma0.05": {
+   "tipo": "vera",
+   "sistema": "kdv",
+   "sigma": 0.05,
+   "supporto_vero": [
+    "u_xxx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "sha256": "3f83f8ebc732b290287ea8309e0e358b9d2c7294662a8c795c535bda75ef9dc6"
+  },
+  "kdv_sigma0.1": {
+   "tipo": "vera",
+   "sistema": "kdv",
+   "sigma": 0.1,
+   "supporto_vero": [
+    "u_xxx",
+    "uu_x"
+   ],
+   "coeff_veri": {
+    "uu_x": -1.0,
+    "u_xxx": -0.0484
+   },
+   "sha256": "23b90c9a3ec3aee79e122032247bfc723d0896a2f37dd297b3224acd45f46647"
+  },
+  "kdv_null_shuffle_t_0": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "shuffle_t",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "1c07cf35a9131c7ddb529d100ed6eb04d2083bb0db79a33abb4f19d89d9567de"
+  },
+  "kdv_null_shuffle_t_1": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "shuffle_t",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "204823b806458722f410778548f705ca93ac4871b126e90229e890f199101f79"
+  },
+  "kdv_null_shuffle_t_2": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "shuffle_t",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "d698b2ad20307f76903b144569fa082a8bc9d76f83a12f1d989e3a8c146c212e"
+  },
+  "kdv_null_shuffle_t_3": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "shuffle_t",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "c40d2411991e5786883af3ea5b38b009f00938a28612e7480d4e537143f4f384"
+  },
+  "kdv_null_shuffle_t_4": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "shuffle_t",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "db0cf6d0bb2667668388d3544d4541629e104fb50e50f9afb464cf23d24f411e"
+  },
+  "kdv_null_phase_surrogate_0": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "phase_surrogate",
+   "seme": 0,
+   "supporto_vero": [],
+   "sha256": "8c1d8833bfbca05a8dc46cde5cff5345b1ee191abf15006fc9bf14cf897111a3"
+  },
+  "kdv_null_phase_surrogate_1": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "phase_surrogate",
+   "seme": 1,
+   "supporto_vero": [],
+   "sha256": "bdd4951ef061a2933c74fa3bdf1542031470b6df4fc13bfe629f6b2872baf24a"
+  },
+  "kdv_null_phase_surrogate_2": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "phase_surrogate",
+   "seme": 2,
+   "supporto_vero": [],
+   "sha256": "c722649760913f4aba7eb9d36283d5ada1392d2f97c6a55e57d047af70b4c69c"
+  },
+  "kdv_null_phase_surrogate_3": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "phase_surrogate",
+   "seme": 3,
+   "supporto_vero": [],
+   "sha256": "204347688e15878d80464ef03756049510bd2580bfba4cab1f01f2fa16831707"
+  },
+  "kdv_null_phase_surrogate_4": {
+   "tipo": "nullo",
+   "sistema": "kdv",
+   "kind": "phase_surrogate",
+   "seme": 4,
+   "supporto_vero": [],
+   "sha256": "1b6b6232618b71904e1d4ec460ea1d1516c2b884efff56a5dc5a753ab3a2f852"
+  }
+ },
+ "elapsed_s": 669.7,
+ "n_vere": 20,
+ "n_nulli": 40
+}

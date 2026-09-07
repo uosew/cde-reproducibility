@@ -6,7 +6,8 @@ from pathlib import Path
 import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; V13 = ART / "cde_v13_blind_out"; OUT = ART / "cde_risoluzione_claim_out"
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; V13 = ART / "cde_v13_blind_out"; OUT = ART / "cde_risoluzione_claim_out"
 def _L(n, f):
     s = importlib.util.spec_from_file_location(n, BASE / f); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 RIS = _L("ris", "CDE_RISOLUZIONE_CLAIM_V0.py")

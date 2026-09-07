@@ -320,6 +320,31 @@ type and by field class (Section~\ref{sec:ablations}).
 
 \paragraph{Nulls, and the causal decomposition.} Vanilla PySINDy commits a false discovery on \textbf{49/50 null fields} (CDE: 0/120), even though an empty model was \emph{reachable} in its threshold grid on 33/50 of them: STLSQ has no criterion that ever prefers it. We then ran the ablation \textbf{PySINDy + epistemic gate}, transplanting the v1.1 residual gate (proxy: $\sqrt{1 - R^2}$ of PySINDy's own weak regression, same 5\% level): null FDR drops to \textbf{0/50} --- the null-rejection advantage is governance, and it transfers. But the same gate also rejects the baseline's \emph{true} fits at moderate noise (only 14/25 cells remain claimed discoveries; KdV falls at $\sigma \geq 2\%$, Allen--Cahn and Fisher--KPP at $\sigma \geq 5\%$), while \emph{all} 25 CDE cells pass the identical gate. The decomposition is clean: null rejection comes from the epistemic layer; noise-robust discovery power comes from the quality of the validated weak operator. Both are needed, and neither alone explains the paired result (Figure~\ref{fig:gatenull}b).
 
+\paragraph{A second implementation, and what it isolates.} A reviewer may reasonably ask
+whether claiming on nulls is a property of one library. We therefore ran an independent
+implementation --- \texttt{DataDrivenSparse} (SciML, Julia 1.12.7), a different group in a
+different language --- on \emph{exactly} the design matrices our frozen engine builds, so the
+only variable is the selection rule. On the four V8 systems, under the same fixed-threshold
+policy PySINDy's nulls were scored with, it claims a model on \textbf{40
+of 40 null fields}, selecting a median of 7 of 7 terms; PySINDy claims on
+40 of 40. Neither has a criterion that prefers the empty model. Transplanting
+the same 5\% residual gate takes the independent implementation to
+\textbf{0 of 40}: null residuals run
+0.798--0.998 against at most 4.1e-02 on true cells, a
+factor 19. Reported against us: allowed the most generous
+policy --- choosing, per case, a threshold that abstains where one exists --- its claims fall to
+10 of 40. Sparse selection \emph{can} abstain; it has
+no criterion for deciding when, and a practitioner holding a null field does not have that
+oracle.
+
+One number we did not seek is worth more than that verdict. On the same true cells the
+independent optimizer recovers the exact support in \textbf{20 of
+20} cells using our weak features, where PySINDy recovered 14 of
+20 using its own. With the optimizer family held fixed, the difference is the weak
+operator: an independent measurement of the decomposition claimed above, from software we did
+not write. Two implementations are not a class, and we claim no more than the sentence they
+support.
+
 \section{Ablations and epistemic observations}
 \label{sec:ablations}
 \subsection{Stability selection without the residual gate (v1.0 to v1.1)}
@@ -618,6 +643,7 @@ V9 KS (seed 11) & 11 & 3.13.10 & 2.5.1 & PASS & \texttt{ed42bcc6dd6c4588} \\
 V13 sealed replica (scored) & 700000+ & 3.13.10 & 2.5.1 & PASS & \texttt{04d08889eddb7fa2} \\
 Blind-4 resolution bound & 720000+ & 3.13.10 & 2.5.1 & PASS & \texttt{945dc846e72f94dd} \\
 Blind-5 projected bound & 740000+ & 3.13.10 & 2.5.1 & PASS & \texttt{2d70321320fe5d7b} \\
+Independent optimizer (Julia) & 7 & 3.13.10 & 2.5.1 & PASS & \texttt{4714835fe5920de2} \\
 \bottomrule
 \end{tabular}
 \end{center}

@@ -1,0 +1,5 @@
+[deps]
+DataDrivenDiffEq = "2445eb08-9709-466a-b3fc-47e12bd697a2"
+DataDrivenSparse = "5b588203-7d8b-4fab-a537-c31a7f73f46b"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+NPZ = "15e1cf62-19b3-5cfa-8e77-841668bca605"

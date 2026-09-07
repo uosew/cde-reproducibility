@@ -5,7 +5,8 @@ from pathlib import Path
 import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; OUT = ART / "cde_risoluzione_claim_out"; KS = ("1.0", "2.0")
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; OUT = ART / "cde_risoluzione_claim_out"; KS = ("1.0", "2.0")
 def esito(righe):
     out = {"n": len(righe), "n_false": sum(r["falsa"] for r in righe), "per_k": {}}
     for k in KS:

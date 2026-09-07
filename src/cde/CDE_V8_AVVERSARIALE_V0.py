@@ -45,6 +45,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 MOTORE = BASE / "CDE_PDE_DISCOVERY_V8.py"
 OUT_V8 = ART / "cde_pde_discovery_v8_out"
 ORIGINALE = ART / "cde_pde_discovery_v8_multiseed"

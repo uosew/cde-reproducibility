@@ -1,0 +1,470 @@
+{
+ "esito": {
+  "nulli": 40,
+  "nulli_rivendicati": 40,
+  "nulli_rivendicati_oracolo": 10,
+  "nulli_rivendicati_gated": 0,
+  "vere": 20,
+  "supporto_esatto": 20,
+  "errori": 0,
+  "soglia_fissa_per_sistema": {
+   "allen_cahn": "0.01",
+   "fisher_kpp": "0.01",
+   "burgers": "0.01",
+   "kdv": "0.01"
+  },
+  "dettaglio": [
+   {
+    "cella": "allen_cahn_sigma0.0",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0001384795807786552
+   },
+   {
+    "cella": "allen_cahn_sigma0.01",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.00533817231228027
+   },
+   {
+    "cella": "allen_cahn_sigma0.02",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.007836544649722305
+   },
+   {
+    "cella": "allen_cahn_sigma0.05",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.022279252088278353
+   },
+   {
+    "cella": "allen_cahn_sigma0.1",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.041053519088481406
+   },
+   {
+    "cella": "allen_cahn_null_shuffle_t_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9732976872611799
+   },
+   {
+    "cella": "allen_cahn_null_shuffle_t_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9940114890406982
+   },
+   {
+    "cella": "allen_cahn_null_shuffle_t_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9912365041369136
+   },
+   {
+    "cella": "allen_cahn_null_shuffle_t_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9487738400065204
+   },
+   {
+    "cella": "allen_cahn_null_shuffle_t_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9924657265241728
+   },
+   {
+    "cella": "allen_cahn_null_phase_surrogate_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9702643139688605
+   },
+   {
+    "cella": "allen_cahn_null_phase_surrogate_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9527486030142134
+   },
+   {
+    "cella": "allen_cahn_null_phase_surrogate_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9512310892469483
+   },
+   {
+    "cella": "allen_cahn_null_phase_surrogate_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9552051365055737
+   },
+   {
+    "cella": "allen_cahn_null_phase_surrogate_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9774170762970169
+   },
+   {
+    "cella": "fisher_kpp_sigma0.0",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 9.15025217110052e-05
+   },
+   {
+    "cella": "fisher_kpp_sigma0.01",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.000717178976704543
+   },
+   {
+    "cella": "fisher_kpp_sigma0.02",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0011601848664729137
+   },
+   {
+    "cella": "fisher_kpp_sigma0.05",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0028744003187214577
+   },
+   {
+    "cella": "fisher_kpp_sigma0.1",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.00530505055048811
+   },
+   {
+    "cella": "fisher_kpp_null_shuffle_t_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.97614508971884
+   },
+   {
+    "cella": "fisher_kpp_null_shuffle_t_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.9876316396062135
+   },
+   {
+    "cella": "fisher_kpp_null_shuffle_t_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9828290649856163
+   },
+   {
+    "cella": "fisher_kpp_null_shuffle_t_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.9457849061010276
+   },
+   {
+    "cella": "fisher_kpp_null_shuffle_t_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.9470544358578614
+   },
+   {
+    "cella": "fisher_kpp_null_phase_surrogate_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.8745388688034924
+   },
+   {
+    "cella": "fisher_kpp_null_phase_surrogate_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.9319321652207346
+   },
+   {
+    "cella": "fisher_kpp_null_phase_surrogate_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9808139332058312
+   },
+   {
+    "cella": "fisher_kpp_null_phase_surrogate_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.8135132618376807
+   },
+   {
+    "cella": "fisher_kpp_null_phase_surrogate_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.7990666364130654
+   },
+   {
+    "cella": "burgers_sigma0.0",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 2.2350673406222526e-05
+   },
+   {
+    "cella": "burgers_sigma0.01",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0019419047702534768
+   },
+   {
+    "cella": "burgers_sigma0.02",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0028611533464623345
+   },
+   {
+    "cella": "burgers_sigma0.05",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.008290690063462367
+   },
+   {
+    "cella": "burgers_sigma0.1",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.014528299524200426
+   },
+   {
+    "cella": "burgers_null_shuffle_t_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9698789094382437
+   },
+   {
+    "cella": "burgers_null_shuffle_t_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9789488789498462
+   },
+   {
+    "cella": "burgers_null_shuffle_t_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9696343784306246
+   },
+   {
+    "cella": "burgers_null_shuffle_t_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9984403637713437
+   },
+   {
+    "cella": "burgers_null_shuffle_t_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.984916887247674
+   },
+   {
+    "cella": "burgers_null_phase_surrogate_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.8796018685296569
+   },
+   {
+    "cella": "burgers_null_phase_surrogate_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.8786982613913993
+   },
+   {
+    "cella": "burgers_null_phase_surrogate_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.8961873062733664
+   },
+   {
+    "cella": "burgers_null_phase_surrogate_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": true,
+    "soglia_fissa": "0.01",
+    "resid": 0.8491305366425859
+   },
+   {
+    "cella": "burgers_null_phase_surrogate_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9069594264440866
+   },
+   {
+    "cella": "kdv_sigma0.0",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 8.313360321640224e-05
+   },
+   {
+    "cella": "kdv_sigma0.01",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.0030407287024690655
+   },
+   {
+    "cella": "kdv_sigma0.02",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.00618174233282525
+   },
+   {
+    "cella": "kdv_sigma0.05",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.014184702325328171
+   },
+   {
+    "cella": "kdv_sigma0.1",
+    "tipo": "vera",
+    "esatto": true,
+    "resid": 0.026278430555530193
+   },
+   {
+    "cella": "kdv_null_shuffle_t_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9730421707082073
+   },
+   {
+    "cella": "kdv_null_shuffle_t_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9047817243493118
+   },
+   {
+    "cella": "kdv_null_shuffle_t_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9726638203800982
+   },
+   {
+    "cella": "kdv_null_shuffle_t_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.938384257402593
+   },
+   {
+    "cella": "kdv_null_shuffle_t_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9760028146879535
+   },
+   {
+    "cella": "kdv_null_phase_surrogate_0",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.868929909810709
+   },
+   {
+    "cella": "kdv_null_phase_surrogate_1",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.7977746821627612
+   },
+   {
+    "cella": "kdv_null_phase_surrogate_2",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.8788612464808699
+   },
+   {
+    "cella": "kdv_null_phase_surrogate_3",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9458906993978365
+   },
+   {
+    "cella": "kdv_null_phase_surrogate_4",
+    "tipo": "nullo",
+    "rivendica": true,
+    "rivendica_oracolo": false,
+    "soglia_fissa": "0.01",
+    "resid": 0.9089823003814163
+   }
+  ],
+  "verdetto": "CLASSE"
+ },
+ "mutation_test": {
+  "40 nulli rivendicati -> CLASSE": true,
+  "0 nulli rivendicati -> IMPLEMENTAZIONE": true,
+  "20 su 40 -> INTERMEDIO": true,
+  "errori diffusi -> NON_CONFRONTABILE": true,
+  "il gate non conta un nullo con residuo alto": true,
+  "politica fissa e oracolo divergono e sono riportate entrambe": true,
+  "supporto esatto riconosciuto": true,
+  "supporto sbagliato non conta": true
+ }
+}

@@ -18,6 +18,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 ROOT = BASE.parent
 OUT_MD = PAPER / "RESEARCH_NOTE_WEAKFORM_DISCOVERY_2026_07_29.md"
 

@@ -8,6 +8,7 @@ Reproducibility package for the research note **"Epistemically Gated Weak-Form D
 |---|---|
 | `src/cde/` | 38 frozen Python modules (operator v7, engine v8, KS v9, gated pipelines V0/V1/V1.1, runtime guard, non-oracle preflight, blind generators/discoverers/scorers, resolution bound, paper builders). Flat on purpose: the modules locate each other by file name. `src/INDEX.md` groups them by role. |
 | `artifacts/` | every committed output the paper reads (JSON/Markdown; raw `*.npz` fields are regenerable from recorded seeds and are not committed). `artifacts/INDEX.md` groups them by campaign. |
+| `baselines/julia/` | the independent sparse-regression arm: its script, the exact package environment, its raw output and its scoring. It reads the design matrices in `artifacts/cde_feature_export_out/`, which are committed because they are the interface of the paired comparison — both arms provably saw the same numbers. |
 | `blind/protocols/` | the preregistrations, verdict semantics, claim cards, audit and decisions the campaigns were run under. |
 | `builders/` | `build_numbers.py` (re-reads every artifact, runs every claim assertion, writes `provenance/CLAIM_PROVENANCE.md`), `build_figures.py`, `build_paper.py`. |
 | `paper/` | `main.tex` and the figures, all generated. |
@@ -53,7 +54,7 @@ The tests re-score the two sealed campaigns from the committed verdicts and trut
 
 ## Environment
 
-The artifacts were produced and the paper is rebuilt with CPython 3.13.10, NumPy 2.5.1, SciPy 1.18.0, Matplotlib 3.11.1 (`requirements-lock.txt`); a py3.12 replica is in the manifest. The paired baseline artifact was produced with PySINDy 2.1.0 and is committed, so PySINDy is not needed to rebuild the paper. `src/cde/numpy_guard.py` exists because on CPython 3.14 with NumPy < 2.3 infix operations on arrays ≥ 256 KB mutate their operand (NumPy issues #28681, #30435); every run records the guard's verdict in its evidence envelope, and an envelope without a passing guard is never promotable.
+The artifacts were produced and the paper is rebuilt with CPython 3.13.10, NumPy 2.5.1, SciPy 1.18.0, Matplotlib 3.11.1 (`requirements-lock.txt`); a py3.12 replica is in the manifest. The paired baseline artifacts were produced with PySINDy 2.1.0 and, for the independent arm, Julia 1.12.7 with `DataDrivenSparse` (environment pinned in `baselines/julia/Manifest.toml`); both are committed, so neither PySINDy nor Julia is needed to rebuild the paper. The Julia arm's number is re-scored from the committed artifacts by the test suite, in pure Python; `baselines/julia/run_dde.jl` re-runs it if you have Julia. `src/cde/numpy_guard.py` exists because on CPython 3.14 with NumPy < 2.3 infix operations on arrays ≥ 256 KB mutate their operand (NumPy issues #28681, #30435); every run records the guard's verdict in its evidence envelope, and an envelope without a passing guard is never promotable.
 
 ## What this package is not
 

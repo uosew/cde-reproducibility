@@ -64,6 +64,24 @@
    "where": "Section 8.2, Fig. 4a"
   },
   {
+   "claim": "independent implementation (Julia) on the same design matrices: nulls claimed / with the gate / most generous policy",
+   "value": "40/40 / 0/40 / 10/40",
+   "artifact": "baselines/julia/{risultati_dde.json,scoring.json}, artifacts/cde_feature_export_out/",
+   "code": "CDE_ESPORTA_FEATURE_V0.py + run_dde.jl + CDE_BASELINE_JULIA_SCORER_V0.py",
+   "campaign": "paired independent baseline (prereg 2026-09-07)",
+   "builder": "build_research_note_latex_v0.py (asserts)",
+   "where": "Results 6.4"
+  },
+  {
+   "claim": "independent implementation: exact support on true cells, ours vs PySINDy's features",
+   "value": "20/20 vs 14/20",
+   "artifact": "baselines/julia/scoring.json, cde_v8_pysindy_baseline_v0_out/results.json",
+   "code": "run_dde.jl + CDE_BASELINE_JULIA_SCORER_V0.py",
+   "campaign": "paired independent baseline",
+   "builder": "build_research_note_latex_v0.py",
+   "where": "Results 6.4"
+  },
+  {
    "claim": "blind-4: claims / sub-support / violations / verdict",
    "value": "59 / 8 / 0 / CONFIRMED",
    "artifact": "cde_blind4_out/scoring.json, claim_dettaglio.json",
@@ -74,6 +92,7 @@
   }
  ],
  "artifact_sha256_16": {
+  "baselines/julia/scoring.json": "4714835fe5920de2",
   "cde_v13_blind_out/unblinding_report.json": "04d08889eddb7fa2",
   "cde_blind4_out/scoring.json": "945dc846e72f94dd",
   "cde_risoluzione_claim_out/esito_stage1.json": "fd8d06d5ef70dad2",

@@ -11,6 +11,7 @@ import numpy as np
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 def _L(n, f):
     s = importlib.util.spec_from_file_location(n, BASE / f); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 V1 = _L("v1", "CDE_PDE_PIPELINE_GATED_V1.py"); TERMS = V1.TERMS; VERDETTI_ASSERTIVI = V1.VERDETTI_ASSERTIVI

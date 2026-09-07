@@ -18,6 +18,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
 PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"
 OUTDIR = PAPER
 OUTDIR.mkdir(exist_ok=True)
 
@@ -89,6 +90,24 @@ _ss = [r for r in D4 if r["mancanti"]]; assert len(_ss) == _E["sotto_supporto"]
 _margini = [r["X"] / list(r["mancanti"].values())[0] for r in _ss]; assert min(_margini) > 1.0
 _cmin_med = sorted(r["c_min_div_vv_x"] for r in _ss)[len(_ss) // 2]; _ag_med = sorted(r["alpha_gamma_vero"] for r in _ss)[len(_ss) // 2]
 assert _cmin_med > _ag_med
+BJ = _json.loads((JUL / "scoring.json").read_text())
+_J = BJ["esito"]
+assert _J["verdetto"] == "CLASSE" and _J["errori"] == 0
+assert _J["nulli"] == 40 and _J["nulli_rivendicati"] == 40 and _J["nulli_rivendicati_gated"] == 0
+assert _J["vere"] == 20 and _J["supporto_esatto"] == 20
+_res_null = [d["resid"] for d in _J["dettaglio"] if d["tipo"] == "nullo"]
+_res_true = [d["resid"] for d in _J["dettaglio"] if d["tipo"] == "vera"]
+assert min(_res_null) > max(_res_true)
+_JMAN = _json.loads((ART / "cde_feature_export_out" / "manifest.json").read_text())
+assert _JMAN["n_vere"] == 20 and _JMAN["n_nulli"] == 40
+# riferimento PySINDy sui soli quattro sistemi V8, ricalcolato dall'artefatto
+_bl4 = {k: v for k, v in M.BL["systems"].items() if k != "ks"}
+_bl4_null = sum(v["nulls"]["false_discoveries"] for v in _bl4.values())
+_bl4_runs = sum(v["nulls"]["n_runs"] for v in _bl4.values())
+_bl4_exact = sum(sum(r["support_exact"] for r in v["sigma"].values()) for v in _bl4.values())
+_bl4_cells = sum(len(v["sigma"]) for v in _bl4.values())
+assert (_bl4_null, _bl4_runs, _bl4_exact, _bl4_cells) == (40, 40, 14, 20)
+_sha_jul = __import__("hashlib").sha256((JUL / "scoring.json").read_bytes()).hexdigest()[:16]
 B5 = _json.loads((ART / "cde_blind5_out" / "scoring.json").read_text())
 _E5 = B5["esito"]; assert _E5["verdetto"] == "CONFIRMED" and not _E5["violazioni"] and _E5["verdetti_cambiati"] == 0
 assert _E5["n_claim"] >= 30 and _E5["sotto_supporto"] == _E5["coperte"] and B5["audit_cecita"]["riferimenti_sospetti"] == []
@@ -266,7 +285,8 @@ manifest = "\n".join(
     for k, v in M.env.items()) + (
     f"\nV13 sealed replica (scored) & 700000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_v13}}} \\\\"
     f"\nBlind-4 resolution bound & 720000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b4}}} \\\\"
-    f"\nBlind-5 projected bound & 740000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b5}}} \\\\")
+    f"\nBlind-5 projected bound & 740000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b5}}} \\\\"
+    f"\nIndependent optimizer (Julia) & 7 & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_jul}}} \\\\")
 
 if M.BL is not None:
     baseline_tex = (
@@ -311,6 +331,32 @@ if M.BL is not None:
            M.bl_null_runs, M.n_null_total, M.bl_abst, M.bl_null_runs,
            M.bl_fd_gated, M.bl_null_runs, M.bl_gated_true, M.bl_cells_total,
            M.cde_cells_total))
+    baseline_tex += rf"""
+\paragraph{{A second implementation, and what it isolates.}} A reviewer may reasonably ask
+whether claiming on nulls is a property of one library. We therefore ran an independent
+implementation --- \texttt{{DataDrivenSparse}} (SciML, Julia 1.12.7), a different group in a
+different language --- on \emph{{exactly}} the design matrices our frozen engine builds, so the
+only variable is the selection rule. On the four V8 systems, under the same fixed-threshold
+policy PySINDy's nulls were scored with, it claims a model on \textbf{{{_J['nulli_rivendicati']}
+of {_J['nulli']} null fields}}, selecting a median of 7 of 7 terms; PySINDy claims on
+{_bl4_null} of {_bl4_runs}. Neither has a criterion that prefers the empty model. Transplanting
+the same 5\% residual gate takes the independent implementation to
+\textbf{{{_J['nulli_rivendicati_gated']} of {_J['nulli']}}}: null residuals run
+{min(_res_null):.3f}--{max(_res_null):.3f} against at most {max(_res_true):.1e} on true cells, a
+factor {min(_res_null) / max(_res_true):.0f}. Reported against us: allowed the most generous
+policy --- choosing, per case, a threshold that abstains where one exists --- its claims fall to
+{_J['nulli_rivendicati_oracolo']} of {_J['nulli']}. Sparse selection \emph{{can}} abstain; it has
+no criterion for deciding when, and a practitioner holding a null field does not have that
+oracle.
+
+One number we did not seek is worth more than that verdict. On the same true cells the
+independent optimizer recovers the exact support in \textbf{{{_J['supporto_esatto']} of
+{_J['vere']}}} cells using our weak features, where PySINDy recovered {_bl4_exact} of
+{_bl4_cells} using its own. With the optimizer family held fixed, the difference is the weak
+operator: an independent measurement of the decomposition claimed above, from software we did
+not write. Two implementations are not a class, and we claim no more than the sentence they
+support.
+"""
 else:
     baseline_tex = ""
 

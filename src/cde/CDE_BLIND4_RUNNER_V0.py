@@ -6,7 +6,8 @@ import hashlib, importlib.util, json, sys, time
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; OUT = ART / "cde_blind4_out"
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; OUT = ART / "cde_blind4_out"
 def _L(n, f):
     s = importlib.util.spec_from_file_location(n, BASE / f); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 D13 = _L("d13", "CDE_V13_BLIND_DISCOVERER_V0.py"); RIS = _L("ris", "CDE_RISOLUZIONE_CLAIM_V0.py")

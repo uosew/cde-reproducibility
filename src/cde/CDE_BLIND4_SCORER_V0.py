@@ -4,7 +4,8 @@ import hashlib, importlib.util, json, re, sys
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
 ART = BASE.parent.parent / "artifacts"      # public layout (cde-reproducibility)
-PAPER = BASE.parent.parent / "paper"; OUT = ART / "cde_blind4_out"
+PAPER = BASE.parent.parent / "paper"
+JUL = BASE.parent.parent / "baselines" / "julia"; OUT = ART / "cde_blind4_out"
 def _L(n, f):
     s = importlib.util.spec_from_file_location(n, BASE / f); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
 def valuta(ann, truth, contributo):

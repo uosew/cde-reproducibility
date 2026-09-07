@@ -22,6 +22,22 @@ def test_paper_tex_regenerates_identically(tmp_path):
     committed = (ROOT / "paper/main.tex").read_text()
     subprocess.run([sys.executable, str(ROOT / "builders/build_paper.py")], check=True, capture_output=True)
     assert (ROOT / "paper/main.tex").read_text() == committed
+def test_julia_arm_rescored_from_committed_artifacts():
+    """The independent-baseline number is recomputed in pure Python from the committed
+    artifacts: Julia is not needed to rebuild the paper, only to re-run the arm."""
+    S = load("CDE_BASELINE_JULIA_SCORER_V0.py")
+    man = json.loads((A / "cde_feature_export_out/manifest.json").read_text())
+    dde = json.loads((ROOT / "baselines/julia/risultati_dde.json").read_text())["celle"]
+    S.EXPORT_TERMS = tuple(man["terms"])
+    e = S.esito(man["celle"], dde)
+    rec = json.loads((ROOT / "baselines/julia/scoring.json").read_text())["esito"]
+    for k in ("verdetto", "nulli", "nulli_rivendicati", "nulli_rivendicati_gated",
+              "nulli_rivendicati_oracolo", "vere", "supporto_esatto", "errori"):
+        assert e[k] == rec[k], (k, e[k], rec[k])
+    assert e["verdetto"] == "CLASSE" and e["nulli_rivendicati_gated"] == 0
+    assert all(S.mutation_test().values())
+
+
 def test_no_monorepo_dependency():
     forbidden = ("Desktop" + "/LB", "living" + "_brain", "LB" + "_LAB", "/Users" + "/")   # split so this file does not match itself
     scanned = list((ROOT / "src").rglob("*.py")) + list((ROOT / "builders").glob("*.py")) + [ROOT / "provenance/make_manifest.py"]
