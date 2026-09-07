@@ -5,271 +5,292 @@
    "sha256_originale": "ac243421ddf437824b0b74e75d4e700a6fcebdcfee80a92bc0074b8261d9e511",
    "sha256_pubblico": "548353aca57afaa9ec4a6ca291eeabde7156fd6de9c75d8e87192504110c5ad5",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND4_RUNNER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND4_RUNNER_V0.py",
    "sha256_originale": "0a32dc7395a4fa53d4f58ae242c4c7bc78c5ab4a99f0dd8776d1d1c917dd7f88",
    "sha256_pubblico": "aca13bbc94fb77da1a9ae9a29cd865a5bd43a69f7f0ec48cd6f8fa694bc2b20f",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND4_SCORER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND4_SCORER_V0.py",
    "sha256_originale": "419e41c28c5390b1669d8964ab12dd92fcf57bb89c7f5c8249f7256b8899ba76",
    "sha256_pubblico": "0e9282e5d9959845c4ce700b4e079ed2f42c1e4f89170205ca4b23095a085b1f",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
+  },
+  "CDE_BLIND5_GENERATOR_V0.py": {
+   "source_path": "CDE_Scientific_Discovery/CDE_BLIND5_GENERATOR_V0.py",
+   "sha256_originale": "87e7a7accc6243502dc5a2f1363ffab5af1aa114f59ef5c35b7e5a4b0b0f516c",
+   "sha256_pubblico": "8eced216cbd36b7ca56f5354e4307a815b1945b005525ebc5a0cdb42981ce06f",
+   "patchato": true,
+   "source_commit": "a873b3a2"
+  },
+  "CDE_BLIND5_RUNNER_V0.py": {
+   "source_path": "CDE_Scientific_Discovery/CDE_BLIND5_RUNNER_V0.py",
+   "sha256_originale": "5303ad9aff271646ab7af434658a14831dc350e1205ceef5779f43a183af0394",
+   "sha256_pubblico": "c8843d637bb13ff46f3b4dee915d7b544d93a86d4473cc03fe17d1e4d9997df5",
+   "patchato": true,
+   "source_commit": "a873b3a2"
+  },
+  "CDE_BLIND5_SCORER_V0.py": {
+   "source_path": "CDE_Scientific_Discovery/CDE_BLIND5_SCORER_V0.py",
+   "sha256_originale": "938c8af84ab1eac9354500e8766d8d5a2391ab017f9dbd925773cf9fdf36699e",
+   "sha256_pubblico": "665d276a89fed2d0e672210fb4e0d3c391978561b015e77527fa0aa28a6979cc",
+   "patchato": true,
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND_PDE2_GENERATOR_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND_PDE2_GENERATOR_V0.py",
    "sha256_originale": "b187ca4530559fed8256a6bf7d511cbfd3b0add9f2db7829ba60d9f1fda9f69f",
    "sha256_pubblico": "43968f65fdf3c167d00921e65200024c3d1ec125217978d7e0cbfe90c764cac4",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND_PDE2_RUNNER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND_PDE2_RUNNER_V0.py",
    "sha256_originale": "df6071bb124d13c27ac623763d2a195cead0cbf4a9ecdfda3bfa3d8dbceb0d32",
    "sha256_pubblico": "9141d1a15ca8d32cb23c3e8d35e906a923504d939ef91e9b8341379c412aeffd",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND_PDE2_SCORER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND_PDE2_SCORER_V0.py",
    "sha256_originale": "88b258a167689caab1684e587045119877550a4dac9e69f44fbb5c8dd5850b02",
    "sha256_pubblico": "b38cee104c662f6c65b9235fbe58aec35ab3349a2152f88b493db43d49c0ef7d",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_BLIND_PDE_RUNNER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_BLIND_PDE_RUNNER_V0.py",
    "sha256_originale": "5a740f843f661ec4af131f2075f14aeeaadd7fb3ecba05fccb8971d7b6bf3a85",
    "sha256_pubblico": "50c0343804527d28f6b0ac496c96c50bcd9d2289ab43fa82b57f30d7d4a4071b",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_KS_DISCOVERY_V9.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_KS_DISCOVERY_V9.py",
    "sha256_originale": "aa2a4149b760572a70920fbf1f674148a6595654c704d7664bf40ae7c0d0feda",
    "sha256_pubblico": "7fb3f0ed90b65cb0ff42c52c849c4681c764a07109ffd5b1bd3156a54f8f8ab1",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PDE_DISCOVERY_V8.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PDE_DISCOVERY_V8.py",
    "sha256_originale": "4a2181b8dbeda428fcfe17c9c34bdffa3f6f809ba9b37a9db2465196f6adc1ec",
    "sha256_pubblico": "375a6b3b8b1a89a410fb51e684b9ad1125e45b43579597874adbe6da6a09c4f7",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PDE_PIPELINE_GATED_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PDE_PIPELINE_GATED_V0.py",
    "sha256_originale": "674f192890ef9686f3bacb49815370a9cb61c69503b49b9164787dc015304b23",
    "sha256_pubblico": "bfedc1f16971616dfff3092ec5d9073446dfe094b52cc3a1a46069b34c6957d4",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PDE_PIPELINE_GATED_V1.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PDE_PIPELINE_GATED_V1.py",
    "sha256_originale": "faedaa183a94a7dd60eed3651a67f311dad680173e72c6a72b2a856b662b60fa",
    "sha256_pubblico": "06b0a04ee866c4a3831c5ec37a065f5d68d6d89b2a11cf6594482db44dd61389",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PDE_PIPELINE_GATED_V1_1.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PDE_PIPELINE_GATED_V1_1.py",
    "sha256_originale": "063dfa10dc3909c222d1ab0993bb519ba6fd25eeeda7954c9d0e110c7f5ec96a",
    "sha256_pubblico": "cd4853899b0994e82e8f2c157e168bdbaaff4c069d3e3a70a5e8149a3f9568ec",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PIPELINE_REPLAY_BLIND2_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PIPELINE_REPLAY_BLIND2_V0.py",
    "sha256_originale": "dba6c78fac83cac5b766de41eaca34d5aa9586d57de114aadb040ec29c81ee32",
    "sha256_pubblico": "97ec5a386d189de5bbf5d667bfe0c3212d016c0dc9ffc19347fb0f479e69948b",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_PIPELINE_REPLAY_BLIND2_V1_1.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_PIPELINE_REPLAY_BLIND2_V1_1.py",
    "sha256_originale": "199afd6259db6ee54be52855d2e23e4f5f84db496e9c115b0ed5200111361edd",
    "sha256_pubblico": "39b7a501a65aabe46abe2b313f2d14b1cb6b33ae30e92f06f8e4b7c3bfeab438",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_RISOLUZIONE_ANALYZER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_RISOLUZIONE_ANALYZER_V0.py",
    "sha256_originale": "8b31ff3e4f559522bc35999d27323e6ac09378a96453fd47189fb24513b93862",
    "sha256_pubblico": "9cd474697e71847be686addf7f6c8baf4cdbe2066510f8d71e1e326a7ec96bd7",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_RISOLUZIONE_CLAIM_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_RISOLUZIONE_CLAIM_V0.py",
-   "sha256_originale": "f2e8367b430e1d05d75393554ddfa1d21bde39faf4d61adf089687ec3fa7cc3a",
-   "sha256_pubblico": "8c45855c4d662d439cecb9045007bd847b227ccb8d2581619e6185c8859b7582",
+   "sha256_originale": "20c3d8ed8546b03770a4a88a4e8839aefc1be2b60bf1e4abfaa42015e8bc470f",
+   "sha256_pubblico": "3f7c7561ba8e0c2fa9e1bd939dd430e9cd9510d0bb1a6793e1385971228ba26d",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_RISOLUZIONE_STAGE1_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_RISOLUZIONE_STAGE1_V0.py",
    "sha256_originale": "9d4b83836d88a6eb7b38b61fb7bec9443f75ff239b240815590121ccb822ac52",
    "sha256_pubblico": "e45abcaa59f39758d61e84acc8c2af19389167280bf90020f49d3c8acc420593",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_THERMAL_DRESS_REHEARSAL_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_THERMAL_DRESS_REHEARSAL_V0.py",
    "sha256_originale": "849decc219d227a53a6132746ec6a38d69d9deb2b28a41e5cef5382203330c56",
    "sha256_pubblico": "05927a15e7fed43105b52519c33412965769b8e458e22519b0cb8e36e605f0d3",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V10_CAPABILITY_MATRIX_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V10_CAPABILITY_MATRIX_V0.py",
    "sha256_originale": "ae1e520a890c8ce3e3998a617ee8f5a93c15a6d630e2bc151164d5e65fb95208",
    "sha256_pubblico": "2d7a1f61e88a14ea232790101cf04aaaf1f0ce40aba2758f85a37139e878a200",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V10_CLAIM_LADDER_AUDIT_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V10_CLAIM_LADDER_AUDIT_V0.py",
    "sha256_originale": "f1f2f7865211d4ff0da517cffdf601cccb9307e0bc40c19e0a1a69456b7de1bf",
    "sha256_pubblico": "452afd17670e9abf0d9a38c72b706eced409c799be331a0f9b8ebe2a40798586",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V10_NONORACLE_PREFLIGHT_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V10_NONORACLE_PREFLIGHT_V0.py",
    "sha256_originale": "a2f74be8e61a6e1d77f8c4bc725175b5ce297bb0558373fda6d1969dd0d3dd24",
    "sha256_pubblico": "24ae3db2f4042287b0b5f0453db51309b24ff6bbcb38d185027f159c0d90f42c",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V10_WRONG_LIBRARY_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V10_WRONG_LIBRARY_V0.py",
    "sha256_originale": "2f40dfcdb33b06bdb461ad8b76559a4f8cf153985179e5868f0cd44581574f4d",
    "sha256_pubblico": "2df9e225bcff3284770b2b86563da5eb0c3446ecad59a7e543758849dc297ca3",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V11_BLIND_DISCOVERER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V11_BLIND_DISCOVERER_V0.py",
    "sha256_originale": "d3f5606d79918d8eaac2f2599a90c8b284439d8c4ef35ce274efbbe7fbaf2c38",
    "sha256_pubblico": "1d774beb527b0e78f6730d51880e949fd3adc30f3828d54f97780c7278e2fd5c",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V11_BLIND_DISCOVERER_V1.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V11_BLIND_DISCOVERER_V1.py",
    "sha256_originale": "dd8f90f531d5f47e30fe0b5fd12377b95e33f1d6262e736afbc65bbb06467351",
    "sha256_pubblico": "758b0044f1f9b4490a57497def3b398852f6aea3d7b515baec094ee81afa65fe",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V11_BLIND_GENERATOR_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V11_BLIND_GENERATOR_V0.py",
    "sha256_originale": "7f673455cdf4ce72c1ec02277e044d2fc17f85631e958cadecc7d66499ddfea4",
    "sha256_pubblico": "f9b0643fb76185b7559c5cf3f2dd193f2eec402d81d3028c02c172101884a280",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V11_BLIND_UNBLINDING_V1.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V11_BLIND_UNBLINDING_V1.py",
    "sha256_originale": "2a4a430e3fe02064513c1b35072c2bf60c3a73f42120caffc2bb9b5f5de6a236",
    "sha256_pubblico": "1a1539b2465f5eae6df8f14d0ae290778d09a395418fd52a2bec378c2b032cbb",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0.py",
    "sha256_originale": "35dc4d760cae9bad8c4bf4d840678040102bc2dca895a22b234d003caf8cff52",
    "sha256_pubblico": "3e099896bc6dc987874c30e07b4666374d435c45dbbd18ec1524040fd46cb7af",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V13_BLIND_DISCOVERER_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V13_BLIND_DISCOVERER_V0.py",
    "sha256_originale": "cf465d29a29649d9e60f8bdc467a4345e5120a9974b6ee2cf403effaaa92001b",
    "sha256_pubblico": "5e0786e9d71069c1f2072409bd769bd97e5bc238e2f70d828f27fd56f165df65",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V13_BLIND_GENERATOR_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V13_BLIND_GENERATOR_V0.py",
    "sha256_originale": "36f55373069606ff48b7719ad184a549375ffba2d2e4cc956a36ea9cfb49ca36",
    "sha256_pubblico": "f373454a0581ce1dbf068e010bbd0897a250e32c171bc3a2d30bb30f7e85956a",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V13_BLIND_UNBLINDING_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V13_BLIND_UNBLINDING_V0.py",
    "sha256_originale": "941d2074515229397f6452781fcccbf09a6eceac54af8c2b86810af8d14c0dcc",
    "sha256_pubblico": "bbd4c841358655429f3e7d6259293ab78adec04c935737787577ae26f00bfa50",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V8_AVVERSARIALE_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V8_AVVERSARIALE_V0.py",
    "sha256_originale": "cfa36ef69635d69eeb86c7a2c5b500e41c1f56795131f8418aa04b77f71ced98",
    "sha256_pubblico": "abcab7d257d7627121a999c6231661ada8dccc9b6b6497175ca83ac144fcc6ae",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_V8_EXTERNAL_SOLVER_REPLICATION_V0.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_V8_EXTERNAL_SOLVER_REPLICATION_V0.py",
    "sha256_originale": "678288024b887ab784a0ec57523af7ef116e30fba4e5be7abe1483d4945ee023",
    "sha256_pubblico": "7efe7a89fd6a9f9c25457fe0349da2397d5bf50d2acca88d004ed261525b14b8",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "CDE_WEAK_OPERATOR_COMPONENTWISE_IDENTITY_V7.py": {
    "source_path": "CDE_Scientific_Discovery/CDE_WEAK_OPERATOR_COMPONENTWISE_IDENTITY_V7.py",
    "sha256_originale": "0c5b33d84759f2f76e848ac243af5f8d57fbac17f0369d0bfb993eeec7436b36",
    "sha256_pubblico": "98c6f9d61b767840dd3bb025b3225faf0fd84478c806c44484a0f2fdef2f541f",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "build_note_figures_v0.py": {
    "source_path": "CDE_Scientific_Discovery/build_note_figures_v0.py",
-   "sha256_originale": "317aaad5ce23dddbaf7b0838666f39ef50bded08dd95af4a711edd2ad157beeb",
-   "sha256_pubblico": "32d07bd194a5a09903b572b183a39ccbd4eb2a524e3e98d0125836dc5baee1ec",
+   "sha256_originale": "970da7aeef5c5261acd3e600fa85d076d9801a73031f315a8eac29214783e50c",
+   "sha256_pubblico": "d116a7b639d8dbba0239810ef6eae1f6883cd2e274d2fc6d4407cf3d8e0a72c6",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "build_research_note_latex_v0.py": {
    "source_path": "CDE_Scientific_Discovery/build_research_note_latex_v0.py",
-   "sha256_originale": "9e279b77001e2f2ff9afcb425478a0442eb09a60517853f73fc6e85d1f5e442f",
-   "sha256_pubblico": "36544d82e6ef3105ff382879a675cb0dfda4d45cbd62bf44fbe9ef86c716a4b5",
+   "sha256_originale": "ac79ea41c630b1609532cf13f8e96cabaa1669501cdd26352f4fc0bd3ec997fa",
+   "sha256_pubblico": "51099f3dc4f1779e577fab8dd0b8942994ca9bf6f746ccb0253b6581cd0d0e20",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "build_research_note_v0.py": {
    "source_path": "CDE_Scientific_Discovery/build_research_note_v0.py",
-   "sha256_originale": "fa4545aef7cbff7dcfba2d9b258495991e60286c0152f633f4b92d05e1bd0ba0",
-   "sha256_pubblico": "8e4d1f90039506d5d76304744f5321318956196c11248e42e444657a64ffcd2e",
+   "sha256_originale": "d9d2eae4bd944e6de083144350f09d4c24c7e141516f077eeb5f6c45c23ce747",
+   "sha256_pubblico": "dcf5b170b2df05d8a72d1ef6b7293ddcf9c4a9bac331b275d200cff7233a93c0",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "numpy_guard.py": {
    "source_path": "CDE_Scientific_Discovery/numpy_guard.py",
    "sha256_originale": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
    "sha256_pubblico": "f775f6900af50e94df1e6f83d850982781437849f68b52cda528c7fd179196e2",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   },
   "runtime_guard_bootstrap.py": {
    "source_path": "runtime_guard_bootstrap.py",
    "sha256_originale": "48c8de5c9a45ddad55444b49d0741f3b1e325c90dab757704b9525c70e73fcf4",
    "sha256_pubblico": "0e8b010f51c95246d9816e6832bccbeeaf9e47f83b597d97f6beda901afa5926",
    "patchato": true,
-   "source_commit": "41733028"
+   "source_commit": "a873b3a2"
   }
  },
  "artefatti": {
   "NUMPY_ELISION_REPOSITORY_AUDIT_2026_07_28.json": "9ea3598e620ebbb5caa8de5e5fd2bf79131df9f6e7a5cf82979ff2c248aaae7d",
-  "RESEARCH_NOTE_WEAKFORM_DISCOVERY_2026_07_29.md": "50f550f0b26acfc7e55e562b0201fc62f632d7ed3154b74bf8277879476f3e9f",
+  "RESEARCH_NOTE_WEAKFORM_DISCOVERY_2026_07_29.md": "7599cbdff9f0c267be19b109807570afd0141484c5b5f3195174c417dc86fba4",
   "cde_blind4_out/generation_envelope.json": "336d5c0bfd7212d3d7e11d1981587f179aa34966f86e1176327a5311f8102c50",
   "cde_blind4_out/scoring.json": "945dc846e72f94dd95547e537272d4b184af0b9c37fe12282f31620c47cb4601",
   "cde_blind4_out/verdicts_mac.json": "493da40c2e2b4f34a8ca0e0e5b3fe3395485dcd885cb50fef8637f9bf5250dca",
@@ -280,6 +301,16 @@
   "cde_blind4_out/envelope_mac.json": "f08c6edc9dc0ade99137dc34d9cb7bb5d0d8da082780cbe0faa5e9cb352bda10",
   "cde_blind4_out/sealed/truth.sha256": "464f2823eaa15c313d47f757c7ec12e738ca45a0cf98e8498e3ae941ccfcc5a5",
   "cde_blind4_out/sealed/truth.json": "e92ebf057ca77c3864195af04ee327bdc8667a71e53a1a9dc97b2464b1a09d6a",
+  "cde_blind5_out/generation_envelope.json": "d7ab31043f54e61ca3a65cc5883fda4221dcf169827e4fb6ef8065ece7468814",
+  "cde_blind5_out/scoring.json": "2d70321320fe5d7b6862abb9e29bb13b5871fe9b46c66a601660133c2c97fabe",
+  "cde_blind5_out/verdicts_mac.json": "17fd10954bfa3cb5391a3e51bbf4c94149a83c82692e7505d495408e9c589445",
+  "cde_blind5_out/claim_dettaglio.json": "c6e257fed8025a125e0edfdac5e777ccb71c26e32a38f045c163811cb14360cf",
+  "cde_blind5_out/verdicts_annotati.json": "55e78c546b453d0dcacc84edb8e578ccd5b53f1d363a281413168b9ba6c639e6",
+  "cde_blind5_out/manifest.json": "8b0befb96e18b6b79e0d8bdb803cc63f90170176050408d8594162f369d43ed1",
+  "cde_blind5_out/public_meta.json": "3b5ef72732131b0bbd89f4e2cc228f48e5f58770924ffeb373cbad272137cd3e",
+  "cde_blind5_out/envelope_mac.json": "f7680056b3d2c7ceb8898ad8d9c727ced26d69048d0ec33ae35816a30bdd4806",
+  "cde_blind5_out/sealed/truth.sha256": "686d71696dc99065d1cdc2088539229c98e2924ef880ef7f539a7f597683a858",
+  "cde_blind5_out/sealed/truth.json": "8359aa64e4c7f2f868ac2100c356b0fcf50961f2b23cb77e4b53e4b326665d04",
   "cde_blind_pde2_out/replay_pipeline_V0_V11.json": "81bdc8a861f290a2f9e1f185d87ed6bf4989249a515f613ecebc262ab1b2e94c",
   "cde_blind_pde2_out/scoring.json": "c79d89dc7bb58bf3fc430cba2a4e59b824bc309806f0161e01e38a6a1abc6641",
   "cde_blind_pde2_out/replay_pipeline_V0_V1.json": "bed43b08a728b34c0c3bd0e88a5ffd52ffdfe1db5b0bc1d63e1ba5d5eee0eab9",
@@ -395,6 +426,7 @@
   "cde_real_thermography_v0_out/results_py312.json": "6c18d95ddeb00c3c4ded6864dc9ce0354e30df56cae5ca89ce8ed6be3969e5a3",
   "cde_real_thermography_v0_out/results_py313.json": "3bd39023e9cf91372eca76b09c8697d5d8316362462fda4e1a279889ea8cc8f1",
   "cde_real_thermography_v0_out/claim_card.md": "0a7fa1d73652699508473c5ed5ee784d5b151ad21584f02a873243c7c7d7b3a6",
+  "cde_risoluzione_claim_out/diagnostica_proiezione_2026-09-07.json": "9adb514fbffd186dfa343a20f09f0d6afeedd4d9a6ad601c440b9f5d38315779",
   "cde_risoluzione_claim_out/esito_stage1.json": "fd8d06d5ef70dad2f93f4108774c1616b4611346d96617c541eebb1e2dc43618",
   "cde_risoluzione_claim_out/stage1.json": "3ee3a1d89e84b5d60cfe2bb6139904f6ac3009dfd803c0d5f256d37e40b72a30",
   "cde_thermal_dress_rehearsal_v0_out/evidence_envelope_v2.json": "dc55dfc2bc3486571dc4851eb3249dbfa48fe3f5dfcdfbc83fc9d1f63a84fd4f",

@@ -89,6 +89,22 @@ _ss = [r for r in D4 if r["mancanti"]]; assert len(_ss) == _E["sotto_supporto"]
 _margini = [r["X"] / list(r["mancanti"].values())[0] for r in _ss]; assert min(_margini) > 1.0
 _cmin_med = sorted(r["c_min_div_vv_x"] for r in _ss)[len(_ss) // 2]; _ag_med = sorted(r["alpha_gamma_vero"] for r in _ss)[len(_ss) // 2]
 assert _cmin_med > _ag_med
+B5 = _json.loads((ART / "cde_blind5_out" / "scoring.json").read_text())
+_E5 = B5["esito"]; assert _E5["verdetto"] == "CONFIRMED" and not _E5["violazioni"] and _E5["verdetti_cambiati"] == 0
+assert _E5["n_claim"] >= 30 and _E5["sotto_supporto"] == _E5["coperte"] and B5["audit_cecita"]["riferimenti_sospetti"] == []
+D5 = _json.loads((ART / "cde_blind5_out" / "claim_dettaglio.json").read_text())["claim"]
+_ss5 = [(r["case"], t, o) for r in D5 for t, o in r["mancanti"].items()]
+assert len(_ss5) == _E5["sotto_supporto"]
+_m5 = sorted(o["c_min_v2"] / o["c_vero"] for _, _, o in _ss5)
+_m5h = sorted(o["c_min_v1_k2"] / o["c_vero"] for _, _, o in _ss5)
+assert min(_m5) > 1.0 and min(_m5h) > 1.0            # su questo pannello entrambi i limiti reggono
+_h4 = sum(o["chat"] > 2 * o["se"] for _, _, o in _ss5); assert _h4 == len(_ss5)
+DIAG = _json.loads((ART / "cde_risoluzione_claim_out" / "diagnostica_proiezione_2026-09-07.json").read_text())
+_dh1 = sum(d["vero"] >= d["h1"] for d in DIAG); _dp1 = sum(d["vero"] >= d["p1"] for d in DIAG)
+assert _dh1 > 0 and _dp1 == 0, "la diagnostica non mostra piu' il vantaggio della proiezione"
+_collin = sorted(1 - d["collin"] for d in DIAG)      # ||a~_t|| / ||a_t||
+_med_collin = _collin[len(_collin) // 2]
+_sha_b5 = __import__("hashlib").sha256((ART / "cde_blind5_out" / "scoring.json").read_bytes()).hexdigest()[:16]
 _sha_v13 = __import__("hashlib").sha256((ART / "cde_v13_blind_out" / "unblinding_report.json").read_bytes()).hexdigest()[:16]
 _sha_b4 = __import__("hashlib").sha256((ART / "cde_blind4_out" / "scoring.json").read_bytes()).hexdigest()[:16]
 _rate = 100.0 * _A["n_claim_false"] / _A["opportunita"]
@@ -147,7 +163,7 @@ as two inside; here a term inside the library is too small to be seen.
 
 \paragraph{{What this changes in this note.}} The statements ``zero false
 discoveries'' in the abstract, Results and Conclusion refer to the
-{'%(n_null)d'} explicit null controls of the PDE campaigns and remain true
+{M.n_null_total} explicit null controls of the PDE campaigns and remain true
 as stated. They must not be read as a property of the ladder: on a sealed
 panel with representable cases at the resolution limit, the ladder's
 false-claim rate is {_rate:.1f}\%, concentrated entirely in sub-support
@@ -158,68 +174,86 @@ the sealed file, and on the recorded generation/execution order. Both
 weaknesses are fixed in the panel of the next subsection.
 
 \subsection{{A declared resolution bound on every claim}}
-The sub-support class asks for a statement the ladder was not making: how
-small a term the data could have hidden. For a claimed support $S$ with fitted
-coefficients $\hat c$, design matrix $A$ and time column $b$, we attach to
-every assertive verdict
+The sub-support class asks for a statement the ladder was not making: how small a term the
+data could have hidden. Write the design matrix $A$ with columns $a_1,\dots,a_p$, the claimed
+support $S$ with least-squares coefficients $\hat c_S = A_S^{{+}} y$, the projector
+$P_S = A_S A_S^{{+}}$ and the residual $r = (I - P_S)\,y$ of the asserted model. For a term
+$t \notin S$ let $\tilde a_t = (I - P_S)\, a_t$ be the part of its column that the support
+cannot explain. We attach to every assertive verdict
 \begin{{equation}}
-X = k\,\frac{{\|A_S \hat c - b\|_2}}{{\|b\|_2}}, \qquad
-c_{{\min}}(t) = k\,\frac{{\|A_S \hat c - b\|_2}}{{\|A_t\|_2}} \;\; (t \notin S),
+\label{{eq:bound}}
+X = \frac{{\|r\|_2}}{{\|y\|_2}}, \qquad
+c_{{\min}}(t) = \frac{{\|r\|_2}}{{\|\tilde a_t\|_2}} \quad (t \notin S),
 \end{{equation}}
-read as ``law $S$ up to library terms whose relative contribution
-$f_t = |c_t|\,\|A_t\|_2 / \|b\|_2$ is below $X$''. The bound changes no
-verdict; it changes what a verdict asserts. Soundness is a falsifiable
-property: for every claim on a representable case, every missing true term
-must satisfy $f_t < X$.
+read as ``law $S$ up to library terms with $|c_t| < c_{{\min}}(t)$''. The bound changes no
+verdict; it changes what a verdict asserts. Soundness is falsifiable: for every claim on a
+representable case, every missing true term must satisfy $|c_t| < c_{{\min}}(t)$.
 
-\paragraph{{Choice of $k$ (diagnostic, truth open).}} On the
-{ST1['n_false']} false claims of the replica plus 30 of its correct claims,
-$k = 1$ is violated in {ST1['per_k']['1.0']['n_violazioni']} cases --- the fitted
-model absorbs part of the missing term through correlated columns, so the
-residual understates it --- while $k = 2$ (the identifiability factor already
-frozen in the ladder) is violated in none. The preregistration had predicted
-exactly this and fixed $k = 2$ before the confirmatory run; the diagnostic on
-the replica chose $k$, and confirmed nothing.
+\paragraph{{Why this form.}} Suppose the data are $y = A_S c_S + c_t a_t + e$, with $e$
+everything the asserted model omits. Projecting out the support gives
+$r = c_t \tilde a_t + (I - P_S) e$, so with a single missing term and no other error
+$|c_t| = \|r\| / \|\tilde a_t\|$ \emph{{exactly}}: \eqref{{eq:bound}} is not a heuristic but the
+identity the residual satisfies. It remains an upper bound unless the residual error is
+anti-aligned with the missing term strongly enough to cancel more than half its energy, and
+$|c_t| \le 2\|r\|/\|\tilde a_t\|$ whenever adding the missing term would not increase the
+residual. Collinearity enters through the denominator:
+$\|\tilde a_t\| = \|a_t\|\sqrt{{1 - \rho_t^2}}$ with $\rho_t$ the multiple correlation of
+$a_t$ with the support, so a term nearly inside the span of $S$ gets a \emph{{larger}}
+$c_{{\min}}$ --- the claim declares more ignorance about it, not less.
 
-\paragraph{{Confirmation on a second sealed panel.}} A new panel of 120
-representable cases (four classes, new seeds), its truth hashed into the
-generation envelope and committed \emph{{before}} the discoverer ran, was
-solved blind by the unchanged v2.1 ladder; predictions were hashed before the
-truth was opened; the scorer's mutation tests bit first. The ladder produced
-{_E['n_claim']} claims: {_E['corrette']} exact and {_E['false_strette']} strict
-false claims, all of them sub-support claims of the same class. \textbf{{In all
-{_E['sotto_supporto']}, the missing term sits below $X$}}: margins from
-{min(_margini):.2f}$\times$ to {max(_margini):.2f}$\times$, and the declared
-smallest detectable coefficient of the missing term (median
-{sci(_cmin_med)}) exceeds its true value (median {sci(_ag_med)}) --- the bound
-says, correctly, that the term was not resolvable. No verdict changed; median
-$X$ is {100.0 * _E['X_mediana']:.1f}\%. Verdict \texttt{{CONFIRMED}} by the
-preregistered rule (Figure~\ref{{fig:resolution}}).
+\paragraph{{Two sealed confirmations, and what the projection buys.}} We first ran the
+unprojected form $\|r\|/\|a_t\|$ with a safety factor $k$, chosen on a declared diagnostic over
+the 14 false claims above plus 30 correct ones: $k = 1$ was violated in
+{_dh1} of {len(DIAG)} cases --- the fitted model absorbs part of the missing term through
+correlated columns --- while $k = 2$ was violated in none. A first sealed panel of 120
+representable cases (new seeds, truth hashed into the generation envelope and committed
+\emph{{before}} the discoverer ran, predictions hashed before the truth was opened) gave
+{_E["n_claim"]} claims, {_E["sotto_supporto"]} of them sub-support, with the missing term below
+the bound in all {_E["sotto_supporto"]} (margins {min(_margini):.2f}--{max(_margini):.2f}$\times$)
+and no verdict changed.
 
-\paragraph{{What the bound does not do.}} It covers terms inside the library
-only: an out-of-library surrogate has no $f_t$ and remains the business of the
-amplitude-extrapolation gate. The {_E['false_strette']} strict false claims
-stay false by the exact-support definition, which we keep and report
-unchanged; the bound turns them from unqualified assertions into claims with a
-stated scope. Zero violations in {_E['n_claim']} claims bounds the violation
-rate at {300.0 / _E['n_claim']:.1f}\% (rule of three): one sealed replication,
-not a validated property. The bound is now mandatory on every assertive verdict
-of the production pipeline (semantics amendment of 2026-09-03), and its
-soundness on the PDE pipeline of this note --- identical formula, different
-features --- is not yet measured.
+The projected form of \eqref{{eq:bound}} then removes the factor. On the same diagnostic it is
+violated in {_dp1} of {len(DIAG)} cases at $k = 1$, and on a second sealed panel of 120 cases
+it gives {_E5["n_claim"]} claims, {_E5["sotto_supporto"]} sub-support, \textbf{{0 violations}}
+(margins {min(_m5):.2f}--{max(_m5):.2f}$\times$, median {sorted(_m5)[len(_m5)//2]:.2f}$\times$),
+median $X$ {100.0 * _E5["X_mediana"]:.1f}\%, no verdict changed. On that panel the unprojected
+bound at $k = 2$ is also sound (margins {min(_m5h):.2f}--{max(_m5h):.2f}$\times$), so the panel
+does not separate the two on soundness. It separates them on where the factor comes from:
+$\|\tilde a_t\| / \|a_t\|$ has median {_med_collin:.2f} on these cases, i.e.\ about
+$1/2$ --- the hand-chosen safety factor \emph{{was}} the collinearity, and
+\eqref{{eq:bound}} puts it in the denominator where it belongs (Figure~\ref{{fig:resolution}}).
+
+\paragraph{{Selection-limited, not noise-limited.}} Partial regression estimates a missing
+term as $\hat c_t = \langle \tilde a_t, r\rangle / \|\tilde a_t\|^2$ with standard error
+$\hat\sigma / \|\tilde a_t\|$. On every sub-support claim of both sealed panels and of the
+diagnostic, $|\hat c_t| > 2\,\mathrm{{se}}$: the data \emph{{saw}} the term, and it was dropped
+by the selection rule --- a relative threshold and a stability frequency --- not by noise. The
+resolution of a claim is therefore set by selection, and $c_{{\min}}$ should be read as an
+envelope on what the asserted residual can hide, not as a confidence interval for $c_t$: a
+debiased-lasso or conformal interval estimates that coefficient, needs a noise model, and can be
+much tighter. A complete account would take the larger of a selection floor and a noise floor;
+only the latter is implemented here.
+
+\paragraph{{What the bound does not do.}} It covers terms inside the library only: an
+out-of-library surrogate has no $c_t$ and remains the business of the amplitude-extrapolation
+gate. The {_E["false_strette"] + _E5["false_strette"]} strict false claims of the two panels stay
+false by the exact-support definition, which we keep and report unchanged; the bound turns them
+from unqualified assertions into claims with a stated scope. Zero violations in
+{_E5["n_claim"]} claims bounds the violation rate at {300.0 / _E5["n_claim"]:.1f}\% (rule of
+three): a second sealed replication, not a validated property. The bound is now mandatory on
+every assertive verdict of the production pipeline, and its soundness on the PDE pipeline of
+this note --- identical formula, different features --- is not yet measured.
 
 \begin{{figure}}[t]
 \centering
 \includegraphics[width=\linewidth]{{fig_resolution}}
-\caption{{The declared resolution bound against the term it must cover.
-(a)~The {ST1['n_false']} sub-support false claims of the sealed replica:
-contribution $f$ of the missing term $\partial_x(v v_x)$ against the bound
-$X$ for $k=1$ and $k=2$; points above the diagonal violate soundness
-($k=1$: {ST1['per_k']['1.0']['n_violazioni']} violations; $k=2$: none).
-(b)~The {_E['sotto_supporto']} sub-support claims of the second sealed panel,
-scored blind with $k=2$: $f$ against $X$, all below the diagonal (margins
-{min(_margini):.2f}--{max(_margini):.2f}$\times$), with the $X$ of the
-{_E['corrette']} exact claims as a marginal strip.}}
+\caption{{The declared resolution bound against the coefficient it must cover, in coefficient
+units; points below the diagonal violate soundness. (a)~Declared diagnostic on the
+{len(DIAG)} sub-support claims with open truth: the unprojected bound $\|r\|/\|a_t\|$ at
+$k = 1$ is violated in {_dh1} cases (open squares below the line), the projected bound
+$\|r\|/\|\tilde a_t\|$ in none. (b)~The two sealed panels, scored blind: {_E["sotto_supporto"]}
+sub-support claims under the unprojected bound at $k = 2$ and {_E5["sotto_supporto"]} under the
+projected bound at $k = 1$, all above the diagonal.}}
 \label{{fig:resolution}}
 \end{{figure}}
 """
@@ -231,7 +265,8 @@ manifest = "\n".join(
     f"\\texttt{{{v['results_sha256'][:16]}}} \\\\"
     for k, v in M.env.items()) + (
     f"\nV13 sealed replica (scored) & 700000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_v13}}} \\\\"
-    f"\nBlind-4 resolution bound & 720000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b4}}} \\\\")
+    f"\nBlind-4 resolution bound & 720000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b4}}} \\\\"
+    f"\nBlind-5 projected bound & 740000+ & 3.13.10 & 2.5.1 & PASS & \\texttt{{{_sha_b5}}} \\\\")
 
 if M.BL is not None:
     baseline_tex = (
@@ -340,7 +375,7 @@ thermal-camera cases (423 opportunities to claim falsely) measured %(v13_fp)d
 false claims (%(v13_rate).1f\%%), all sub-support claims on a term carrying
 about 0.5\%% of the dynamics and none on nulls; it motivated a declared
 resolution bound on every claim, confirmed on a second sealed panel
-(%(b4_claims)d claims, 0 violations). The Kuramoto--Sivashinsky case is the primary
+(%(b4_claims)d and %(b5_claims)d claims on two sealed panels, 0 violations). The Kuramoto--Sivashinsky case is the primary
 evidence: the protocol, frozen before contact with the system, distinguishes
 the destabilizing anti-diffusion $-u_{xx}$ from the stabilizing
 hyper-diffusion $-u_{xxxx}$ on a spatiotemporally chaotic attractor. We
@@ -710,7 +745,8 @@ discoveries in %(n_null)d null controls. That last figure is a property of
 the null controls, not of the ladder: a sealed replica on 603 cases measured a
 %(v13_rate).1f\%% false-claim rate, entirely from sub-support claims on a term
 below the gates' resolution, and the remedy --- a declared resolution bound on
-every claim --- held with zero violations on a second sealed panel. The epistemic machinery (identity
+every claim, with collinearity entering through the projected column --- held with zero
+violations on two sealed panels. The epistemic machinery (identity
 gates, oracle preflight, abstention, residual gating, environment canaries,
 cross-runtime replication) is not overhead: each component caught at least
 one real failure during this program. The protocol does not discover new
@@ -837,7 +873,7 @@ time-stepping for stiff PDEs,'' \emph{SIAM J. Sci. Comput.}
     "audit_conf": M.elision_counts.get("REQUIRES_REPLICATION", 0),
     "manifest": manifest,
     "v13_tex": v13_tex, "v13_fp": _A["n_claim_false"], "v13_rate": _rate,
-    "b4_claims": _E["n_claim"],
+    "b4_claims": _E["n_claim"], "b5_claims": _E5["n_claim"],
     "appc": appc,
     "baseline_tex": baseline_tex,
 }

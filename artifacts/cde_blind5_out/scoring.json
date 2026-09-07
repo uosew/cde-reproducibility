@@ -1,0 +1,25 @@
+{
+ "audit_cecita": {
+  "sha256_predizioni": "55e78c546b453d0dcacc84edb8e578ccd5b53f1d363a281413168b9ba6c639e6",
+  "sha256_verita": "8359aa64e4c7f2f868ac2100c356b0fcf50961f2b23cb77e4b53e4b326665d04",
+  "riferimenti_sospetti": []
+ },
+ "esito": {
+  "n_claim": 50,
+  "corrette": 43,
+  "false_strette": 7,
+  "sotto_supporto": 7,
+  "coperte": 7,
+  "violazioni": [],
+  "verdetti_cambiati": 0,
+  "X_mediana": 0.013874957249095248,
+  "verdetto": "CONFIRMED"
+ },
+ "mutation_test": {
+  "31 claim, coefficiente mancante sotto c_min -> CONFIRMED": true,
+  "coefficiente mancante >= c_min -> REJECTED": true,
+  "< 30 claim -> INCONCLUSIVE": true,
+  "verdetto cambiato dall'annotazione -> REJECTED": true,
+  "termine spurio = falsa stretta, non sotto-supporto": true
+ }
+}

@@ -217,39 +217,43 @@ def fig_gate_null():
 
 def fig_resolution():
     import json
-    st1 = json.loads((ART / "cde_risoluzione_claim_out" / "stage1.json").read_text())["righe"]
+    diag = json.loads((ART / "cde_risoluzione_claim_out" / "diagnostica_proiezione_2026-09-07.json").read_text())
     d4 = json.loads((ART / "cde_blind4_out" / "claim_dettaglio.json").read_text())["claim"]
-    false = [r for r in st1 if r["falsa"]]
-    f1 = [list(r["contributi_mancanti"].values())[0] for r in false]
-    x1 = [r["k"]["1.0"]["X"] for r in false]; x2 = [r["k"]["2.0"]["X"] for r in false]
-    v1 = sum(f >= x for f, x in zip(f1, x1)); v2 = sum(f >= x for f, x in zip(f1, x2))
-    assert v2 == 0 and v1 > 0
-    ss = [r for r in d4 if r["mancanti"]]; ex = [r for r in d4 if r["esatta"]]
-    f4 = [list(r["mancanti"].values())[0] for r in ss]; x4 = [r["X"] for r in ss]
-    assert all(f < x for f, x in zip(f4, x4))
-    fig, axes = plt.subplots(1, 2, figsize=(6.6, 2.6), constrained_layout=True)
-    ax = axes[0]
-    lim = max(max(x2), max(f1)) * 1.15
-    ax.fill_between([0, lim], [0, lim], [lim, lim], color="#d62728", alpha=0.07, lw=0)
-    ax.plot([0, lim], [0, lim], "-", color="0.3", lw=0.8)
-    ax.plot(f1, x1, "s", ms=4.5, color="#ff7f0e", mew=0, label=f"$k=1$ ({v1} violations)")
-    ax.plot(f1, x2, "o", ms=4.5, color="#1f77b4", mew=0, label="$k=2$ (0 violations)")
-    ax.text(lim * 0.55, lim * 0.93, "violation: $f \\geq X$", fontsize=7, color="#a00000")
-    ax.set_xlim(0, lim); ax.set_ylim(0, lim)
-    ax.set_xlabel("contribution $f$ of the missing term"); ax.set_ylabel("declared bound $X$")
-    ax.set_title(f"(a) sealed replica, {len(false)} sub-support claims (diagnostic)")
-    ax.legend(frameon=False, loc="lower right", handletextpad=0.3)
-    ax = axes[1]
-    lim = max(max(x4), max(r["X"] for r in ex)) * 1.08
-    ax.fill_between([0, lim], [0, lim], [lim, lim], color="#d62728", alpha=0.07, lw=0)
-    ax.plot([0, lim], [0, lim], "-", color="0.3", lw=0.8)
-    ax.plot(f4, x4, "o", ms=5, color="#1f77b4", mew=0, label=f"{len(ss)} sub-support claims, $k=2$")
-    rng = np.random.default_rng(0)
-    ax.plot(-0.004 + 0.0015 * rng.standard_normal(len(ex)), [r["X"] for r in ex], "|", ms=5, color="0.55", mew=0.8, label=f"$X$ of the {len(ex)} exact claims")
-    ax.set_xlim(-0.008, lim); ax.set_ylim(0, lim)
-    ax.set_xlabel("contribution $f$ of the missing term"); ax.set_ylabel("declared bound $X$")
-    ax.set_title("(b) second sealed panel, scored blind")
-    ax.legend(frameon=False, loc="lower right", handletextpad=0.3)
+    d5 = json.loads((ART / "cde_blind5_out" / "claim_dettaglio.json").read_text())["claim"]
+    vero = [d["vero"] for d in diag]; h1 = [d["h1"] for d in diag]; p1 = [d["p1"] for d in diag]
+    nh = sum(v >= b for v, b in zip(vero, h1)); npj = sum(v >= b for v, b in zip(vero, p1))
+    assert nh > 0 and npj == 0
+    s4 = [r for r in d4 if r["mancanti"]]
+    x4 = [r["alpha_gamma_vero"] for r in s4]; y4 = [r["c_min_div_vv_x"] for r in s4]
+    s5 = [(o["c_vero"], o["c_min_v2"]) for r in d5 for o in r["mancanti"].values()]
+    x5 = [a for a, _ in s5]; y5 = [b for _, b in s5]
+    assert all(a < b for a, b in zip(x4, y4)) and all(a < b for a, b in zip(x5, y5))
+
+    fig, axes = plt.subplots(1, 2, figsize=(6.6, 2.7), constrained_layout=True)
+    for ax, (xs, ys, labels, title) in zip(axes, [
+            ([vero, vero], [h1, p1],
+             [f"unprojected $\\|r\\|/\\|a_t\\|$, $k=1$ ({nh} violations)",
+              "projected $\\|r\\|/\\|\\tilde{a}_t\\|$, $k=1$ (0)"],
+             f"(a) diagnostic, {len(diag)} sub-support claims (open truth)"),
+            ([x4, x5], [y4, y5],
+             [f"sealed panel 1, unprojected $k=2$ ({len(x4)})",
+              f"sealed panel 2, projected $k=1$ ({len(x5)})"],
+             "(b) two sealed panels, scored blind")]):
+        lo = min(min(x) for x in xs) * 0.55; hi = max(max(y) for y in ys) * 3.2
+        # violation is |c_t| >= c_min, i.e. BELOW the diagonal
+        ax.fill_between([lo, hi], [lo, lo], [lo, hi], color="#d62728", alpha=0.07, lw=0)
+        ax.plot([lo, hi], [lo, hi], "-", color="0.35", lw=0.8)
+        ax.plot(xs[0], ys[0], "s", ms=4.2, mfc="none", mec="#ff7f0e", mew=1.0, label=labels[0])
+        ax.plot(xs[1], ys[1], "o", ms=4.2, color="#1f77b4", mew=0, label=labels[1])
+        ax.set_xscale("log"); ax.set_yscale("log"); ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
+        ax.set_xlabel(r"true coefficient $|c_t|$ of the missing term")
+        ax.set_ylabel(r"declared bound $c_{\min}(t)$")
+        ax.set_title(title)
+        ax.legend(frameon=False, loc="upper left", handletextpad=0.3, borderpad=0.2)
+    axes[0].text(0.96, 0.08, "violation: $|c_t| \\geq c_{\\min}$", fontsize=7, color="#a00000",
+                 ha="right", transform=axes[0].transAxes)
+    for ax in axes:      # sanity: sound points must sit ABOVE the diagonal
+        pass
     fig.savefig(OUTDIR / "fig_resolution.pdf")
     plt.close(fig)
 

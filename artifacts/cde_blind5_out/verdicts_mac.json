@@ -1,0 +1,1956 @@
+{
+ "case_000": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "div_vv_x",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 4.193088203953565e-06,
+   "v_xx": 5.17783100858099e-05,
+   "div_vv_x": 4.06355891353475e-08
+  },
+  "fit_rel_resid": 0.07912449546689722,
+  "r_holdout": 0.07571831221507196
+ },
+ "case_001": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v": -0.00020771654744265193,
+   "v_xx": 5.850852694336114e-05,
+   "vv_x": -5.172841260100103e-07
+  },
+  "fit_rel_resid": 0.03913667453456516,
+  "r_holdout": 0.036644975261042954
+ },
+ "case_002": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 4.992538626947483e-06,
+   "v_xx": 6.338427140406563e-05
+  },
+  "fit_rel_resid": 0.07513823714980601,
+  "r_holdout": 0.0753725003414642
+ },
+ "case_003": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 1.5142889946330998e-05,
+   "v_xx": 0.00011422498146036531
+  },
+  "fit_rel_resid": 0.06101283096617223,
+  "r_holdout": 0.06480219209236456
+ },
+ "case_004": {
+  "verdict": "ABSTAIN_GATE",
+  "blocked_at": "fit_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012473234197805765
+  },
+  "fit_rel_resid": 0.06426438251552759,
+  "r_holdout": 0.06342759689012589
+ },
+ "case_005": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00015420738102697655
+  },
+  "fit_rel_resid": 0.05920573776061071,
+  "r_holdout": 0.0531076722684823
+ },
+ "case_006": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 2.982125003750177e-05,
+   "v_xx": 0.00016891534527633859
+  },
+  "fit_rel_resid": 0.10026368402943325,
+  "r_holdout": 0.11074634676398007
+ },
+ "case_007": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v_xx": 0.0001832130035841152,
+   "vv_x": -6.7470804441565e-07
+  },
+  "fit_rel_resid": 0.09504723929366764,
+  "r_holdout": 0.08344677281576045
+ },
+ "case_008": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011798978403683671
+  },
+  "fit_rel_resid": 0.057719207001911486,
+  "r_holdout": 0.0539215022845666
+ },
+ "case_009": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00013199823226700888,
+   "div_vv_x": 1.3877667437108154e-07
+  },
+  "fit_rel_resid": 0.06952885531654861,
+  "r_holdout": 0.06923762134118541
+ },
+ "case_010": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00010190928624219777
+  },
+  "fit_rel_resid": 0.03127457616184296,
+  "r_holdout": 0.028812445877726037
+ },
+ "case_011": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 5.891743116021128e-05
+  },
+  "fit_rel_resid": 0.05768586749408423,
+  "r_holdout": 0.05645337863115864
+ },
+ "case_012": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00016198853101625834
+  },
+  "fit_rel_resid": 0.1671285450022385,
+  "r_holdout": 0.15153598945518576
+ },
+ "case_013": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 6.651306774485145e-05
+  },
+  "fit_rel_resid": 0.040448813881297195,
+  "r_holdout": 0.040784310830337324
+ },
+ "case_014": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": -8.498257624663688e-06,
+   "v_xx": 0.00019598851320278191
+  },
+  "fit_rel_resid": 0.0536772086269271,
+  "r_holdout": 0.05135363992882688
+ },
+ "case_015": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": 0.0005642742612919567,
+   "v2": 8.045742536074072e-06,
+   "v_xx": 0.0001910054068167413
+  },
+  "fit_rel_resid": 0.0854705506454462,
+  "r_holdout": 0.07720536084676315
+ },
+ "case_016": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012013191842053153
+  },
+  "fit_rel_resid": 0.059779661132432105,
+  "r_holdout": 0.05151274879394228
+ },
+ "case_017": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00018151952663375887
+  },
+  "fit_rel_resid": 0.032818617323493435,
+  "r_holdout": 0.03636938747353349
+ },
+ "case_018": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 2.0124509860197863e-05,
+   "v_xx": 0.0001102745860175049
+  },
+  "fit_rel_resid": 0.08184348612890943,
+  "r_holdout": 0.08300709457119133
+ },
+ "case_019": {
+  "verdict": "ABSTAIN_GATE",
+  "blocked_at": "fit_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011718032633380392
+  },
+  "fit_rel_resid": 0.05953523266655084,
+  "r_holdout": 0.053222134384727234
+ },
+ "case_020": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 9.808465359060374e-05
+  },
+  "fit_rel_resid": 0.0881879564956892,
+  "r_holdout": 0.08098803122211476
+ },
+ "case_021": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.0001614719377738935
+  },
+  "fit_rel_resid": 0.06008301252713949,
+  "r_holdout": 0.057725632432475686
+ },
+ "case_022": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011905191784724227,
+   "div_vv_x": 1.3046863948006324e-07
+  },
+  "fit_rel_resid": 0.07482720174219733,
+  "r_holdout": 0.0711033032716792
+ },
+ "case_023": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v2": -1.3562111608428818e-05,
+   "v_xx": 0.00019514745911846997,
+   "vv_x": -1.6875031060682029e-06
+  },
+  "fit_rel_resid": 0.06931997389600644,
+  "r_holdout": 0.05861205490497906
+ },
+ "case_024": {
+  "verdict": "ABSTAIN_GATE",
+  "blocked_at": "fit_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012613676984076018
+  },
+  "fit_rel_resid": 0.05020420094979391,
+  "r_holdout": 0.04354918847526877
+ },
+ "case_025": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v",
+   "v2",
+   "v_x",
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v": 0.0005382077592102541,
+   "v2": 1.6610093151965957e-05,
+   "v_x": -5.580609416181104e-05,
+   "v_xx": 0.00019913648797157668,
+   "vv_x": 2.703277464409612e-06
+  },
+  "fit_rel_resid": 0.11204121487727912,
+  "r_holdout": 0.11004612066338047
+ },
+ "case_026": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00017985442437076077
+  },
+  "fit_rel_resid": 0.13922145984415418,
+  "r_holdout": 0.12819915397898854
+ },
+ "case_027": {
+  "verdict": "ABSTAIN_GATE",
+  "blocked_at": "fit_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011384983179252924
+  },
+  "fit_rel_resid": 0.05000446693388037,
+  "r_holdout": 0.04546848360003317
+ },
+ "case_028": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00015432886183773788
+  },
+  "fit_rel_resid": 0.06858894707726136,
+  "r_holdout": 0.06551390023350659
+ },
+ "case_029": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 1.3350689500097392e-05,
+   "v_xx": 0.00011386461387632104
+  },
+  "fit_rel_resid": 0.051543433729088796,
+  "r_holdout": 0.05540514928158941
+ },
+ "case_030": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0073456923883037754,
+   "v_xx": 0.0001221654376479084
+  },
+  "fit_rel_resid": 0.03149134070700851,
+  "r_holdout": 0.03122749036806284
+ },
+ "case_031": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.033450179576991035,
+   "v_xx": 0.00010553310631211446
+  },
+  "fit_rel_resid": 0.015322429655208598,
+  "r_holdout": 0.018187655382299054
+ },
+ "case_032": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03644174302151647,
+   "v_xx": 0.00015014539366854803
+  },
+  "fit_rel_resid": 0.013060000859239964,
+  "r_holdout": 0.012809269113076891
+ },
+ "case_033": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.01970977892114863,
+   "v_xx": 0.00013193954753099312
+  },
+  "fit_rel_resid": 0.012513051023394575,
+  "r_holdout": 0.018176341501514197
+ },
+ "case_034": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04617004290139627,
+   "v_xx": 0.00013052627174092897
+  },
+  "fit_rel_resid": 0.009909414194479037,
+  "r_holdout": 0.014076700691974467
+ },
+ "case_035": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.036916391218036394,
+   "v_xx": 0.00014702746916056967
+  },
+  "fit_rel_resid": 0.009823676226879522,
+  "r_holdout": 0.011639858985452103
+ },
+ "case_036": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03483925689222843,
+   "v_xx": 0.00016846835730346892
+  },
+  "fit_rel_resid": 0.009447671693655535,
+  "r_holdout": 0.011083862912175998
+ },
+ "case_037": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03947440231764159,
+   "v_xx": 0.0001519203597805917
+  },
+  "fit_rel_resid": 0.007296500280020042,
+  "r_holdout": 0.009130726016872042
+ },
+ "case_038": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04261741500931757,
+   "v_xx": 0.0001001459866815673
+  },
+  "fit_rel_resid": 0.01299348383889654,
+  "r_holdout": 0.022726645988904615
+ },
+ "case_039": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.019846423095996133,
+   "v_xx": 0.00010521386477476972
+  },
+  "fit_rel_resid": 0.014220653860039371,
+  "r_holdout": 0.015911375896079643
+ },
+ "case_040": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.009724660246681456,
+   "v2": 5.227648101267644e-06,
+   "v_xx": 7.975390654656546e-05
+  },
+  "fit_rel_resid": 0.02540475704354847,
+  "r_holdout": 0.024847458391935338
+ },
+ "case_041": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03752300522327236,
+   "v_xx": 0.00018235075854994707
+  },
+  "fit_rel_resid": 0.0074877752141240235,
+  "r_holdout": 0.007272844269597442
+ },
+ "case_042": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.043236067980020255,
+   "v_xx": 9.380793137026644e-05
+  },
+  "fit_rel_resid": 0.008345261464610792,
+  "r_holdout": 0.013208322762834221
+ },
+ "case_043": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.00614161417009421,
+   "v_xx": 9.26692009184334e-05
+  },
+  "fit_rel_resid": 0.02197630067865796,
+  "r_holdout": 0.02290107661529775
+ },
+ "case_044": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.010850382979562697,
+   "v2": 1.8669287539759252e-05,
+   "v_xx": 0.00010700366000524842,
+   "div_vv_x": 1.0904702091911669e-07
+  },
+  "fit_rel_resid": 0.020296828018139652,
+  "r_holdout": 0.018865652367162457
+ },
+ "case_045": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.014689168683830245,
+   "v2": 1.1445801126178394e-05,
+   "v_xx": 0.00019734337783011572
+  },
+  "fit_rel_resid": 0.01791496565935383,
+  "r_holdout": 0.02242551107940701
+ },
+ "case_046": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.045589034668283575,
+   "v_xx": 0.00017856752275165956
+  },
+  "fit_rel_resid": 0.004101068833693993,
+  "r_holdout": 0.0051855082678364224
+ },
+ "case_047": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0477034479475478,
+   "v_xx": 0.00010676088390767912
+  },
+  "fit_rel_resid": 0.008492852812653403,
+  "r_holdout": 0.018014793125237946
+ },
+ "case_048": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04395633584084598,
+   "v_xx": 0.00017554195249410245
+  },
+  "fit_rel_resid": 0.00551117430226088,
+  "r_holdout": 0.006944066168518958
+ },
+ "case_049": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.013743722593919202,
+   "v_xx": 0.00017443691809548327
+  },
+  "fit_rel_resid": 0.0225144244498377,
+  "r_holdout": 0.019661197503353506
+ },
+ "case_050": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03644979441820154,
+   "v_xx": 6.82456651930937e-05
+  },
+  "fit_rel_resid": 0.008590804475262255,
+  "r_holdout": 0.013032964515318634
+ },
+ "case_051": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03141547525269826,
+   "v_xx": 6.360859989735174e-05
+  },
+  "fit_rel_resid": 0.011913735018531808,
+  "r_holdout": 0.010235217962389676
+ },
+ "case_052": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04901873486411075,
+   "v_xx": 0.00017332104754139033
+  },
+  "fit_rel_resid": 0.01137496883236332,
+  "r_holdout": 0.01032176634310237
+ },
+ "case_053": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.02450439799258991,
+   "v_xx": 0.00012656366597891598
+  },
+  "fit_rel_resid": 0.014196373474148061,
+  "r_holdout": 0.014650314030909786
+ },
+ "case_054": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.040931760732814675,
+   "v_xx": 6.75143789472231e-05
+  },
+  "fit_rel_resid": 0.011979105909192307,
+  "r_holdout": 0.014737568877889693
+ },
+ "case_055": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04382849625892144,
+   "v_xx": 0.00019230910018883614
+  },
+  "fit_rel_resid": 0.009993771521012567,
+  "r_holdout": 0.01795137172158797
+ },
+ "case_056": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.045768623322963435,
+   "v_xx": 0.00014329829263068502
+  },
+  "fit_rel_resid": 0.013191340275323883,
+  "r_holdout": 0.016623414891321846
+ },
+ "case_057": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.018962851450889037,
+   "v_xx": 0.00018781789479960605
+  },
+  "fit_rel_resid": 0.012732406428251223,
+  "r_holdout": 0.014664078623079117
+ },
+ "case_058": {
+  "verdict": "REJECTED_TRANSFER",
+  "blocked_at": "transfer_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.004097783971180979,
+   "v_xx": 0.00017920733019794854
+  },
+  "fit_rel_resid": 0.04963213044591611,
+  "r_holdout": 0.05755726941213314
+ },
+ "case_059": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.013000218649389956,
+   "v_xx": 0.0001386272472652197
+  },
+  "fit_rel_resid": 0.028489945111907673,
+  "r_holdout": 0.03830639124230823
+ },
+ "case_060": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v": -0.0059717500854103486,
+   "v2": -6.957598017145969e-06,
+   "v_xx": 9.034566393458933e-05,
+   "vv_x": -1.3922097535358986e-06,
+   "div_vv_x": 4.072274027356772e-07
+  },
+  "fit_rel_resid": 0.023994418822480754,
+  "r_holdout": 0.018647300850202195
+ },
+ "case_061": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0352581100029337,
+   "v_xx": 0.00014146512588469683,
+   "div_vv_x": 7.716196273453287e-07
+  },
+  "fit_rel_resid": 0.014438562842965897,
+  "r_holdout": 0.018048642138968566
+ },
+ "case_062": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.02896965422282395,
+   "v_xx": 5.411933457822927e-05,
+   "div_vv_x": 3.398699976233827e-07
+  },
+  "fit_rel_resid": 0.005197408029514842,
+  "r_holdout": 0.006678595789678269
+ },
+ "case_063": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03478047343135492,
+   "v_xx": 8.860458482309781e-05,
+   "div_vv_x": 6.371477964478593e-07
+  },
+  "fit_rel_resid": 0.00774537484184438,
+  "r_holdout": 0.009299589599349466
+ },
+ "case_064": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.019055587975102966,
+   "v_xx": 0.00010596321150996304,
+   "div_vv_x": 8.582246458076701e-07
+  },
+  "fit_rel_resid": 0.018576783900114295,
+  "r_holdout": 0.02615509731836024
+ },
+ "case_065": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.01057120560546874,
+   "v2": 1.9403070117175104e-05,
+   "v_xx": 0.00017030455296303005,
+   "div_vv_x": 9.996864561227037e-07
+  },
+  "fit_rel_resid": 0.03429422381039696,
+  "r_holdout": 0.0348846440193388
+ },
+ "case_066": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.02089387543965414,
+   "v_xx": 6.37317611823744e-05,
+   "div_vv_x": 2.652705366361009e-07
+  },
+  "fit_rel_resid": 0.007942283881816035,
+  "r_holdout": 0.006330883359092632
+ },
+ "case_067": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.012320136149450737,
+   "v_xx": 7.513844771541206e-05,
+   "div_vv_x": 5.030131279395328e-07
+  },
+  "fit_rel_resid": 0.012039104787234235,
+  "r_holdout": 0.013954081105733276
+ },
+ "case_068": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.036790622129690156,
+   "v_xx": 8.037253480385538e-05,
+   "div_vv_x": 6.482596313665542e-07
+  },
+  "fit_rel_resid": 0.011256035517231146,
+  "r_holdout": 0.01427811293682982
+ },
+ "case_069": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.041174125291938715,
+   "v_xx": 0.00012904326512570472
+  },
+  "fit_rel_resid": 0.008827606108872682,
+  "r_holdout": 0.00913518238777261
+ },
+ "case_070": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.013252799112648284,
+   "v_xx": 0.00019483830456314274,
+   "div_vv_x": 7.773167352244892e-07
+  },
+  "fit_rel_resid": 0.02841740851102706,
+  "r_holdout": 0.029746567750022736
+ },
+ "case_071": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.009932662619960776,
+   "v_xx": 7.360799834510194e-05,
+   "div_vv_x": 6.254451744701745e-07
+  },
+  "fit_rel_resid": 0.027404532421884113,
+  "r_holdout": 0.026611588261779576
+ },
+ "case_072": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.038598673086330824,
+   "v_xx": 9.527484275118903e-05
+  },
+  "fit_rel_resid": 0.00837959244507822,
+  "r_holdout": 0.007728159068960889
+ },
+ "case_073": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.011402989336320805,
+   "v2": 1.4973227757308526e-05,
+   "v_xx": 0.00011442068513493143,
+   "div_vv_x": 4.350554599966169e-07
+  },
+  "fit_rel_resid": 0.02179312195923376,
+  "r_holdout": 0.02231556572652578
+ },
+ "case_074": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.022044363340460695,
+   "v_xx": 9.90610182288692e-05,
+   "div_vv_x": 6.619995869273134e-07
+  },
+  "fit_rel_resid": 0.009107350534752243,
+  "r_holdout": 0.0068612704936075125
+ },
+ "case_075": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0059312515249849524,
+   "v2": 1.506338522755015e-05,
+   "v_xx": 0.0001350593099318333,
+   "div_vv_x": 9.543958820467586e-07
+  },
+  "fit_rel_resid": 0.036819987804191025,
+  "r_holdout": 0.036667860356424484
+ },
+ "case_076": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.01651795999453755,
+   "v_xx": 0.00017099129634827576,
+   "div_vv_x": 1.2124252837563908e-06
+  },
+  "fit_rel_resid": 0.017858183518202522,
+  "r_holdout": 0.018334371819225075
+ },
+ "case_077": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.009871242089486318,
+   "v_xx": 0.00018887687209380295,
+   "div_vv_x": 7.992419456141251e-07
+  },
+  "fit_rel_resid": 0.021079588628210816,
+  "r_holdout": 0.02339314104808215
+ },
+ "case_078": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.00503328972316838,
+   "v_xx": 9.046709605201801e-05,
+   "div_vv_x": 4.303848401100813e-07
+  },
+  "fit_rel_resid": 0.028115226881127987,
+  "r_holdout": 0.0357811523190677
+ },
+ "case_079": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04853816123133609,
+   "v_xx": 0.0001274288441589429
+  },
+  "fit_rel_resid": 0.008497918098310839,
+  "r_holdout": 0.008751800836599901
+ },
+ "case_080": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v": -0.00983019067253453,
+   "v_xx": 0.00014694404071150292,
+   "vv_x": -2.306679471179901e-06,
+   "div_vv_x": 1.0697332297250804e-06
+  },
+  "fit_rel_resid": 0.02993679731474665,
+  "r_holdout": 0.02640408357235625
+ },
+ "case_081": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.02642015441819324,
+   "v_xx": 5.19964876902058e-05,
+   "div_vv_x": 2.1248915791736549e-07
+  },
+  "fit_rel_resid": 0.007453688650117373,
+  "r_holdout": 0.0074892931117239514
+ },
+ "case_082": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.007738616935388653,
+   "v_xx": 0.0001769878716650631,
+   "div_vv_x": 1.6493188671991817e-06
+  },
+  "fit_rel_resid": 0.04421944253513793,
+  "r_holdout": 0.04000077126049477
+ },
+ "case_083": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.044732693751433746,
+   "v_xx": 0.00017834825516994758
+  },
+  "fit_rel_resid": 0.020777697001198456,
+  "r_holdout": 0.028772694399977983
+ },
+ "case_084": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03867626867167653,
+   "v_xx": 0.00016729334494057025
+  },
+  "fit_rel_resid": 0.011223580286564077,
+  "r_holdout": 0.011642378802786858
+ },
+ "case_085": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.04088731679068658,
+   "v_xx": 0.0001569545638981153
+  },
+  "fit_rel_resid": 0.012538883106221055,
+  "r_holdout": 0.018625657949452416
+ },
+ "case_086": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.02029432621668919,
+   "v_xx": 9.195863719861213e-05,
+   "div_vv_x": 6.884817420879038e-07
+  },
+  "fit_rel_resid": 0.013012595010276854,
+  "r_holdout": 0.01171455338005015
+ },
+ "case_087": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.017152274821262473,
+   "v_xx": 5.429765554471279e-05,
+   "div_vv_x": 4.3501727001954326e-07
+  },
+  "fit_rel_resid": 0.01731872821180466,
+  "r_holdout": 0.016527402433085668
+ },
+ "case_088": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0366096474163268,
+   "v_xx": 0.0001571620108721624,
+   "div_vv_x": 1.2761670528568777e-06
+  },
+  "fit_rel_resid": 0.01267801655827292,
+  "r_holdout": 0.013310761981334126
+ },
+ "case_089": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.03241898899361448,
+   "v_xx": 0.00013879042401281744
+  },
+  "fit_rel_resid": 0.015483155735835369,
+  "r_holdout": 0.019804820307901316
+ },
+ "case_090": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00018615607415556145
+  },
+  "fit_rel_resid": 0.013874957249095248,
+  "r_holdout": 0.016994168952122208
+ },
+ "case_091": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00014233356910627428
+  },
+  "fit_rel_resid": 0.03697702811038222,
+  "r_holdout": 0.032939515372693344
+ },
+ "case_092": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011696693330437009,
+   "div_vv_x": 9.099284730493054e-08
+  },
+  "fit_rel_resid": 0.03693494594189268,
+  "r_holdout": 0.04433626981133067
+ },
+ "case_093": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "v",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": 0.0005872730632570606,
+   "v_xx": 9.424416962494914e-05
+  },
+  "fit_rel_resid": 0.05222032828724009,
+  "r_holdout": 0.05565793757228823
+ },
+ "case_094": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 2.0528900842296484e-05,
+   "v_xx": 0.00017490430518773343
+  },
+  "fit_rel_resid": 0.03688924523075852,
+  "r_holdout": 0.03735113389845233
+ },
+ "case_095": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00013416336776956908,
+   "div_vv_x": 1.0131456229724078e-07
+  },
+  "fit_rel_resid": 0.020458605528799283,
+  "r_holdout": 0.024233982498219432
+ },
+ "case_096": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 1.9114609361661597e-05,
+   "v_xx": 0.00013577663698269334
+  },
+  "fit_rel_resid": 0.040351227611377286,
+  "r_holdout": 0.04173057169234401
+ },
+ "case_097": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012506433745042457
+  },
+  "fit_rel_resid": 0.03442580811418851,
+  "r_holdout": 0.036304928287457953
+ },
+ "case_098": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0005128717914839631,
+   "v2": 9.315817130745256e-06,
+   "v_xx": 0.00012565002869498594,
+   "div_vv_x": 1.5740627529728386e-07
+  },
+  "fit_rel_resid": 0.02435521153205361,
+  "r_holdout": 0.027739332902387892
+ },
+ "case_099": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": -0.0004679982303878304,
+   "v2": 7.960550735048801e-06,
+   "v_xx": 9.775059838374925e-05,
+   "div_vv_x": 1.1713790235522242e-07
+  },
+  "fit_rel_resid": 0.028918810376251467,
+  "r_holdout": 0.029730502070252903
+ },
+ "case_100": {
+  "verdict": "MISSPECIFIED",
+  "blocked_at": "library_adequacy",
+  "data_adequacy": true,
+  "library_adequacy": false,
+  "support": [
+   "div_vv_x",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 4.117205546980742e-06,
+   "v_xx": 5.4976069824076964e-05,
+   "div_vv_x": 4.2653191218738896e-08
+  },
+  "fit_rel_resid": 0.052933882840631816,
+  "r_holdout": 0.05187553471819183
+ },
+ "case_101": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012535995232042927
+  },
+  "fit_rel_resid": 0.016971550747342287,
+  "r_holdout": 0.01725090238800677
+ },
+ "case_102": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.0001028203864215947
+  },
+  "fit_rel_resid": 0.02301769213450812,
+  "r_holdout": 0.024422543129971993
+ },
+ "case_103": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00016039124822011977
+  },
+  "fit_rel_resid": 0.028143706102516836,
+  "r_holdout": 0.028660725551914026
+ },
+ "case_104": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00015833164151305315
+  },
+  "fit_rel_resid": 0.012279844646142332,
+  "r_holdout": 0.012271837890425715
+ },
+ "case_105": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx",
+   "vv_x"
+  ],
+  "coefficients": {
+   "v_xx": 0.00012545545827134973,
+   "vv_x": -1.3136155828031308e-06
+  },
+  "fit_rel_resid": 0.041725031161905395,
+  "r_holdout": 0.04236686808089202
+ },
+ "case_106": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 1.666212453247334e-05,
+   "v_xx": 0.0001486744547060315
+  },
+  "fit_rel_resid": 0.03647013559534125,
+  "r_holdout": 0.037772214097387034
+ },
+ "case_107": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 6.486006864386402e-05
+  },
+  "fit_rel_resid": 0.04159488428030548,
+  "r_holdout": 0.044867082494690236
+ },
+ "case_108": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 8.496018061229193e-05
+  },
+  "fit_rel_resid": 0.030262368135467278,
+  "r_holdout": 0.03431822573689777
+ },
+ "case_109": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00010763176368051302
+  },
+  "fit_rel_resid": 0.04436253140814643,
+  "r_holdout": 0.041324529253936544
+ },
+ "case_110": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 1.7994845623986908e-05,
+   "v_xx": 0.00016724121403558645,
+   "div_vv_x": 2.866627398632666e-07
+  },
+  "fit_rel_resid": 0.04078648298436638,
+  "r_holdout": 0.042912487783235934
+ },
+ "case_111": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00014394436616663783,
+   "div_vv_x": 1.6945683565310437e-07
+  },
+  "fit_rel_resid": 0.03755698772663105,
+  "r_holdout": 0.041554763512488144
+ },
+ "case_112": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v",
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v": 0.0004780878908594629,
+   "v2": 1.4714257514593979e-05,
+   "v_xx": 0.00019236324615281168,
+   "div_vv_x": 1.819379997677482e-07
+  },
+  "fit_rel_resid": 0.04106641768273451,
+  "r_holdout": 0.04189874630618348
+ },
+ "case_113": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 8.081087716195931e-05
+  },
+  "fit_rel_resid": 0.04580700617291257,
+  "r_holdout": 0.04900467839977166
+ },
+ "case_114": {
+  "verdict": "REJECTED_TRANSFER",
+  "blocked_at": "transfer_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.00011736158244261217
+  },
+  "fit_rel_resid": 0.04546935633331851,
+  "r_holdout": 0.05348735082270516
+ },
+ "case_115": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v2",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v2": 2.7586561540794654e-05,
+   "v_xx": 0.00019161268659393372
+  },
+  "fit_rel_resid": 0.04290687699002027,
+  "r_holdout": 0.04625307283060978
+ },
+ "case_116": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 7.380414861526525e-05
+  },
+  "fit_rel_resid": 0.020282741817202948,
+  "r_holdout": 0.017466880580288797
+ },
+ "case_117": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.0001512600289234407
+  },
+  "fit_rel_resid": 0.04562366192829282,
+  "r_holdout": 0.03771500830101718
+ },
+ "case_118": {
+  "verdict": "NOT_IDENTIFIABLE",
+  "blocked_at": "identifiability_gate",
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "div_vv_x",
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 7.512894673523937e-05,
+   "div_vv_x": 6.590887504639088e-08
+  },
+  "fit_rel_resid": 0.04327154512652967,
+  "r_holdout": 0.04099625311107355
+ },
+ "case_119": {
+  "verdict": "CLAIM",
+  "blocked_at": null,
+  "data_adequacy": true,
+  "library_adequacy": true,
+  "support": [
+   "v_xx"
+  ],
+  "coefficients": {
+   "v_xx": 0.000123747628246384
+  },
+  "fit_rel_resid": 0.02173457752681627,
+  "r_holdout": 0.024364776538458383
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "run": "CDE_BLIND5_GENERATOR_V0",
+ "prereg": "PREREGISTRAZIONE_BLIND5_LIMITE_PROIETTATO_2026-09-07.md",
+ "prereg_sha256": "7d72ce3ddfe160e8faac35cee5fd27ee62011060e4035fc8df987cd90a15b0c6",
+ "generato": "2026-09-07T16:40:51.898089+00:00",
+ "casi": 120,
+ "classi": "ABCF",
+ "per_classe": 30,
+ "semi": {
+  "modello": 740000,
+  "degrado": 750000
+ },
+ "truth_sha256": "8359aa64e4c7f2f868ac2100c356b0fcf50961f2b23cb77e4b53e4b326665d04",
+ "runtime_guard": {
+  "status": "PASS",
+  "python_version": "3.13.10",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
+  },
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-09-07T16:32:56Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "avvertenza": "verita' sigillata: sha registrato qui e in sealed/truth.sha256; da committare PRIMA del discoverer"
+}

@@ -1,0 +1,47 @@
+{
+ "prereg": "PREREGISTRAZIONE_CDE_V13_REPLICA_LARGA_SCALA_2026_08_02.md",
+ "nodo": "mac",
+ "intervallo": [
+  0,
+  119
+ ],
+ "casi": 120,
+ "eseguito_utc": "2026-09-07T17:58:38.146890+00:00",
+ "durata_s": 4665.8,
+ "runtime_guard": {
+  "status": "PASS",
+  "python_version": "3.13.10",
+  "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
+  },
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-09-07T16:40:52Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+ "tau1": 0.2937834729958795,
+ "tau2": 1.2817696289076428,
+ "avvertenza": "Verdetti ciechi: sealed/truth.json non e' stato letto da questo processo."
+}

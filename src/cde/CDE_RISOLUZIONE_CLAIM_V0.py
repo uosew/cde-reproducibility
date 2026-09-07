@@ -45,3 +45,20 @@ def ricostruisci_Ab(case_path, hz):
         feats.append(R.weak_features_thermal(x, t, V, centers, "simpson"))
     Fp = {k: np.concatenate([f[k] for f in feats]) for k in feats[0]}
     return R.to_Ab(Fp)
+
+
+def annota_v2(A, b, supporto, coeffs):
+    """Limite proiettato (nota 2026-09-07 §3): c_min(t) = ||(I-P_S) y|| / ||(I-P_S) a_t||, k = 1."""
+    idx = [TERMS.index(t) for t in supporto]
+    AS = A[:, idx]; c, *_ = np.linalg.lstsq(AS, b, rcond=None); r = b - AS @ c
+    rho = float(np.linalg.norm(r)); P = AS @ np.linalg.pinv(AS)
+    out = {"k": 1.0, "rho": rho, "X": rho / float(np.linalg.norm(b)), "c_min": {}, "c_min_v1_k2": {}, "chat": {}, "se": {}}
+    n = len(b); sig = rho / np.sqrt(max(n - len(idx), 1))
+    for t in TERMS:
+        if t in supporto: continue
+        a = A[:, TERMS.index(t)]; at = a - P @ a; nat = float(np.linalg.norm(at)); na = float(np.linalg.norm(a))
+        out["c_min"][t] = rho / nat if nat > 0 else float("inf")
+        out["c_min_v1_k2"][t] = 2 * rho / na if na > 0 else float("inf")
+        out["chat"][t] = float(abs(at @ r) / (at @ at)) if nat > 0 else 0.0
+        out["se"][t] = sig / nat if nat > 0 else float("inf")
+    return out
