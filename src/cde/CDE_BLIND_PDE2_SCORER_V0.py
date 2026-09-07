@@ -27,7 +27,7 @@ Cancelli del verdetto:
   PASS = H1 & H2 & H3;  PARTIAL = H1 vero ma H3 falso (funziona ma costa);
   FAIL = H1 falso.
 
-Uso: ../.venv313/bin/python CDE_BLIND_PDE2_SCORER_V0.py
+Uso: python CDE_BLIND_PDE2_SCORER_V0.py
 """
 from __future__ import annotations
 

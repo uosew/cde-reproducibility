@@ -15,7 +15,7 @@ seed 7 (decisione oracle nota: OPEN). Poi soglie CONGELATE e valutate sul
 set di valutazione preregistrato (2 rifiuti storici + 3 open). L'oracle
 r_GT viene calcolato SOLO per la matrice di accordo NOP/oracle.
 
-Uso:  ../.venv313/bin/python CDE_V10_NONORACLE_PREFLIGHT_V0.py [--smoke]
+Uso:  python CDE_V10_NONORACLE_PREFLIGHT_V0.py [--smoke]
 """
 from __future__ import annotations
 

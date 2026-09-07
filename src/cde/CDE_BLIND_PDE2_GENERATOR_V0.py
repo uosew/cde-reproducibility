@@ -23,7 +23,7 @@ Ogni traiettoria viene verificata in risoluzione: se la coda spettrale supera
 che il risolutore leggerebbe come «la legge non trasferisce» — un falso
 negativo prodotto dal generatore, non dal motore.
 
-Uso: ../.venv313/bin/python CDE_BLIND_PDE2_GENERATOR_V0.py [--pilota]
+Uso: python CDE_BLIND_PDE2_GENERATOR_V0.py [--pilota]
 """
 from __future__ import annotations
 

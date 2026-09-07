@@ -17,7 +17,7 @@ Due parti:
     replica da campagne committate). Nessun numero inventato.
 
 Solo JSON, run in secondi.
-Uso: ../.venv313/bin/python CDE_V10_CLAIM_LADDER_AUDIT_V0.py
+Uso: python CDE_V10_CLAIM_LADDER_AUDIT_V0.py
 """
 from __future__ import annotations
 

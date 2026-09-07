@@ -147,12 +147,12 @@ davanti a qualcuno che si fida.
 | numpy | 2.5.1 | 2.5.1 |
 | scipy | 1.18.0 | 1.18.0 |
 | piattaforma | macOS arm64 | Windows 11 AMD64 |
-| percorso | `~/Desktop/LB` | `C:\LB_CDE` |
+| percorso | `<node-mac>` | `<node-win>` |
 | commit | dichiarato nel ledger | dichiarato nel ledger |
 
 `enforce_runtime_guard(strict=True)` obbligatorio su entrambi, con esito allegato
 agli artifact. Il nodo Windows e' raggiunto per **hostname verificato**
-(`DESKTOP-KPTBQ2Q`) via Tailscale, mai per indirizzo di LAN.
+(`<hostname>`) su rete privata, mai per indirizzo di LAN.
 
 ---
 

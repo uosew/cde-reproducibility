@@ -1,43 +1,43 @@
 {
-  "run": "CDE_PDE_DISCOVERY_V8",
-  "timestamp_utc": "2026-07-29T17:22:53Z",
-  "results_sha256": "e1704f0b5b24e45ed0996e9aa43ef90895b1faf1b1cb87b94e29c22e4c92322c",
-  "seed": 7,
+ "run": "CDE_PDE_DISCOVERY_V8",
+ "timestamp_utc": "2026-07-29T17:22:53Z",
+ "results_sha256": "e1704f0b5b24e45ed0996e9aa43ef90895b1faf1b1cb87b94e29c22e4c92322c",
+ "seed": 7,
+ "python_version": "3.12.12",
+ "numpy_version": "2.5.1",
+ "platform": "macOS-26.5.1-arm64-arm-64bit",
+ "git_commit": "21e1f5df",
+ "runtime_guard": {
+  "status": "PASS",
   "python_version": "3.12.12",
   "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
   "platform": "macOS-26.5.1-arm64-arm-64bit",
-  "git_commit": "21e1f5df",
-  "runtime_guard": {
-    "status": "PASS",
-    "python_version": "3.12.12",
-    "numpy_version": "2.5.1",
-    "scipy_version": "1.18.0",
-    "executable": "/Users/valentinoberardi/Desktop/LB/CDE_Scientific_Discovery/../.venv312/bin/python",
-    "platform": "macOS-26.5.1-arm64-arm-64bit",
-    "architecture": "arm64",
-    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv312",
-    "in_support_matrix": true,
-    "operations_tested": [
-      "*",
-      "**",
-      "+",
-      "-",
-      "/",
-      "exp"
-    ],
-    "operations_result": {
-      "**": false,
-      "*": false,
-      "+": false,
-      "-": false,
-      "/": false,
-      "exp": false
-    },
-    "input_mutation_detected": false,
-    "checked_at_utc": "2026-07-29T17:12:47Z",
-    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
-    "guard_protocol_version": "1.1.0",
-    "forensic": false
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
   },
-  "human_review_required": true
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-07-29T17:12:47Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "human_review_required": true
 }

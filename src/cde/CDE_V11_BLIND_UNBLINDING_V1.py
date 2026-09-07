@@ -8,7 +8,7 @@ G6 holdout >= 90%; G2' recovery su rappresentabili con dati sani >= 90%;
 G3' misspec detection >= 90%; G8 preflight false rejection <= 10%;
 G9 MISSPECIFIED precision >= 80% (recall riportato); potenza per classe.
 
-Uso: ../.venv313/bin/python CDE_V11_BLIND_UNBLINDING_V1.py
+Uso: python CDE_V11_BLIND_UNBLINDING_V1.py
 """
 from __future__ import annotations
 

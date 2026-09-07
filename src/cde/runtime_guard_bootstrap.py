@@ -14,7 +14,7 @@ Contratto (protocollo quarantena 2026-07-28):
     SOLO con la variabile d'ambiente LB_GUARD_ALLOW_FORENSIC=1; il report
     esce comunque con status FAIL e forensic=True, e qualunque envelope che
     lo contenga viene valutato RUN_INVALID_ENVIRONMENT (mai promuovibile).
-  - Nei venv ufficiali (.venv313/.venv312) il canary gira automaticamente a
+  - Negli ambienti ufficiali (requirements-lock.txt) il canary gira automaticamente a
     ogni avvio interprete via lb_guard_autoload (.pth installato da
     scripts/install_runtime_guard_pth.py): l'enforcement non dipende dalla
     disciplina del singolo autore.
@@ -103,7 +103,7 @@ def enforce_runtime_guard(strict: bool = True) -> dict:
     if rep["status"] == "FAIL" and strict and not rep["forensic"]:
         why = ("mutazione da elisione rilevata"
                if rep["input_mutation_detected"] else
-               "ambiente fuori matrice di supporto (.venv313/.venv312)")
+               "ambiente fuori matrice di supporto (vedi requirements-lock.txt)")
         raise RuntimeError(
             f"RUNTIME GUARD FAIL: {why} — python {rep['python_version']}, "
             f"numpy {rep['numpy_version']}, exe {rep['executable']}. "

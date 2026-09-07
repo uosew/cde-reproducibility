@@ -1,42 +1,42 @@
 {
-  "run": "CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0",
-  "timestamp_utc": "2026-07-31T10:11:24Z",
-  "results_sha256": "fcf2af2cb3c3ded464b1c6c6bbf9bd274f5141d1166a2caf2e9d540dcaa70151",
+ "run": "CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0",
+ "timestamp_utc": "2026-07-31T10:11:24Z",
+ "results_sha256": "fcf2af2cb3c3ded464b1c6c6bbf9bd274f5141d1166a2caf2e9d540dcaa70151",
+ "python_version": "3.13.10",
+ "numpy_version": "2.5.1",
+ "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+ "git_commit": "538b1611",
+ "runtime_guard": {
+  "status": "PASS",
   "python_version": "3.13.10",
   "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
-  "git_commit": "538b1611",
-  "runtime_guard": {
-    "status": "PASS",
-    "python_version": "3.13.10",
-    "numpy_version": "2.5.1",
-    "scipy_version": "1.18.0",
-    "executable": "/Users/valentinoberardi/Desktop/LB/.venv313/bin/python",
-    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
-    "architecture": "arm64",
-    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv313",
-    "in_support_matrix": true,
-    "operations_tested": [
-      "*",
-      "**",
-      "+",
-      "-",
-      "/",
-      "exp"
-    ],
-    "operations_result": {
-      "**": false,
-      "*": false,
-      "+": false,
-      "-": false,
-      "/": false,
-      "exp": false
-    },
-    "input_mutation_detected": false,
-    "checked_at_utc": "2026-07-31T09:30:03Z",
-    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
-    "guard_protocol_version": "1.1.0",
-    "forensic": false
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
   },
-  "human_review_required": true
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-07-31T09:30:03Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "human_review_required": true
 }

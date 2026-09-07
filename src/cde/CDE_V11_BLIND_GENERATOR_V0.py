@@ -10,7 +10,7 @@ l'envelope di procurement. Output: cases/*.npz (float16),
 public_meta.json (solo parametri camera), sealed/truth.json (sha256
 nell'envelope; sigillo = hash + ordine dei commit).
 
-Uso: ../.venv313/bin/python CDE_V11_BLIND_GENERATOR_V0.py [--smoke]
+Uso: python CDE_V11_BLIND_GENERATOR_V0.py [--smoke]
 """
 from __future__ import annotations
 

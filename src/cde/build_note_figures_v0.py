@@ -10,7 +10,7 @@ generatore congelato (CDE_KS_DISCOVERY_V9.simulate_ks, seed 7) e verificato
 contro i metadati committati (Nx, Nt, L, std(u)) prima dell'uso.
 
 Output (in arxiv_note/): fig_ks_field.pdf, fig_coef_err.pdf, fig_gate_null.pdf
-Uso:  ../.venv313/bin/python build_note_figures_v0.py
+Uso:  python build_note_figures_v0.py
 """
 from __future__ import annotations
 

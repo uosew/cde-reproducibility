@@ -9,7 +9,7 @@ livello). Calibrazione tau1/tau2 = 3x max sui 10 dataset NON-blind del
 rehearsal V2 GO, rigenerati deterministicamente prima della run blind.
 Legge SOLO cases/*.npz + public_meta.json; nessun accesso a sealed/.
 
-Uso: ../.venv313/bin/python CDE_V11_BLIND_DISCOVERER_V1.py
+Uso: python CDE_V11_BLIND_DISCOVERER_V1.py
 """
 from __future__ import annotations
 

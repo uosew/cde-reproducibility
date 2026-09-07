@@ -21,7 +21,7 @@ Per ogni caso applica la pipeline congelata, nell'ordine:
 
 Solo se tutti i cancelli passano ed e' identificabile, la decisione e' CLAIM.
 
-Uso: ../.venv313/bin/python CDE_BLIND_PDE_RUNNER_V0.py [--caso case_01]
+Uso: python CDE_BLIND_PDE_RUNNER_V0.py [--caso case_01]
 """
 from __future__ import annotations
 

@@ -27,7 +27,7 @@ Esegue DUE pipeline sullo stesso caso e sulle STESSE feature:
 Le feature sono calcolate UNA volta per caso e condivise dai due bracci:
 l'appaiamento e' esatto, senza rumore di semi fra i bracci.
 
-Uso: ../.venv313/bin/python CDE_BLIND_PDE2_RUNNER_V0.py [--caso case_01]
+Uso: python CDE_BLIND_PDE2_RUNNER_V0.py [--caso case_01]
 """
 from __future__ import annotations
 

@@ -7,7 +7,7 @@ committati ed esegue gli assert su ogni claim (se falliscono, questo builder
 non parte). La prosa e' scritta in LaTeX nativo ASCII+math (pdflatex-safe,
 come richiesto da arXiv). Output: arxiv_note/main.tex
 
-Uso:  ../.venv313/bin/python build_research_note_latex_v0.py
+Uso:  python build_research_note_latex_v0.py
 Compilazione di verifica: pdflatex (2 passate) in arxiv_note/.
 """
 from __future__ import annotations
@@ -308,8 +308,7 @@ Nonlinear PDEs Under Noise\\[0.6em]
 \large Exact support recovery, null rejection, identifiability abstention,\\
 \large and cross-runtime reproducibility}
 \author{Valentino Berardi-Montesi\\
-\small Living Brain (LB) Project\\
-\small \texttt{valentinoberardi@gmail.com} \quad
+\small Independent researcher \quad
 ORCID: \href{https://orcid.org/0009-0004-6209-7239}{\texttt{0009-0004-6209-7239}}}
 \date{July 29, 2026 --- revised September 3, 2026}
 

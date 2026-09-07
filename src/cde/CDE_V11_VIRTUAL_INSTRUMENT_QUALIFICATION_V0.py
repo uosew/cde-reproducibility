@@ -16,7 +16,7 @@ non-uniformita' emissivita' (pattern fisso della camera) -> rumore NETD
 -> deriva differenziale residua (comune rimossa dal riferimento) ->
 pixel morti + interpolazione ingestion -> saturazione -> quantizzazione.
 
-Uso: ../.venv313/bin/python CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0.py [--smoke]
+Uso: python CDE_V11_VIRTUAL_INSTRUMENT_QUALIFICATION_V0.py [--smoke]
 """
 from __future__ import annotations
 

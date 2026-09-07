@@ -41,7 +41,7 @@ spaziali WX=0.08 m (64 px), correzione deriva con riferimento freddo
 (media dei 10 px piu' freddi per frame). Il confronto V0/V1 e' la
 specifica quantitativa del protocollo di misura reale.
 
-Uso: ../.venv313/bin/python CDE_THERMAL_DRESS_REHEARSAL_V0.py [--v1]
+Uso: python CDE_THERMAL_DRESS_REHEARSAL_V0.py [--v1]
 """
 from __future__ import annotations
 

@@ -8,7 +8,7 @@ Replica / Stato, con stati SUPPORTED, PARTIAL, PENDING, FAILED, NOT_TESTED
 derivati dai valori degli artifact (assert, nessun numero a mano).
 
 Output: results.json + CDE_V10_CAPABILITY_MATRIX.md
-Uso: ../.venv313/bin/python CDE_V10_CAPABILITY_MATRIX_V0.py
+Uso: python CDE_V10_CAPABILITY_MATRIX_V0.py
 """
 from __future__ import annotations
 

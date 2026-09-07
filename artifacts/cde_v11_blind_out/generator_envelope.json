@@ -1,46 +1,46 @@
 {
-  "run": "CDE_V11_BLIND_GENERATOR_V0",
-  "smoke": false,
-  "prereg": "PREREGISTRATION_V11_BLIND_CHALLENGE_2026_07_31.md @ 28e4c4bb",
-  "n_cases": 90,
-  "timestamp_utc": "2026-07-31T11:05:50Z",
-  "truth_sha256": "65f6a2b01bc5331ddbc567c5610a4bafb09cd8af737a0ca942f0bfa5e0e77115",
-  "cases_manifest_sha256": "db713d953bff438b58a87e6c7025598b61e9e9b9f699abc37735aaf5daa3901f",
+ "run": "CDE_V11_BLIND_GENERATOR_V0",
+ "smoke": false,
+ "prereg": "PREREGISTRATION_V11_BLIND_CHALLENGE_2026_07_31.md @ 28e4c4bb",
+ "n_cases": 90,
+ "timestamp_utc": "2026-07-31T11:05:50Z",
+ "truth_sha256": "65f6a2b01bc5331ddbc567c5610a4bafb09cd8af737a0ca942f0bfa5e0e77115",
+ "cases_manifest_sha256": "db713d953bff438b58a87e6c7025598b61e9e9b9f699abc37735aaf5daa3901f",
+ "python_version": "3.13.10",
+ "numpy_version": "2.5.1",
+ "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+ "git_commit": "28e4c4bb",
+ "runtime_guard": {
+  "status": "PASS",
   "python_version": "3.13.10",
   "numpy_version": "2.5.1",
+  "scipy_version": "1.18.0",
+  "executable": "<redacted-path>",
   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
-  "git_commit": "28e4c4bb",
-  "runtime_guard": {
-    "status": "PASS",
-    "python_version": "3.13.10",
-    "numpy_version": "2.5.1",
-    "scipy_version": "1.18.0",
-    "executable": "/Users/valentinoberardi/Desktop/LB/.venv313/bin/python",
-    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
-    "architecture": "arm64",
-    "virtual_env": "/Users/valentinoberardi/Desktop/LB/.venv313",
-    "in_support_matrix": true,
-    "operations_tested": [
-      "*",
-      "**",
-      "+",
-      "-",
-      "/",
-      "exp"
-    ],
-    "operations_result": {
-      "**": false,
-      "*": false,
-      "+": false,
-      "-": false,
-      "/": false,
-      "exp": false
-    },
-    "input_mutation_detected": false,
-    "checked_at_utc": "2026-07-31T10:59:23Z",
-    "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
-    "guard_protocol_version": "1.1.0",
-    "forensic": false
+  "architecture": "arm64",
+  "virtual_env": "<redacted-path>",
+  "in_support_matrix": true,
+  "operations_tested": [
+   "*",
+   "**",
+   "+",
+   "-",
+   "/",
+   "exp"
+  ],
+  "operations_result": {
+   "**": false,
+   "*": false,
+   "+": false,
+   "-": false,
+   "/": false,
+   "exp": false
   },
-  "human_review_required": true
+  "input_mutation_detected": false,
+  "checked_at_utc": "2026-07-31T10:59:23Z",
+  "canary_sha256": "8aa18456760c931a714a1a5d1200841b57fe4116dcb9e353746119cdb810e175",
+  "guard_protocol_version": "1.1.0",
+  "forensic": false
+ },
+ "human_review_required": true
 }

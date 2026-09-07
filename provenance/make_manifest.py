@@ -22,9 +22,9 @@ campaigns = {
  "cde_risoluzione_claim_out": ("resolution bound, Stage 1 diagnostic on V13 claims", "CDE_RISOLUZIONE_STAGE1_V0.py / ANALYZER", "PREREGISTRAZIONE_LIMITE_RISOLUZIONE_CLAIM_2026-09-03.md"),
  "cde_blind4_out": ("blind-4, 120 sealed representable cases, resolution bound confirmed", "CDE_BLIND4_GENERATOR/RUNNER/SCORER_V0.py", "PREREGISTRAZIONE_LIMITE_RISOLUZIONE_CLAIM_2026-09-03.md"),
 }
-man = {"lb_commit": next(iter(ex["codice"].values()))["lb_commit"], "artifact_dirs": {}, "code": ex["codice"]}
+man = {"source_commit": next(iter(ex["codice"].values()))["source_commit"], "artifact_dirs": {}, "code": ex["codice"]}
 for k, v in ex["artefatti"].items():
     d = k.split("/")[0]; c = campaigns.get(d, ("(supporting artifact)", "", ""))
     man["artifact_dirs"].setdefault(d, {"campaign": c[0], "produced_by": c[1], "protocol": c[2], "files": {}})["files"][k] = v
 (ROOT / "provenance/MANIFEST.json").write_text(json.dumps(man, indent=1))
-print(f"SHA256SUMS: {len(lines)} files; MANIFEST: {len(man['artifact_dirs'])} artifact dirs, {len(man['code'])} code files, LB commit {man['lb_commit']}")
+print(f"SHA256SUMS: {len(lines)} files; MANIFEST: {len(man['artifact_dirs'])} artifact dirs, {len(man['code'])} code files, source commit {man['source_commit']}")

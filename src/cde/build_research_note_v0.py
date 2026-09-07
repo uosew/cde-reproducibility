@@ -8,7 +8,7 @@ ASSERT: se gli artifact non la supportano, la generazione FALLISCE invece di
 produrre una nota sbagliata. Nessun numero e' scritto a mano nel template.
 
 Output: RESEARCH_NOTE_WEAKFORM_DISCOVERY_2026_07_29.md
-Uso:    ../.venv313/bin/python build_research_note_v0.py
+Uso:    python build_research_note_v0.py
 """
 from __future__ import annotations
 
@@ -242,7 +242,7 @@ md = f"""# Epistemically Gated Weak-Form Discovery of Nonlinear PDEs Under Noise
 
 ### Exact support recovery, null rejection, identifiability abstention, and cross-runtime reproducibility
 
-*Living Brain (LB) project — technical research note, 2026-07-29.*
+*Technical research note, 2026-07-29.*
 *All numbers in this note are generated programmatically from committed
 artifacts (frozen reference commit `{FROZEN_COMMIT}`, protocol v1.1); the
 build script aborts if any claim is not supported by the artifacts.*

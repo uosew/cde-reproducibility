@@ -2,7 +2,7 @@
 
 ### Exact support recovery, null rejection, identifiability abstention, and cross-runtime reproducibility
 
-*Living Brain (LB) project — technical research note, 2026-07-29.*
+*Technical research note, 2026-07-29.*
 *All numbers in this note are generated programmatically from committed
 artifacts (frozen reference commit `8ecc3f85`, protocol v1.1); the
 build script aborts if any claim is not supported by the artifacts.*

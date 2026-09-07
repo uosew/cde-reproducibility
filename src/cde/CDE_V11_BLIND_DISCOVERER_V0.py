@@ -8,7 +8,7 @@ Per ogni caso: ingestion -> preflight non-oracle per IC -> selezione
 v1.1 pooled IC0..3 -> holdout IC4 -> swap relativo 2x -> verdetto ladder
 v2. Output: verdicts.json, emesso PRIMA dell'unblinding.
 
-Uso: ../.venv313/bin/python CDE_V11_BLIND_DISCOVERER_V0.py
+Uso: python CDE_V11_BLIND_DISCOVERER_V0.py
 """
 from __future__ import annotations
 

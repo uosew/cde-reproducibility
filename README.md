@@ -12,7 +12,7 @@ Reproducibility package for the research note **"Epistemically Gated Weak-Form D
 | `builders/` | `build_numbers.py` (re-reads every artifact, runs every claim assertion, writes `provenance/CLAIM_PROVENANCE.md`), `build_figures.py`, `build_paper.py`. |
 | `paper/` | `main.tex` and the figures, all generated. |
 | `tests/` | the publication gate (below). |
-| `provenance/` | `MANIFEST.json` (artifact → campaign, producing code, protocol, LB commit), `SHA256SUMS`, `CLAIM_PROVENANCE.md` (each quantitative claim of the paper → artifact → code → campaign → builder → place in the paper), `EXTRACTION.json` (per-module original sha256 and the one path patch applied). |
+| `provenance/` | `MANIFEST.json` (artifact → campaign, producing code, protocol, source commit), `SHA256SUMS`, `CLAIM_PROVENANCE.md` (each quantitative claim of the paper → artifact → code → campaign → builder → place in the paper), `EXTRACTION.json` (per-module original sha256 and the one path patch applied). |
 
 ## Reproduce
 
@@ -36,7 +36,7 @@ The artifacts were produced and the paper is rebuilt with CPython 3.13.10, NumPy
 
 ## What this package is not
 
-It is not the research repository it was extracted from, and it does not try to be: no search engines, no evolution loops, no unrelated experiments. `provenance/assemble_from_lb.py` is the extraction script; it runs only on the author's machine and is included so the extraction itself is inspectable.
+It is not the research repository it was extracted from, and it does not try to be: no search engines, no evolution loops, no unrelated experiments. The extraction script is kept in the source repository; `provenance/EXTRACTION.json` records, for every module, the original sha256 and the single path patch applied.
 
 ## License
 

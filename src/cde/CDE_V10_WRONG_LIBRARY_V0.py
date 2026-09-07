@@ -18,7 +18,7 @@ stessi campi seed 7 della v1); cambia SOLO la libreria candidata:
 Ancora di regressione: con la libreria standard su Burgers sigma=0 la
 pipeline clonata deve riprodurre ESATTAMENTE la claim committata della v1.
 
-Uso:  ../.venv313/bin/python CDE_V10_WRONG_LIBRARY_V0.py [--smoke]
+Uso:  python CDE_V10_WRONG_LIBRARY_V0.py [--smoke]
 """
 from __future__ import annotations
 
