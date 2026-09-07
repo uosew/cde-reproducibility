@@ -61,7 +61,7 @@ It is not the research repository it was extracted from, and it does not try to 
 
 ## Contact and collaboration
 
-Valentino Berardi-Montesi, independent researcher — **valentinoberardi@gmail.com** (ORCID [0009-0004-6209-7239](https://orcid.org/0009-0004-6209-7239)).
+Valentino Berardi, independent researcher — **valentinoberardi@gmail.com** (ORCID [0009-0004-6209-7239](https://orcid.org/0009-0004-6209-7239)).
 
 If this work is of interest to you, please get in touch: questions about the protocol, replication attempts on your own data, and disagreements with any claim are all welcome. I am open to **project-based collaborations** — applying the sealed-campaign discipline and the gated discovery pipeline to real field data, extending the residual gate into other sparse-regression tools, or joint replication studies. Issues and pull requests on this repository are welcome too; a failure story that one of these gates would have caught is the most useful contribution of all.
 
