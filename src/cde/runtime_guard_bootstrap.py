@@ -11,11 +11,11 @@ Contratto (protocollo quarantena 2026-07-28):
   - strict=True (default): su canary positivo o ambiente fuori matrice il
     processo termina con RuntimeError. Nessun fallback silenzioso.
   - Uso forense di un ambiente vulnerabile (es. riprodurre il bug su py3.14):
-    SOLO con la variabile d'ambiente LB_GUARD_ALLOW_FORENSIC=1; il report
+    SOLO con la variabile d'ambiente CDE_GUARD_ALLOW_FORENSIC=1; il report
     esce comunque con status FAIL e forensic=True, e qualunque envelope che
     lo contenga viene valutato RUN_INVALID_ENVIRONMENT (mai promuovibile).
   - Negli ambienti ufficiali (requirements-lock.txt) il canary gira automaticamente a
-    ogni avvio interprete via lb_guard_autoload (.pth installato da
+    ogni avvio interprete via the guard autoload (.pth installato da
     scripts/install_runtime_guard_pth.py): l'enforcement non dipende dalla
     disciplina del singolo autore.
 
@@ -88,7 +88,7 @@ def build_runtime_guard_report() -> dict:
         "checked_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "canary_sha256": _guard_sha256(),
         "guard_protocol_version": ng.GUARD_PROTOCOL_VERSION,
-        "forensic": os.environ.get("LB_GUARD_ALLOW_FORENSIC") == "1",
+        "forensic": os.environ.get("CDE_GUARD_ALLOW_FORENSIC") == "1",
     }
 
 
@@ -96,7 +96,7 @@ def enforce_runtime_guard(strict: bool = True) -> dict:
     """Canary sempre; blocca l'esecuzione se l'ambiente non e' verificato.
 
     Ritorna il report da inserire nell'evidence envelope sotto la chiave
-    'runtime_guard'. Con LB_GUARD_ALLOW_FORENSIC=1 non solleva, ma il report
+    'runtime_guard'. Con CDE_GUARD_ALLOW_FORENSIC=1 non solleva, ma il report
     resta FAIL+forensic e la run non sara' mai promuovibile.
     """
     rep = build_runtime_guard_report()
@@ -108,7 +108,7 @@ def enforce_runtime_guard(strict: bool = True) -> dict:
             f"RUNTIME GUARD FAIL: {why} — python {rep['python_version']}, "
             f"numpy {rep['numpy_version']}, exe {rep['executable']}. "
             "Esecuzione scientifica bloccata PRIMA del caricamento dati. "
-            "Per evidenza forense esplicita: LB_GUARD_ALLOW_FORENSIC=1.")
+            "Per evidenza forense esplicita: CDE_GUARD_ALLOW_FORENSIC=1.")
     if rep["status"] == "FAIL":
         print("!! runtime_guard: FAIL (modalita' forense: risultati NON "
               "attendibili, envelope sara' RUN_INVALID_ENVIRONMENT)",

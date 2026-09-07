@@ -679,7 +679,7 @@ def main():
     OUT.mkdir(exist_ok=True)
 
     # runtime guard obbligatorio PRIMA di qualsiasi calcolo (quarantena
-    # 2026-07-28): blocca ambienti non verificati; LB_GUARD_ALLOW_FORENSIC=1
+    # 2026-07-28): blocca ambienti non verificati; CDE_GUARD_ALLOW_FORENSIC=1
     # solo per riprodurre il bug con evidenza marcata non attendibile.
     import importlib.util as _ilu
     _spec = _ilu.spec_from_file_location("runtime_guard_bootstrap",
