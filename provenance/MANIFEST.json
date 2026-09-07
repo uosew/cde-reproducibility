@@ -842,8 +842,8 @@
   },
   "build_research_note_latex_v0.py": {
    "source_path": "CDE_Scientific_Discovery/build_research_note_latex_v0.py",
-   "sha256_originale": "ac79ea41c630b1609532cf13f8e96cabaa1669501cdd26352f4fc0bd3ec997fa",
-   "sha256_pubblico": "51099f3dc4f1779e577fab8dd0b8942994ca9bf6f746ccb0253b6581cd0d0e20",
+   "sha256_originale": "ddc42eb82d3616397a795d084a57d6c6cace3329fba841e1f868bf3e1dedf965",
+   "sha256_pubblico": "ebd4da2bee76cadf25babb35b8444f3d78c1bcda511420491d52f8bda85dfcca",
    "patchato": true,
    "source_commit": "a873b3a2"
   },

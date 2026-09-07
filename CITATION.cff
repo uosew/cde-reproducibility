@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these artifacts, please cite the research note."
 title: "Epistemically Gated Weak-Form Discovery of Nonlinear PDEs Under Noise — reproducibility package"
 authors:
-  - family-names: Berardi-Montesi
+  - family-names: Berardi
     given-names: Valentino
     orcid: "https://orcid.org/0009-0004-6209-7239"
     email: valentinoberardi@gmail.com

@@ -1,6 +1,6 @@
 # Preregistrazione protocollo v2.0 — Campagna CDE V10 (Fase A)
 
-Data: 2026-07-30. Autore: Valentino Berardi-Montesi (con Claude, LB Project).
+Data: 2026-07-30. Autore: Valentino Berardi (con Claude, LB Project).
 Stato: **PREREGISTRATO PRIMA DI QUALUNQUE RUN V10**. Questo file viene
 committato prima dell'implementazione; ogni modifica successiva al primo run
 completo richiede un emendamento datato nel ledger in fondo.
