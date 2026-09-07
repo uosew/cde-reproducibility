@@ -5,6 +5,8 @@ authors:
   - family-names: Berardi-Montesi
     given-names: Valentino
     orcid: "https://orcid.org/0009-0004-6209-7239"
+    email: valentinoberardi@gmail.com
+    affiliation: "Independent researcher"
 version: 1.0.0
 date-released: 2026-09-04
 license: MIT
