@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.npz
+!artifacts/cde_feature_export_out/*.npz
 paper/*.aux
 paper/*.log
 paper/*.out
